@@ -260,3 +260,132 @@ header-announcements {
 .font-bull {
   font-family: 'Bull-5', monospace;
 }
+
+/* ── Sale / Compare-at price — coral accent ──────────────── */
+.price--sale,
+[class*="price--sale"],
+.price__sale {
+  color: #FF5031;
+}
+
+/* ── Product title on cards — uppercase ─────────────────── */
+.product-card .product-title,
+.card__heading,
+[class*="product-card"] .product-title {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 1.2rem;
+}
+
+/* ── Collection filter bar — square chips ────────────────── */
+.facet-filters,
+[class*="filter"] button,
+[class*="facet"] button {
+  border-radius: 0 !important;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+}
+
+/* ── Product page — variant buttons active state ────────── */
+.variant-picker__option-value--selected,
+[data-selected="true"].variant-picker__option-value {
+  border-color: #FF5031 !important;
+  border-width: 2px !important;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* ── Product page — buy button full width ────────────────── */
+.product-form__submit,
+buy-buttons .button,
+[class*="add-to-cart"] .button {
+  width: 100%;
+}
+
+/* ── Page width override — ensure proper gutters ─────────── */
+.page-width {
+  padding-inline: max(24px, calc((100vw - var(--normal-page-width, 192rem)) / 2));
+}
+
+/* ── Marquee text ─────────────────────────────────────────── */
+marquee-section,
+[class*="marquee"] {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* ── Cart drawer title ───────────────────────────────────── */
+.cart-drawer__title,
+[class*="cart__title"] {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ── Footer heading style ────────────────────────────────── */
+.footer__heading,
+[class*="footer"] h3,
+[class*="footer"] h4 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+}
+
+/* ── Footer links ────────────────────────────────────────── */
+.footer__list a,
+[class*="footer"] a {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--color-foreground, #222222);
+  text-decoration: none;
+  transition: color 0.25s ease-out;
+}
+
+.footer__list a:hover,
+[class*="footer"] a:hover {
+  color: #FF5031;
+}
+
+/* ── Search input — square ───────────────────────────────── */
+.predictive-search__input,
+.search__input {
+  border-radius: 0 !important;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* ── Quick add button — square ───────────────────────────── */
+[class*="quick-add"] .button {
+  border-radius: 0 !important;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+}
+
+/* ── Breadcrumbs ─────────────────────────────────────────── */
+.breadcrumb,
+[class*="breadcrumb"] {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: var(--color-foreground, #222222);
+  opacity: 0.6;
+}
+
+/* ── Size guide link ─────────────────────────────────────── */
+.masons-size-guide__trigger {
+  margin-top: -4px;
+}
+
+/* ── Product section gap override ───────────────────────── */
+product-information {
+  gap: 0;
+}

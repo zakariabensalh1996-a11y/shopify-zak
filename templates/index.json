@@ -455,6 +455,20 @@
       }
     },
 
+    "shop_the_look": {
+      "type": "masons-shop-the-look",
+      "name": "Shop The Look",
+      "settings": {
+        "heading": "SHOP THE LOOK",
+        "subheading": "Composez votre look avec nos sélections",
+        "products_label": "COMPOSEZ VOTRE LOOK",
+        "cta_label": "Voir tout",
+        "cta_link": "/collections/all",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+
     "media_about": {
       "type": "masons-about",
       "name": "About Us",
@@ -486,6 +500,7 @@
     "collection_links_models",
     "product_list_homme",
     "product_list_femme",
+    "shop_the_look",
     "media_about",
     "media_personal_shopper"
   ]

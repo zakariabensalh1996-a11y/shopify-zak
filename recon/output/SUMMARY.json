@@ -1,0 +1,2913 @@
+{
+  "scrapedAt": "2026-03-25T22:14:20.022Z",
+  "totalPages": 8,
+  "pages": [
+    {
+      "name": "homepage",
+      "url": "https://us.masons.it/fr",
+      "sectionsFound": 12,
+      "imagesFound": 232,
+      "scriptsFound": 108,
+      "cssVarsFound": 185,
+      "error": null
+    },
+    {
+      "name": "collection-list",
+      "url": "https://us.masons.it/fr/collections",
+      "sectionsFound": 12,
+      "imagesFound": 232,
+      "scriptsFound": 106,
+      "cssVarsFound": 185,
+      "error": null
+    },
+    {
+      "name": "collection-homme",
+      "url": "https://us.masons.it/fr/collections/homme",
+      "sectionsFound": 6,
+      "imagesFound": 24,
+      "scriptsFound": 105,
+      "cssVarsFound": 185,
+      "error": null
+    },
+    {
+      "name": "collection-femme",
+      "url": "https://us.masons.it/fr/collections/femme",
+      "sectionsFound": 6,
+      "imagesFound": 24,
+      "scriptsFound": 106,
+      "cssVarsFound": 185,
+      "error": null
+    },
+    {
+      "name": "cart",
+      "url": "https://us.masons.it/fr/cart",
+      "sectionsFound": 7,
+      "imagesFound": 24,
+      "scriptsFound": 104,
+      "cssVarsFound": 185,
+      "error": null
+    },
+    {
+      "name": "page-faq",
+      "url": "https://us.masons.it/fr/pages/faq",
+      "sectionsFound": 7,
+      "imagesFound": 24,
+      "scriptsFound": 107,
+      "cssVarsFound": 185,
+      "error": null
+    },
+    {
+      "name": "blog-index",
+      "url": "https://us.masons.it/fr/blogs",
+      "sectionsFound": 6,
+      "imagesFound": 24,
+      "scriptsFound": 105,
+      "cssVarsFound": 185,
+      "error": null
+    },
+    {
+      "name": "search",
+      "url": "https://us.masons.it/fr/search",
+      "sectionsFound": 7,
+      "imagesFound": 251,
+      "scriptsFound": 109,
+      "cssVarsFound": 185,
+      "error": null
+    }
+  ],
+  "globalCssVars": {
+    "--hover-lift-amount": "4px",
+    "--hover-scale-amount": "1.03",
+    "--hover-subtle-zoom-amount": "1.015",
+    "--hover-shadow-color": "var(--color-shadow)",
+    "--hover-transition-duration": ".25s",
+    "--hover-transition-timing": "ease-out",
+    "--southera": "'Southera'",
+    "--sidebar-width": "37rem",
+    "--narrow-content-width": "57.6rem",
+    "--normal-content-width": "67.2rem",
+    "--wide-content-width": "90rem",
+    "--narrow-page-width": "144rem",
+    "--normal-page-width": "192rem",
+    "--wide-page-width": "240rem",
+    "--section-height-small": "24rem",
+    "--section-height-medium": "40rem",
+    "--section-height-large": "56rem",
+    "--text-align-default": "left",
+    "--atlas-background-main": "#FFFFFF",
+    "--atlas-background-content": "#FFFFFF",
+    "--atlas-background-success": "#518b22",
+    "--atlas-background-error": "#be2119",
+    "--atlas-text-primary": "#000000",
+    "--atlas-text-secondary": "#00000080",
+    "--atlas-text-negative": "#be2119",
+    "--atlas-text-positive": "#366d12",
+    "--atlas-text-placeholder": "#747576",
+    "--atlas-text-primary-inverse": "#FFFFFF",
+    "--atlas-primary-color": "#000000",
+    "--atlas-button-primary": "#000000",
+    "--atlas-button-disabled-color": "grey",
+    "--atlas-button-text-disabled-color": "lightgrey",
+    "--atlas-border-light": "rgba(0, 0, 0, 0.05)",
+    "--atlas-border-focus": "#41a1e6",
+    "--atlas-border-dark": "rgba(0, 0, 0, 0.5)",
+    "--atlas-input-error": "#cc3c28",
+    "--atlas-overlay-light": "rgba(0, 0, 0, 0.05)",
+    "--atlas-overlay-medium": "rgba(0, 0, 0, 0.15)",
+    "--atlas-overlay-heavy": "rgba(0, 0, 0, 0.5)",
+    "--atlas-focus-outline-color": "rgba(65, 161, 230, 0.2)",
+    "--atlas-text-selection": "rgba(150, 180, 255, 0.5)",
+    "--atlas-caution-base": "#fdd926",
+    "--atlas-font-family": "\"Helvetica Neue\", sans-serif",
+    "--atlas-font-family-mono": "ui-monospace, Menlo, Monaco, \"Cascadia Mono\", \"Roboto Mono\", \"Oxygen Mono\", \"Ubuntu Monospace\", \"Cantarell\", \"Source Code Pro\", \"Fira Mono\", \"Droid Sans Mono\", Verdana, monospace",
+    "--atlas-font-size-tiny": "12px",
+    "--atlas-margin-tiny": "4px",
+    "--atlas-line-height-tiny": "16px",
+    "--atlas-font-size-small": "14px",
+    "--atlas-line-height-small": "20px",
+    "--atlas-margin-small": "8px",
+    "--atlas-font-size-normal": "16px",
+    "--atlas-line-height-normal": "24px",
+    "--atlas-margin-normal": "8px",
+    "--atlas-font-size-large": "18px",
+    "--atlas-line-height-large": "28px",
+    "--atlas-margin-large": "10px",
+    "--atlas-font-weight-normal": "400",
+    "--atlas-font-weight-bold": "bolder",
+    "--atlas-heading-font-family": "\"Helvetica Neue\", monospace",
+    "--atlas-heading-text-primary": "#000000",
+    "--atlas-heading-text-secondary": "#00000080",
+    "--atlas-heading-text-negative": "#be2119",
+    "--atlas-font-size-display": "40px",
+    "--atlas-line-height-display": "52px",
+    "--atlas-margin-display": "24px",
+    "--atlas-font-size-h1": "40px",
+    "--atlas-line-height-h1": "48px",
+    "--atlas-margin-h1": "24px",
+    "--atlas-font-size-h2": "32px",
+    "--atlas-line-height-h2": "40px",
+    "--atlas-margin-h2": "24px",
+    "--atlas-font-size-h3": "24px",
+    "--atlas-line-height-h3": "32px",
+    "--atlas-margin-h3": "12px",
+    "--atlas-font-size-h4": "18px",
+    "--atlas-line-height-h4": "24px",
+    "--atlas-margin-h4": "12px",
+    "--atlas-font-size-h5": "16px",
+    "--atlas-line-height-h5": "24px",
+    "--atlas-margin-h5": "12px",
+    "--atlas-font-weight-heading": "500",
+    "--atlas-font-weight-heading-bold": "bolder",
+    "--atlas-shadow-medium": "0px 8px 16px 0px rgba(55, 63, 71, 0.2)",
+    "--atlas-popover-shadow": "0 20px 48px 0 rgba(55, 63, 71, 0.16), 0 12px 24px 0 rgba(55, 63, 71, 0.2), 0 0 12px 0 rgba(55, 63, 71, 0.08)",
+    "--atlas-button-border-radius": "8px",
+    "--atlas-button-border-radius-small": "8px",
+    "--atlas-button-border-radius-normal": "8px",
+    "--atlas-button-border-radius-tiny": "8px",
+    "--atlas-button-padding-normal": "7px 12px",
+    "--atlas-button-padding-small": "5px 12px",
+    "--atlas-button-padding-tiny": "3px 8px",
+    "--atlas-button-font-weight": "500",
+    "--atlas-button-icon-size-tiny": "24px",
+    "--atlas-button-icon-size-small": "32px",
+    "--atlas-button-icon-size-normal": "40px",
+    "--atlas-button-text-transform": "none",
+    "--atlas-input-border-radius-normal": "8px",
+    "--atlas-input-border-radius-small": "8px",
+    "--atlas-input-padding": "7px 12px",
+    "--atlas-input-background-disabled": "var(--atlas-overlay-light)",
+    "--atlas-range-input-background": "var(--atlas-overlay-light)",
+    "--atlas-range-input-thumb-background": "var(--atlas-background-content)",
+    "--atlas-range-input-thumb-border": "2px solid var(--atlas-overlay-medium)",
+    "--atlas-range-input-thumb-size": "24px",
+    "--atlas-chat-input-padding": "16px 48px 16px 12px",
+    "--atlas-chat-bubble-text-primary": "#322e2f",
+    "--atlas-chat-bubble-background": "#f2f2f2",
+    "--atlas-chat-bubble-display-name": "#797979",
+    "--atlas-select-panel-shadow": "0px 8px 16px 0px rgba(55, 63, 71, 0.2)",
+    "--atlas-drawer-border-radius": "24px",
+    "--atlas-drawer-inset-border-radius": "12px",
+    "--atlas-toast-border-radius": "12px",
+    "--atlas-toast-border-radius-redesign": "4px",
+    "--atlas-message-border-radius": "16px",
+    "--atlas-card-border-radius-small": "12px",
+    "--atlas-card-border-radius-normal": "32px",
+    "--atlas-card-shadow": "0px 2px 8px 0px rgba(55, 63, 71, 0.08), 0px 1px 2px 0px rgba(55, 63, 71, 0.12)",
+    "--atlas-tabs-border-radius": "12px",
+    "--atlas-loading-spinner-size-small": "16px",
+    "--atlas-loading-spinner-size-medium": "20px",
+    "--atlas-loading-spinner-size-large": "24px",
+    "--atlas-loading-spinner-size-jumbo": "32px",
+    "--atlas-loading-skeleton-color": "rgba(0, 0, 0, 0.05)",
+    "--atlas-loading-skeleton-highlight-color": "rgba(0, 0, 0, 0.02)",
+    "--atlas-thumbnail-border-radius": "8px",
+    "--atlas-progress-bar-height": "8px",
+    "--atlas-progress-bar-border-radius": "4px",
+    "--atlas-space-4": "4px",
+    "--atlas-space-8": "8px",
+    "--atlas-space-12": "12px",
+    "--atlas-space-16": "16px",
+    "--atlas-space-20": "20px",
+    "--atlas-space-24": "24px",
+    "--atlas-space-32": "32px",
+    "--atlas-space-40": "40px",
+    "--atlas-space-tiny": "var(--atlas-space-4)",
+    "--atlas-space-mini": "var(--atlas-space-8)",
+    "--atlas-space-small": "var(--atlas-space-12)",
+    "--atlas-space-medium": "var(--atlas-space-16)",
+    "--atlas-space-large": "var(--atlas-space-20)",
+    "--atlas-space-jumbo": "var(--atlas-space-24)",
+    "--atlas-space-huge": "var(--atlas-space-32)",
+    "--atlas-space-enormous": "var(--atlas-space-40)",
+    "--atlas-icon-size-tiny": "12px",
+    "--atlas-icon-size-mini": "16px",
+    "--atlas-icon-size-small": "20px",
+    "--atlas-icon-size-medium": "24px",
+    "--atlas-icon-size-large": "32px",
+    "--atlas-icon-size-jumbo": "40px",
+    "--atlas-chip-border-radius": "4px",
+    "--atlas-chip-padding": "4px",
+    "--kl-reviews-color-light-gray": "#e9e9eb",
+    "--swiper-pagination-bottom": "0",
+    "--wk-color-solid-button-label": "255, 255, 255",
+    "--wk-color-accent-1": "34, 34, 34",
+    "--wk-color-accent-2": "0, 0, 0",
+    "--wk-color-outline-button-label": "0, 0, 0",
+    "--wk-color-background-1": "255, 255, 255",
+    "--wk-color-background-2": "255, 255, 255",
+    "--wk-color-text": "0, 0, 0",
+    "--wk-button-min-height": "45px",
+    "--wk-button-border-width": "0px",
+    "--wk-button-border-radius": "0px",
+    "--wk-input-min-height": "45px",
+    "--wk-input-border-width": "1px",
+    "--wk-input-border-radius": "0px",
+    "--wk-shadow-opacity": "0%",
+    "--wk-shadow-horizontal-offset": "0px",
+    "--wk-shadow-vertical-offset": "0px",
+    "--wk-shadow-blur": "0px",
+    "--wk-font-text-scale": "1.0",
+    "--atlas-favorites-font-family": "inherit",
+    "--atlas-favorites-font-weight": "null",
+    "--atlas-favorites-font-color": "#000000",
+    "--atlas-favorites-fill-color": "rgba(255,255,255,0)",
+    "--atlas-favorites-icon-color": "#000000",
+    "--atlas-favorites-hub-icon-color": "#C8102E",
+    "--atlas-faq-font-family": "inherit",
+    "--atlas-faq-font-weight": "500",
+    "--atlas-faq-font-color": "#FFFFFF",
+    "--atlas-faq-fill-color": "#000000",
+    "--atlas-widget-side-spacing": "40px",
+    "--atlas-widget-bottom-spacing": "40px",
+    "--atlas-widget-starting-radius": "50px",
+    "--atlas-widget-background-color": "#FFFFFF"
+  },
+  "globalComputedVars": {
+    "--animation-timing-fade-out": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "--variant-picker-button-border-width": "px",
+    "--font-h1--case": "uppercase",
+    "--wk-button-border-width": "0px",
+    "--style-border-drawer": "1px solid rgb(229 229 229)",
+    "--atlas-space-small": "12px",
+    "--margin-sm": "0.7rem",
+    "--atlas-popover-shadow": "0 20px 48px 0 rgba(55, 63, 71, 0.16), 0 12px 24px 0 rgba(55, 63, 71, 0.2), 0 0 12px 0 rgba(55, 63, 71, 0.08)",
+    "--atlas-button-padding-small": "5px 12px",
+    "--animation-values-slow": "0.2s ease-in-out",
+    "--hover-scale-amount": "1.03",
+    "--animation-values-fast": "0.0625s ease-in-out",
+    "--section-height-medium": "65svh",
+    "--font-h4--family": "Helvetica Neue, sans-serif",
+    "--atlas-button-icon-size-tiny": "24px",
+    "--atlas-faq-font-weight": "500",
+    "--line-height--heading-loose": "200%",
+    "--style-border-radius-buttons-primary": "0",
+    "--menu-font-2xl--size": "2.8rem",
+    "--font-h3--size": "2.0rem",
+    "--font-paragraph--line-height": "120%",
+    "--atlas-widget-background-color": "#FFFFFF",
+    "--hover-subtle-zoom-amount": "1.015",
+    "--gap-xs": "0.5rem",
+    "--button-padding-block-md": "4px 3px",
+    "--slideshow-controls-size": "3.5rem",
+    "--color-input-border": "rgb(229 229 229 / 1.0)",
+    "--drawer-menu-inline-padding": "2.5rem",
+    "--letter-spacing--heading-normal": "0em",
+    "--color-foreground-rgb": "0 0 0",
+    "--font-h5--size": "1.6rem",
+    "--font-paragraph--case": "",
+    "--gap-3xs": "0.125rem",
+    "--kl-reviews-color-light-gray": "#e9e9eb",
+    "--font-h1--spacing": "0.25em",
+    "--font-paragraph--weight": "400",
+    "--atlas-card-shadow": "0px 2px 8px 0px rgba(55, 63, 71, 0.08), 0px 1px 2px 0px rgba(55, 63, 71, 0.12)",
+    "--wk-color-outline-button-label": "0, 0, 0",
+    "--wk-button-border-radius": "0px",
+    "--atlas-chat-bubble-display-name": "#797979",
+    "--shadow-blur": "20px",
+    "--color-white": "#FFFFFF",
+    "--input-disabled-border-color": "rgb(0 0 0 / 0.05)",
+    "--font-h6--letter-spacing": "0em",
+    "--atlas-button-border-radius-tiny": "8px",
+    "--focus-outline-width": "0.09375rem",
+    "--color-background-rgb": "242 242 242",
+    "--animation-timing-hover": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+    "--padding-xs": "0.5rem",
+    "--button-font-family": "Helvetica Neue, sans-serif",
+    "--atlas-favorites-font-family": "",
+    "--spacing-scale-md": "0.7",
+    "--animation-slideshow-easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "--input-email-min-width": "200px",
+    "--drawer-inline-padding": "25px",
+    "--animation-speed": "0.125s",
+    "--font-paragraph--spacing": "0.5em",
+    "--atlas-favorites-icon-color": "#000000",
+    "--font-h5--letter-spacing": "0em",
+    "--font-size--h1": "2.4rem",
+    "--line-height--body-loose": "183%",
+    "--spacing-scale-default": "1.0",
+    "--color-variant-border": "rgb(0 0 0 / 1.0)",
+    "--input-disabled-text-color": "rgb(0 0 0 / 0.5)",
+    "--icon-stroke-width": "1.5px",
+    "--padding-md": "0.8rem",
+    "--padding-lg": "1rem",
+    "--card-bg-hover": "rgb(0 0 0 / 0.05)",
+    "--font-size--paragraph": "1.4rem",
+    "--atlas-loading-skeleton-color": "rgba(0, 0, 0, 0.05)",
+    "--color-input-hover-background": "rgb(229 229 229 / 1.0)",
+    "--backdrop-color-rgb": "128 125 125",
+    "--font-h2--weight": "500",
+    "--font-paragraph--size": "1.4rem",
+    "--font-h5--style": "normal",
+    "--layer-window-overlay": "10",
+    "--letter-spacing--heading-tight": "-0.03em",
+    "--atlas-icon-size-jumbo": "40px",
+    "--animation-speed-medium": "0.15s",
+    "--font-body--weight": "400",
+    "--opacity-90": "0.9",
+    "--swiper-pagination-bottom": "0",
+    "--atlas-toast-border-radius-redesign": "4px",
+    "--atlas-focus-outline-color": "rgba(65, 161, 230, 0.2)",
+    "--wide-content-width": "90rem",
+    "--atlas-drawer-border-radius": "24px",
+    "--color-primary-button-text": "rgb(255 255 255 / 1.0)",
+    "--animation-speed-fast": "0.0625s",
+    "--atlas-caution-base": "#fdd926",
+    "--atlas-button-border-radius-small": "8px",
+    "--variant-picker-button-radius": "px",
+    "--font-h3--style": "normal",
+    "--atlas-card-border-radius-small": "12px",
+    "--border-color": "rgb(229 229 229 / 0.5)",
+    "--opacity-60": "0.6",
+    "--padding-4xl": "2rem",
+    "--font-h2--color": "rgb(0 0 0 / 1.0)",
+    "--atlas-margin-h4": "12px",
+    "--atlas-font-weight-heading": "500",
+    "--icon-size-lg": "2.6rem",
+    "--animation-timing-fade-in": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "--opacity-70": "0.7",
+    "--variant-picker-swatch-height-unitless": "",
+    "--font-accent--style": "normal",
+    "--color-variant-text-rgb": "0 0 0",
+    "--color-secondary-button-text": "rgb(34 34 34 / 1.0)",
+    "--style-border-radius-lg": "1rem",
+    "--atlas-line-height-normal": "24px",
+    "--hover-transition-timing": "ease-out",
+    "--margin-2xs": "0.3rem",
+    "--gap-xl": "1.25rem",
+    "--atlas-text-primary": "#000000",
+    "--line-height--body-tight": "100%",
+    "--atlas-chat-bubble-background": "#f2f2f2",
+    "--style-border-radius-pills": "0",
+    "--padding-3xl": "1.75rem",
+    "--line-height": "1",
+    "--breadcrumbs-height": "3.2rem",
+    "--color-primary-rgb": "0 0 0",
+    "--atlas-widget-side-spacing": "40px",
+    "--atlas-space-8": "8px",
+    "--color-border": "rgb(229 229 229 / 1.0)",
+    "--line-height--body-normal": "120%",
+    "--atlas-font-size-h1": "40px",
+    "--atlas-font-size-h3": "24px",
+    "--color-foreground": "rgb(0 0 0 / 1.0)",
+    "--cart-font-weight": "400",
+    "--font-size--h5": "1.6rem",
+    "--atlas-button-disabled-color": "grey",
+    "--font-h3--weight": "400",
+    "--input-disabled-background-color": "rgb(0 0 0 / 0.1)",
+    "--atlas-input-error": "#cc3c28",
+    "--button-text-case": "uppercase",
+    "--atlas-chip-border-radius": "4px",
+    "--cart-font-line-height": "120%",
+    "--opacity-50": "0.5",
+    "--font-size--h4": "1.8rem",
+    "--font-size--xl": "1.5rem",
+    "--style-border-radius-sm": "0.6rem",
+    "--menu-font-lg--line-height": "calc(1.1 + 0.5 * min(16 / 18))",
+    "--badge-rectangle-padding-block": "5px",
+    "--color-input-text": "rgb(0 0 0 / 1.0)",
+    "--badge-blob-padding-block": "4px",
+    "--badge-rectangle-padding-inline": "5px",
+    "--wk-shadow-opacity": "0%",
+    "--atlas-widget-starting-radius": "50px",
+    "--shape--diamond": "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
+    "--layer-menu-drawer": "18",
+    "--gap-sm": "0.7rem",
+    "--letter-spacing--heading-loose": "0.03em",
+    "--variant-picker-border-style": "",
+    "--layer-temporary": "20",
+    "--view-transition-old-main-content": "0.125s ease-in-out both fadeOut",
+    "--opacity-10-25": "0.1",
+    "--menu-font-2xl--line-height": "calc(1.1 + 0.5 * min(16 / 28))",
+    "--layer-sticky": "8",
+    "--opacity-subdued-text": "0.7",
+    "--max-width--display-tight": "5ch",
+    "--color-variant-hover-background": "rgb(255 255 255 / 1.0)",
+    "--atlas-button-padding-normal": "7px 12px",
+    "--drawer-header-desktop-top": "0rem",
+    "--font-h1-value": "24",
+    "--view-transition-new-main-content": "0.125s ease-in-out both fadeIn, 0.125s ease-in-out both slideInTopViewTransition",
+    "--font-h4--line-height": "160%",
+    "--font-size--5xl": "3.5rem",
+    "--max-width--heading-normal": "50ch",
+    "--atlas-font-size-h5": "16px",
+    "--font-h3--letter-spacing": "0em",
+    "--font-subheading--style": "normal",
+    "--atlas-button-border-radius-normal": "8px",
+    "--font-size--h3": "2.0rem",
+    "--font-h6--spacing": "0.25em",
+    "--font-h1--weight": "500",
+    "--shadow-popover": "0px 4px 20px rgb(128 125 125 / 0.15)",
+    "--atlas-icon-size-small": "20px",
+    "--menu-child-font-style": "normal",
+    "--shape--circle": "circle(50% at center)",
+    "--checkout-button-gap": "8px",
+    "--card-border-focus": "rgb(0 0 0 / 0.1)",
+    "--animation-values-allow-discrete": "0.125s ease-in-out allow-discrete",
+    "--color-lowstock": "rgb(255 80 49 / 1.0)",
+    "--atlas-space-enormous": "40px",
+    "--card-border-hover": "rgb(0 0 0 / 0.3)",
+    "--font-h4-value": "18",
+    "--input-box-shadow": "0 0 0 1px rgb(229 229 229 / 1.0)",
+    "--input-box-shadow-focus": "0 0 0 calc(1px + 0.5px) rgb(229 229 229 / 1.0)",
+    "--style-border-width-secondary": "1px",
+    "--font-h3--spacing": "0.25em",
+    "--atlas-favorites-font-color": "#000000",
+    "--atlas-toast-border-radius": "12px",
+    "--input-padding-x": "0.8rem 0.5rem",
+    "--font-h4--size": "1.8rem",
+    "--font-h5--family": "Helvetica Neue, sans-serif",
+    "--wk-shadow-vertical-offset": "0px",
+    "--atlas-font-weight-heading-bold": "bolder",
+    "--icon-size-2xs": "1.36rem",
+    "--atlas-range-input-thumb-border": "2px solid rgba(0, 0, 0, 0.15)",
+    "--font-h1--size": "2.4rem",
+    "--menu-child-font-family": "",
+    "--font-size--3xl": "2.5rem",
+    "--color-secondary-button-hover-background": "rgb(255 255 255 / 1.0)",
+    "--atlas-line-height-h3": "32px",
+    "--color-selected-variant-border": "rgb(255 80 49 / 1.0)",
+    "--font-h1--family": "Helvetica Neue, monospace",
+    "--height-buy-buttons": "calc(1rem * 2 + 2.2rem)",
+    "--font-h2--size": "2.4rem",
+    "--font-h6--style": "normal",
+    "--atlas-overlay-heavy": "rgba(0, 0, 0, 0.5)",
+    "--max-width--body-normal": "50ch",
+    "--layer-flat": "1",
+    "--menu-font-md--line-height": "calc(1.1 + 0.5 * min(16 / 16))",
+    "--opacity-10": "0.1",
+    "--gradient-image-overlay": "linear-gradient(to top, rgb(0 0 0 / 0.5), transparent)",
+    "--atlas-primary-color": "#000000",
+    "--font-h2--spacing": "0.25em",
+    "--animation-values": "0.125s ease-in-out",
+    "--atlas-loading-spinner-size-small": "16px",
+    "--menu-font-lg--size": "2rem",
+    "--color-input-text-rgb": "0 0 0",
+    "--atlas-button-text-disabled-color": "lightgrey",
+    "--font-h3--line-height": "160%",
+    "--menu-child-font-size": "1.2rem",
+    "--atlas-margin-small": "8px",
+    "--font-h6--case": "none",
+    "--padding-sm": "0.7rem",
+    "--menu-parent-font-line-height": "200%",
+    "--wk-color-background-2": "255, 255, 255",
+    "--margin-3xs": "0.125rem",
+    "--padding-6xl": "4rem",
+    "--atlas-space-16": "16px",
+    "--button-font-weight": "400",
+    "--color-shadow": "rgb(128 125 125 / 1.0)",
+    "--atlas-range-input-thumb-size": "24px",
+    "--menu-parent-font-family": "",
+    "--atlas-range-input-thumb-background": "#FFFFFF",
+    "--gap-2xl": "2rem",
+    "--atlas-background-content": "#FFFFFF",
+    "--color-success": "#006400",
+    "--atlas-space-20": "20px",
+    "--font-h3--case": "uppercase",
+    "--atlas-font-family": "\"Helvetica Neue\", sans-serif",
+    "--atlas-font-size-tiny": "12px",
+    "--layer-lowest": "-1",
+    "--atlas-overlay-medium": "rgba(0, 0, 0, 0.15)",
+    "--layer-header-menu": "12",
+    "--layer-heightened": "4",
+    "--atlas-space-jumbo": "24px",
+    "--atlas-chat-input-padding": "16px 48px 16px 12px",
+    "--font-h4--letter-spacing": "0em",
+    "--max-width--display-normal": "20ch",
+    "--animation-easing": "ease-in-out",
+    "--atlas-text-positive": "#366d12",
+    "--opacity-35-55": "0.35",
+    "--style-border-radius-xs": "0.2rem",
+    "--margin-6xl": "5rem",
+    "--atlas-heading-text-negative": "#be2119",
+    "--atlas-font-size-large": "18px",
+    "--font-h4--weight": "400",
+    "--atlas-font-size-h4": "18px",
+    "--atlas-space-40": "40px",
+    "--atlas-background-main": "#FFFFFF",
+    "--menu-font-sm--line-height": "calc(1.1 + 0.5 * min(16 / 14))",
+    "--atlas-font-size-normal": "16px",
+    "--atlas-margin-normal": "8px",
+    "--menu-font-xs--line-height": "calc(1.1 + 0.5 * min(16 / 12))",
+    "--atlas-font-size-small": "14px",
+    "--font-accent--family": "Bull-5, monospace",
+    "--scroll-margin": "50px",
+    "--atlas-icon-size-mini": "16px",
+    "--color-selected-variant-hover-background": "rgb(229 229 229 / 1.0)",
+    "--color-secondary-button-background": "rgb(0 0 0 / 0.0)",
+    "--opacity-5-15": "0.05",
+    "--margin-xs": "0.5rem",
+    "--font-paragraph--family": "Helvetica Neue, sans-serif",
+    "--animation-timing-active": "cubic-bezier(0.5, 0, 0.75, 0)",
+    "--atlas-space-4": "4px",
+    "--max-width--display-narrow": "15ch",
+    "--atlas-line-height-h2": "40px",
+    "--wk-color-solid-button-label": "255, 255, 255",
+    "--opacity-40": "0.4",
+    "--atlas-margin-tiny": "4px",
+    "--icon-size-xs": "2rem",
+    "--color-secondary-button-hover-border": "rgb(34 34 34 / 1.0)",
+    "--color-primary-button-background": "rgb(34 34 34 / 1.0)",
+    "--menu-parent-font-size": "1.2rem",
+    "--animation-speed-slow": "0.2s",
+    "--margin-2xl": "1.5rem",
+    "--color-instock": "#3ED660",
+    "--font-heading--style": "normal",
+    "--animation-timing-default": "cubic-bezier(0, 0, 0.2, 1)",
+    "--atlas-loading-skeleton-highlight-color": "rgba(0, 0, 0, 0.02)",
+    "--header-height": "48px",
+    "--layer-section-background": "-2",
+    "--atlas-margin-h1": "24px",
+    "--atlas-input-border-radius-small": "8px",
+    "--shape--sunburst": "polygon(100% 50%,94.62% 55.87%,98.3% 62.94%,91.57% 67.22%,93.3% 75%,85.7% 77.39%,85.36% 85.36%,77.39% 85.7%,75% 93.3%,67.22% 91.57%,62.94% 98.3%,55.87% 94.62%,50% 100%,44.13% 94.62%,37.06% 98.3%,32.78% 91.57%,25% 93.3%,22.61% 85.7%,14.64% 85.36%,14.3% 77.39%,6.7% 75%,8.43% 67.22%,1.7% 62.94%,5.38% 55.87%,0% 50%,5.38% 44.13%,1.7% 37.06%,8.43% 32.78%,6.7% 25%,14.3% 22.61%,14.64% 14.64%,22.61% 14.3%,25% 6.7%,32.78% 8.43%,37.06% 1.7%,44.13% 5.38%,50% 0%,55.87% 5.38%,62.94% 1.7%,67.22% 8.43%,75% 6.7%,77.39% 14.3%,85.36% 14.64%,85.7% 22.61%,93.3% 25%,91.57% 32.78%,98.3% 37.06%,94.62% 44.13%)",
+    "--atlas-favorites-font-weight": "null",
+    "--color-variant-hover-text": "rgb(0 0 0 / 1.0)",
+    "--gap-md": "0.9rem",
+    "--variant-picker-border-width": "px",
+    "--menu-child-font-weight": "400",
+    "--ease-out-quad": "cubic-bezier(0.32, 0.72, 0, 1)",
+    "--gap-3xl": "3rem",
+    "--font-accent--weight": "400",
+    "--color-primary-button-hover-border": "rgb(255 80 49 / 1.0)",
+    "--shape--blob": "polygon(85.349% 11.712%, 87.382% 13.587%, 89.228% 15.647%, 90.886% 17.862%, 92.359% 20.204%, 93.657% 22.647%, 94.795% 25.169%, 95.786% 27.752%, 96.645% 30.382%, 97.387% 33.048%, 98.025% 35.740%, 98.564% 38.454%, 99.007% 41.186%, 99.358% 43.931%, 99.622% 46.685%, 99.808% 49.446%, 99.926% 52.210%, 99.986% 54.977%, 99.999% 57.744%, 99.975% 60.511%, 99.923% 63.278%, 99.821% 66.043%, 99.671% 68.806%, 99.453% 71.565%, 99.145% 74.314%, 98.724% 77.049%, 98.164% 79.759%, 97.433% 82.427%, 96.495% 85.030%, 95.311% 87.529%, 93.841% 89.872%, 92.062% 91.988%, 89.972% 93.796%, 87.635% 95.273%, 85.135% 96.456%, 82.532% 97.393%, 79.864% 98.127%, 77.156% 98.695%, 74.424% 99.129%, 71.676% 99.452%, 68.918% 99.685%, 66.156% 99.844%, 63.390% 99.942%, 60.624% 99.990%, 57.856% 99.999%, 55.089% 99.978%, 52.323% 99.929%, 49.557% 99.847%, 46.792% 99.723%, 44.031% 99.549%, 41.273% 99.317%, 38.522% 99.017%, 35.781% 98.639%, 33.054% 98.170%, 30.347% 97.599%, 27.667% 96.911%, 25.024% 96.091%, 22.432% 95.123%, 19.907% 93.994%, 17.466% 92.690%, 15.126% 91.216%, 12.902% 89.569%, 10.808% 87.761%, 8.854% 85.803%, 7.053% 83.703%, 5.418% 81.471%, 3.962% 79.119%, 2.702% 76.656%, 1.656% 74.095%, 0.846% 71.450%, 0.294% 68.740%, 0.024% 65.987%, 0.050% 63.221%, 0.343% 60.471%, 0.858% 57.752%, 1.548% 55.073%, 2.370% 52.431%, 3.283% 49.819%, 4.253% 47.227%, 5.249% 44.646%, 6.244% 42.063%, 7.211% 39.471%, 8.124% 36.858%, 8.958% 34.220%, 9.711% 31.558%, 10.409% 28.880%, 11.083% 26.196%, 11.760% 23.513%, 12.474% 20.839%, 13.259% 18.186%, 14.156% 15.569%, 15.214% 13.012%, 16.485% 10.556%, 18.028% 8.261%, 19.883% 6.211%, 22.041% 4.484%, 24.440% 3.110%, 26.998% 2.057%, 29.651% 1.275%, 32.360% 0.714%, 35.101% 0.337%, 37.859% 0.110%, 40.624% 0.009%, 43.391% 0.016%, 46.156% 0.113%, 48.918% 0.289%, 51.674% 0.533%, 54.425% 0.837%, 57.166% 1.215%, 59.898% 1.654%, 62.618% 2.163%, 65.322% 2.750%, 68.006% 3.424%, 70.662% 4.197%, 73.284% 5.081%, 75.860% 6.091%, 78.376% 7.242%, 80.813% 8.551%, 83.148% 10.036%, 85.349% 11.712%)",
+    "--atlas-button-border-radius": "8px",
+    "--color-foreground-muted": "rgb(0 0 0 / 0.6)",
+    "--atlas-button-font-weight": "500",
+    "--wk-color-accent-1": "34, 34, 34",
+    "--hover-transition-duration": ".25s",
+    "--atlas-shadow-medium": "0px 8px 16px 0px rgba(55, 63, 71, 0.2)",
+    "--hover-lift-amount": "4px",
+    "--font-subheading--family": "Helvetica Neue, sans-serif",
+    "--wk-shadow-blur": "0px",
+    "--variant-picker-swatch-width-unitless": "",
+    "--atlas-text-negative": "#be2119",
+    "--font-h1--style": "normal",
+    "--font-h5--spacing": "0.25em",
+    "--font-body--style": "normal",
+    "--style-border-radius-md": "0.8rem",
+    "--color-accent": "rgb(255 80 49 / 1.0)",
+    "--letter-spacing--body-loose": "0.05em",
+    "--color-border-rgb": "229 229 229",
+    "--atlas-faq-font-family": "",
+    "--wk-input-border-width": "1px",
+    "--color-primary-hover": "rgb(0 0 0 / 1.0)",
+    "--letter-spacing--body-normal": "0em",
+    "--font-h3-value": "20",
+    "--atlas-drawer-inset-border-radius": "12px",
+    "--backdrop-opacity": "0.15",
+    "--atlas-text-placeholder": "#747576",
+    "--atlas-background-success": "#518b22",
+    "--height-small": "17.5rem",
+    "--atlas-space-32": "32px",
+    "--atlas-margin-large": "10px",
+    "--font-h6-value": "14",
+    "--input-padding-y": "0.8rem",
+    "--atlas-space-mini": "8px",
+    "--atlas-button-text-transform": "none",
+    "--wide-page-width": "240rem",
+    "--atlas-input-padding": "7px 12px",
+    "--atlas-text-secondary": "#00000080",
+    "--font-h4--style": "normal",
+    "--atlas-space-tiny": "4px",
+    "--input-box-shadow-width": "1px",
+    "--font-size--lg": "1.25rem",
+    "--shadow-drawer": "0px 4px 20px rgb(128 125 125 / 0.15)",
+    "--menu-font-md--size": "1.8rem",
+    "--skeleton-opacity": "0.025",
+    "--color-primary-button-border": "rgb(34 34 34 / 1.0)",
+    "--opacity-5": "0.05",
+    "--atlas-input-border-radius-normal": "8px",
+    "--margin-4xl": "2rem",
+    "--atlas-button-icon-size-normal": "40px",
+    "--text-align-default": "left",
+    "--menu-parent-font-case": "uppercase",
+    "--font-h5--line-height": "160%",
+    "--font-h2--line-height": "160%",
+    "--font-h4--color": "rgb(0 0 0 / 1.0)",
+    "--margin-lg": "1rem",
+    "--menu-font-xl--size": "2.4rem",
+    "--drawer-header-block-padding": "20px",
+    "--color-primary-button-hover-background": "rgb(255 80 49 / 1.0)",
+    "--font-size--h2": "2.4rem",
+    "--atlas-font-family-mono": "ui-monospace, Menlo, Monaco, \"Cascadia Mono\", \"Roboto Mono\", \"Oxygen Mono\", \"Ubuntu Monospace\", \"Cantarell\", \"Source Code Pro\", \"Fira Mono\", \"Droid Sans Mono\", Verdana, monospace",
+    "--color-variant-hover-border": "rgb(255 80 49 / 1.0)",
+    "--color-input-background": "rgb(255 255 255 / 1.0)",
+    "--sidebar-width": "37rem",
+    "--letter-spacing--body-tight": "-0.05em",
+    "--font-h2-value": "24",
+    "--font-h5-value": "16",
+    "--max-width--body-narrow": "35ch",
+    "--atlas-margin-h5": "12px",
+    "--drawer-height": "100dvh",
+    "--atlas-favorites-fill-color": "rgba(255,255,255,0)",
+    "--atlas-line-height-display": "52px",
+    "--opacity-15": "0.15",
+    "--style-border-width-primary": "1px",
+    "--focus-outline-offset": "0.2em",
+    "--font-h2--case": "uppercase",
+    "--variant-picker-border-opacity": "%",
+    "--font-h1--letter-spacing": "0em",
+    "--font-h4--case": "none",
+    "--wk-shadow-horizontal-offset": "0px",
+    "--cart-font-size": "1.2rem",
+    "--input-padding": "0.8rem 0.8rem 0.5rem",
+    "--color-shadow-rgb": "128 125 125",
+    "--font-h1--line-height": "160%",
+    "--style-border-swatch-style": "solid",
+    "--font-h1--color": "rgb(0 0 0 / 1.0)",
+    "--opacity-85": "0.85",
+    "--narrow-content-width": "57.6rem",
+    "--font-heading--weight": "500",
+    "--font-h2--style": "normal",
+    "--style-border-radius-buttons-secondary": "0",
+    "--atlas-background-error": "#be2119",
+    "--atlas-font-size-display": "40px",
+    "--font-subheading--weight": "500",
+    "--font-size--md": "1.125rem",
+    "--transparent-header-offset-boolean": "0",
+    "--padding-inline": "1.2rem",
+    "--padding-xl": "1.25rem",
+    "--narrow-page-width": "144rem",
+    "--atlas-heading-text-primary": "#000000",
+    "--drawer-content-block-padding": "10px",
+    "--font-paragraph-value": "14",
+    "--color-error": "#8B0000",
+    "--max-width--heading-narrow": "30ch",
+    "--font-h6--size": "1.4rem",
+    "--shadow-button": "0 2px 3px rgb(0 0 0 / 20%)",
+    "--gap-2xs": "0.3rem",
+    "--font-h6--color": "rgb(0 0 0 / 1.0)",
+    "--color-black": "#000000",
+    "--atlas-heading-text-secondary": "#00000080",
+    "--icon-size-md": "2.4rem",
+    "--atlas-card-border-radius-normal": "32px",
+    "--atlas-line-height-small": "20px",
+    "--wk-color-text": "0, 0, 0",
+    "--input-search-max-width": "650px",
+    "--atlas-tabs-border-radius": "12px",
+    "--atlas-chat-bubble-text-primary": "#322e2f",
+    "--atlas-margin-h2": "24px",
+    "--margin-md": "0.8rem",
+    "--atlas-text-primary-inverse": "#FFFFFF",
+    "--height-medium": "21.25rem",
+    "--cart-font-family": "Helvetica Neue, sans-serif",
+    "--atlas-loading-spinner-size-large": "24px",
+    "--color-primary-hover-rgb": "0 0 0",
+    "--gap-lg": "1rem",
+    "--section-height-large": "80svh",
+    "--section-height-small": "50svh",
+    "--height-large": "25rem",
+    "--color-foreground-heading-rgb": "0 0 0",
+    "--disabled-opacity": "0.5",
+    "--atlas-message-border-radius": "16px",
+    "--minimum-touch-target": "44px",
+    "--drawer-width": "100vw",
+    "--icon-size-sm": "2.2rem",
+    "--atlas-space-12": "12px",
+    "--atlas-space-medium": "16px",
+    "--color-outofstock": "#C8C8C8",
+    "--style-border-radius-50": "50%",
+    "--opacity-30": "0.3",
+    "--atlas-space-huge": "32px",
+    "--atlas-line-height-large": "28px",
+    "--modal-max-height": "65dvh",
+    "--font-heading--family": "Helvetica Neue, monospace",
+    "--margin-3xl": "1.75rem",
+    "--padding-5xl": "3rem",
+    "--menu-parent-font-style": "normal",
+    "--style-border-width-inputs": "1px",
+    "--menu-parent-font-weight": "500",
+    "--atlas-input-background-disabled": "rgba(0, 0, 0, 0.05)",
+    "--atlas-line-height-tiny": "16px",
+    "--font-h6--weight": "400",
+    "--wk-color-accent-2": "0, 0, 0",
+    "--color-variant-text": "rgb(0 0 0 / 1.0)",
+    "--font-size--2xl": "2rem",
+    "--color-selected-variant-hover-border": "rgb(229 229 229 / 1.0)",
+    "--line-height--heading-tight": "120%",
+    "--atlas-line-height-h1": "48px",
+    "--padding-2xs": "0.25rem",
+    "--slideshow-controls-icon": "2rem",
+    "--color-selected-variant-hover-text": "rgb(0 0 0 / 1.0)",
+    "--opacity-30-60": "0.3",
+    "--layer-base": "0",
+    "--normal-page-width": "192rem",
+    "--drawer-max-width": "500px",
+    "--atlas-button-primary": "#000000",
+    "--atlas-faq-fill-color": "#000000",
+    "--atlas-margin-display": "24px",
+    "--input-textarea-min-height": "55px",
+    "--button-size-sm": "76px",
+    "--font-h2--family": "Helvetica Neue, monospace",
+    "--font-h6--line-height": "160%",
+    "--font-size--sm": "1rem",
+    "--atlas-space-large": "20px",
+    "--color-secondary-button-border": "rgb(34 34 34 / 1.0)",
+    "--atlas-overlay-light": "rgba(0, 0, 0, 0.05)",
+    "--atlas-chip-padding": "4px",
+    "--atlas-icon-size-medium": "24px",
+    "--layer-overlay": "16",
+    "--atlas-font-size-h2": "32px",
+    "--font-size--4xl": "3rem",
+    "--color-background": "rgb(242 242 242 / 1.0)",
+    "--peek-next-slide-size": "3rem",
+    "--font-h3--color": "rgb(0 0 0 / 1.0)",
+    "--menu-font-sm--size": "1.6rem",
+    "--color-foreground-heading": "rgb(0 0 0 / 1.0)",
+    "--header-group-height": "80px",
+    "--opacity-40-60": "0.4",
+    "--font-h5--color": "rgb(0 0 0 / 1.0)",
+    "--style-border-swatch-width": "1px",
+    "--drawer-padding": "calc(0.5rem + 7px)",
+    "--line-height--heading-normal": "160%",
+    "--atlas-range-input-background": "rgba(0, 0, 0, 0.05)",
+    "--variant-picker-swatch-height": "px",
+    "--badge-blob-padding-inline": "16px 12px",
+    "--font-h3--family": "Helvetica Neue, sans-serif",
+    "--font-size--2xs": "0.8125rem",
+    "--button-padding-inline": "16px",
+    "--atlas-progress-bar-border-radius": "4px",
+    "--font-h5--weight": "400",
+    "--font-h6--family": "Helvetica Neue, sans-serif",
+    "--padding-3xs": "0.125rem",
+    "--color-secondary-button-hover-text": "rgb(34 34 34 / 1.0)",
+    "--opacity-80": "0.8",
+    "--atlas-select-panel-shadow": "0px 8px 16px 0px rgba(55, 63, 71, 0.2)",
+    "--font-body--family": "Helvetica Neue, sans-serif",
+    "--atlas-button-icon-size-small": "32px",
+    "--color-white-rgb": "255 255 255",
+    "--normal-content-width": "67.2rem",
+    "--atlas-border-light": "rgba(0, 0, 0, 0.05)",
+    "--opacity-20": "0.2",
+    "--atlas-font-weight-bold": "bolder",
+    "--height-full": "100vh",
+    "--spacing-scale-sm": "0.6",
+    "--atlas-loading-spinner-size-medium": "20px",
+    "--atlas-border-dark": "rgba(0, 0, 0, 0.5)",
+    "--atlas-border-focus": "#41a1e6",
+    "--color-selected-variant-text": "rgb(0 0 0 / 1.0)",
+    "--atlas-favorites-hub-icon-color": "#C8102E",
+    "--style-border-width": "1px",
+    "--button-size-md": "90px",
+    "--hover-shadow-color": "rgb(128 125 125 / 1.0)",
+    "--atlas-margin-h3": "12px",
+    "--font-size--xs": "0.875rem",
+    "--atlas-faq-font-color": "#FFFFFF",
+    "--atlas-thumbnail-border-radius": "8px",
+    "--wk-button-min-height": "45px",
+    "--ease-out-cubic": "cubic-bezier(0.33, 1, 0.68, 1)",
+    "--menu-font-xl--line-height": "calc(1.1 + 0.5 * min(16 / 20))",
+    "--cart-font-style": "normal",
+    "--style-border-popover": "1px solid rgb(229 229 229)",
+    "--style-border-radius-inputs": "0",
+    "--layer-raised": "2",
+    "--variant-picker-swatch-width": "px",
+    "--style-border-radius-popover": "0",
+    "--button-size": "44px",
+    "--drawer-animation-speed": "0.2s",
+    "--atlas-icon-size-large": "32px",
+    "--wk-color-background-1": "255, 255, 255",
+    "--atlas-widget-bottom-spacing": "40px",
+    "--wk-font-text-scale": "1.0",
+    "--color-selected-variant-background": "rgb(255 255 255 / 1.0)",
+    "--atlas-space-24": "24px",
+    "--font-paragraph--style": "normal",
+    "--atlas-icon-size-tiny": "12px",
+    "--font-h4--spacing": "0.25em",
+    "--atlas-heading-font-family": "\"Helvetica Neue\", monospace",
+    "--color-variant-background": "rgb(255 255 255 / 1.0)",
+    "--atlas-loading-spinner-size-jumbo": "32px",
+    "--wk-input-min-height": "45px",
+    "--atlas-line-height-h5": "24px",
+    "--atlas-font-weight-normal": "400",
+    "--variant-picker-swatch-radius": "px",
+    "--southera": "'Southera'",
+    "--color-primary": "rgb(0 0 0 / 1.0)",
+    "--padding-2xl": "1.5rem",
+    "--margin-5xl": "3rem",
+    "--menu-child-font-case": "none",
+    "--margin-xl": "1.25rem",
+    "--atlas-line-height-h4": "24px",
+    "--font-h2--letter-spacing": "0em",
+    "--wk-input-border-radius": "0px",
+    "--animation-timing-bounce": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+    "--atlas-button-padding-tiny": "3px 8px",
+    "--color-primary-button-hover-text": "rgb(255 255 255 / 1.0)",
+    "--atlas-progress-bar-height": "8px",
+    "--font-h5--case": "none",
+    "--button-padding-block-sm": "2px 0",
+    "--font-size--h6": "1.4rem",
+    "--menu-child-font-line-height": "200%",
+    "--menu-font-xs--size": "1.2rem",
+    "--opacity-25": "0.25",
+    "--opacity-8": "0.08",
+    "--atlas-text-selection": "rgba(150, 180, 255, 0.5)",
+    "--font-paragraph--letter-spacing": "0em"
+  },
+  "fonts": [
+    {
+      "family": "Southera",
+      "weight": "normal",
+      "style": "normal",
+      "status": "loaded"
+    },
+    {
+      "family": "GTStandard-M",
+      "weight": "450",
+      "style": "normal",
+      "status": "unloaded"
+    },
+    {
+      "family": "GTStandard-M",
+      "weight": "500",
+      "style": "normal",
+      "status": "unloaded"
+    },
+    {
+      "family": "GTStandard-M",
+      "weight": "600",
+      "style": "normal",
+      "status": "unloaded"
+    },
+    {
+      "family": "Lato",
+      "weight": "100",
+      "style": "italic",
+      "status": "unloaded"
+    },
+    {
+      "family": "Lato",
+      "weight": "100",
+      "style": "italic",
+      "status": "unloaded"
+    },
+    {
+      "family": "Lato",
+      "weight": "300",
+      "style": "italic",
+      "status": "unloaded"
+    },
+    {
+      "family": "Lato",
+      "weight": "300",
+      "style": "italic",
+      "status": "unloaded"
+    },
+    {
+      "family": "Lato",
+      "weight": "400",
+      "style": "italic",
+      "status": "unloaded"
+    },
+    {
+      "family": "Lato",
+      "weight": "400",
+      "style": "italic",
+      "status": "unloaded"
+    },
+    {
+      "family": "Lato",
+      "weight": "700",
+      "style": "italic",
+      "status": "unloaded"
+    },
+    {
+      "family": "Lato",
+      "weight": "700",
+      "style": "italic",
+      "status": "unloaded"
+    },
+    {
+      "family": "Lato",
+      "weight": "900",
+      "style": "italic",
+      "status": "unloaded"
+    },
+    {
+      "family": "Lato",
+      "weight": "900",
+      "style": "italic",
+      "status": "unloaded"
+    },
+    {
+      "family": "Lato",
+      "weight": "100",
+      "style": "normal",
+      "status": "unloaded"
+    },
+    {
+      "family": "Lato",
+      "weight": "100",
+      "style": "normal",
+      "status": "unloaded"
+    },
+    {
+      "family": "Lato",
+      "weight": "300",
+      "style": "normal",
+      "status": "unloaded"
+    },
+    {
+      "family": "Lato",
+      "weight": "300",
+      "style": "normal",
+      "status": "unloaded"
+    },
+    {
+      "family": "Lato",
+      "weight": "400",
+      "style": "normal",
+      "status": "unloaded"
+    },
+    {
+      "family": "Lato",
+      "weight": "400",
+      "style": "normal",
+      "status": "unloaded"
+    },
+    {
+      "family": "Lato",
+      "weight": "700",
+      "style": "normal",
+      "status": "unloaded"
+    },
+    {
+      "family": "Lato",
+      "weight": "700",
+      "style": "normal",
+      "status": "unloaded"
+    },
+    {
+      "family": "Lato",
+      "weight": "900",
+      "style": "normal",
+      "status": "unloaded"
+    },
+    {
+      "family": "Lato",
+      "weight": "900",
+      "style": "normal",
+      "status": "unloaded"
+    },
+    {
+      "family": "Nunito-Sans-Klaviyo-Hosted",
+      "weight": "400",
+      "style": "italic",
+      "status": "unloaded"
+    },
+    {
+      "family": "Nunito-Sans-Klaviyo-Hosted",
+      "weight": "700",
+      "style": "italic",
+      "status": "unloaded"
+    },
+    {
+      "family": "Nunito-Sans-Klaviyo-Hosted",
+      "weight": "400",
+      "style": "normal",
+      "status": "unloaded"
+    },
+    {
+      "family": "Nunito-Sans-Klaviyo-Hosted",
+      "weight": "700",
+      "style": "normal",
+      "status": "unloaded"
+    },
+    {
+      "family": "Poppins-Klaviyo-Hosted",
+      "weight": "400",
+      "style": "italic",
+      "status": "unloaded"
+    },
+    {
+      "family": "Poppins-Klaviyo-Hosted",
+      "weight": "700",
+      "style": "italic",
+      "status": "unloaded"
+    },
+    {
+      "family": "Poppins-Klaviyo-Hosted",
+      "weight": "400",
+      "style": "normal",
+      "status": "unloaded"
+    },
+    {
+      "family": "Poppins-Klaviyo-Hosted",
+      "weight": "700",
+      "style": "normal",
+      "status": "unloaded"
+    }
+  ],
+  "bodyStyles": {
+    "backgroundColor": "rgb(242, 242, 242)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "\"Helvetica Neue\", sans-serif",
+    "fontSize": "13.142px",
+    "lineHeight": "15.7703px"
+  },
+  "announcementBar": {
+    "html": "<script src=\"//us.masons.it/cdn/shop/t/61/assets/announcement-bar.js?v=34024675399582161451762765515\" type=\"module\" fetchpriority=\"low\"></script>\n\n<div class=\"section\">\n  \n\n  \n    <a href=\"/fr\" class=\"announcement-bar__logo\" style=\"\n        background: linear-gradient( 90deg, rgba(255, 255, 255, 0) 0%,\n        #ffffff 32.21%, #ffffff 50.96%,\n        #ffffff 68.27%, rgba(255, 255, 255, 0) 100% );\n      \" pa-marked=\"1\">\n      \n  \n\n  \n\n  \n  \n  \n\n  \n\n  <img src=\"//us.masons.it/cdn/shop/files/masons-clothing-logo-m.png?height=100&amp;v=1768898231\" width=\"205\" height=\"100\" class=\"announcement-bar__logo-image\" srcset=\"//us.masons.it/cdn/shop/files/masons-clothing-logo-m.png?height=100&amp;v=1768898231 1x, //us.masons.it/cdn/shop/files/masons-clothing-logo-m.png?height=200&amp;v=1768898231 2x, //us.masons.it/cdn/shop/files/masons-clothing-logo-m.png?height=300&amp;v=1768898231 3x\" style=\"object-position:98.7805% 97.5%;\">\n\n\n    </a>\n  \n\n  <announcement-bar-component class=\"announcement-bar__sli",
+    "text": "INSCRIVEZ-VOUS À LA NEWSLETTER – 10% SUR VOTRE PREMIÈRE COMMANDE\n      \n    \n\n    \n  \n\n    \n      \n        INSCRIVEZ-VOUS À LA NEWSLETTER – 10% SUR VOTRE PREMIÈRE COMMANDE\n      \n    \n\n    \n  \n\n    \n  \n\n  \n    \n      \n  \n    \n      Ouvrir le sélecteur de région et de langue\n      \n        \n          \n        \n        USD\n      \n/\n          FR\n        \n\n\n\n    \n\n    \n      \n\n  \n\n      \n        \n          \n            \n            \n            Rechercher\n            \n              \n                \n\n              \n            \n          \n        \n      \n      \n        \n          Country/Region\n        \n        \n          \n        \n        \n          \n          \n            Aucun résultat\n              \n                \n\n\n\n                Afrique du Sud\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Albanie\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Algérie\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Allemagne\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Andorre\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Angola\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Anguilla\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Antigua-et-Barbuda\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Arabie saoudite\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Argentine\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Arménie\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Aruba\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Australie\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Autriche\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Azerbaïdjan\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Bahamas\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Bahreïn\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Bangladesh\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Barbade\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Belgique\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Belize\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Bénin\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Bermudes\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Bhoutan\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Biélorussie\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Bolivie\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Bosnie-Herzégovine\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Botswana\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Brésil\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Brunei\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Bulgarie\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Burkina Faso\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Burundi\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Cambodge\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Cameroun\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Canada\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Cap-Vert\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Chili\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Chine\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Chypre\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Colombie\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Comores\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Congo-Brazzaville\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Congo-Kinshasa\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Corée du Sud\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Costa Rica\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Côte d’Ivoire\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Croatie\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Curaçao\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Danemark\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Djibouti\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Dominique\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Égypte\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Émirats arabes unis\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Équateur\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Érythrée\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Espagne\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Estonie\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Eswatini\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                État de la Cité du Vatican\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                États-Unis\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Éthiopie\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Fidji\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Finlande\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                France\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Gabon\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Gambie\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Géorgie\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Géorgie du Sud-et-les Îles Sandwich du Sud\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Ghana\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Gibraltar\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Grèce\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Grenade\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Guatemala\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Guernesey\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Guinée\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Guinée équatoriale\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Guinée-Bissau\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Guyana\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Guyane française\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Haïti\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Honduras\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Hongrie\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Île Christmas\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Île Norfolk\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Île de Man\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Île de l’Ascension\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Îles Åland\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Îles Caïmans\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Îles Cocos\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Îles Cook\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Îles Féroé\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Îles Malouines\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Îles Pitcairn\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Îles Salomon\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Îles Turques-et-Caïques\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Îles Vierges britanniques\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Îles mineures éloignées des États-Unis\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Inde\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Indonésie\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Irlande\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Islande\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Israël\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Italie\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Jamaïque\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Japon\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Jersey\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Jordanie\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Kazakhstan\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Kenya\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Kirghizstan\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Kiribati\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Kosovo\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Koweït\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Laos\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Lesotho\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Lettonie\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Liban\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Liberia\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Libye\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Liechtenstein\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Lituanie\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Luxembourg\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Macédoine du Nord\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Madagascar\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Malaisie\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Malawi\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Maldives\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Mali\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Malte\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Maroc\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Martinique\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Maurice\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Mauritanie\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Mexique\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Moldavie\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Monaco\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Mongolie\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Monténégro\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Montserrat\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Mozambique\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Myanmar (Birmanie)\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Namibie\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Nauru\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Népal\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Nicaragua\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Niger\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Nigeria\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Niue\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Norvège\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Nouvelle-Calédonie\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Nouvelle-Zélande\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Oman\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Ouganda\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Ouzbékistan\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Pakistan\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Panama\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Papouasie-Nouvelle-Guinée\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Paraguay\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Pays-Bas\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Pays-Bas caribéens\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Pérou\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Philippines\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Pologne\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Polynésie française\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Portugal\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Qatar\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                R.A.S. chinoise de Hong Kong\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                R.A.S. chinoise de Macao\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                République centrafricaine\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                République dominicaine\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Roumanie\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Royaume-Uni\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Rwanda\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Sahara occidental\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Saint-Barthélemy\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Saint-Christophe-et-Niévès\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Saint-Marin\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Saint-Martin\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Saint-Martin (partie néerlandaise)\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Saint-Pierre-et-Miquelon\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Saint-Vincent-et-les Grenadines\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Sainte-Hélène\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Sainte-Lucie\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Salvador\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Samoa\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Sao Tomé-et-Principe\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Sénégal\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Serbie\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Seychelles\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Sierra Leone\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Singapour\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Slovaquie\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Slovénie\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Somalie\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Soudan\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Soudan du Sud\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Sri Lanka\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Suède\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Suisse\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Suriname\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Svalbard et Jan Mayen\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Tadjikistan\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Taïwan\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Tanzanie\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Tchad\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Tchéquie\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Terres australes françaises\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Territoire britannique de l’océan Indien\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Territoires palestiniens\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Thaïlande\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Timor oriental\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Togo\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Tokelau\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Tonga\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Trinité-et-Tobago\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Tristan da Cunha\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Tunisie\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Turkménistan\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Turquie\n                \n                  EUR\n                  €\n              \n              \n                \n\n\n\n                Tuvalu\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Uruguay\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Vanuatu\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Venezuela\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Viêt Nam\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Wallis-et-Futuna\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Yémen\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Zambie\n                \n                  USD\n                  $\n              \n              \n                \n\n\n\n                Zimbabwe\n                \n                  USD\n                  $\n              \n        \n        \n        \n      \n    \n\n    \n      \n        \n          Langue\n        \n        \n          Langue:\n        \n        \n              English\n            \n              Español\n            \n              Français\n            \n              Italiano\n            \n              Deutsch",
+    "computedBg": "rgb(255, 255, 255)",
+    "computedColor": "rgb(0, 0, 0)"
+  },
+  "navigationLinks": [
+    {
+      "text": "View all",
+      "href": "https://us.masons.it/fr/collections/printemps-ete-homme"
+    },
+    {
+      "text": "New Arrivals",
+      "href": "https://us.masons.it/fr/collections/new-arrivals"
+    },
+    {
+      "text": "Pants",
+      "href": "https://us.masons.it/fr/collections/pantalons-homme-ete"
+    },
+    {
+      "text": "Bermuda Shorts",
+      "href": "https://us.masons.it/fr/collections/bermuda-ete-homme"
+    },
+    {
+      "text": "Blazer",
+      "href": "https://us.masons.it/fr/collections/blazer-ete-homme"
+    },
+    {
+      "text": "Suits",
+      "href": "https://us.masons.it/fr/collections/costumes-ete-homme"
+    },
+    {
+      "text": "Jackets",
+      "href": "https://us.masons.it/fr/collections/vestes-ete-homme"
+    },
+    {
+      "text": "Shirts",
+      "href": "https://us.masons.it/fr/collections/chemises-ete-homme"
+    },
+    {
+      "text": "Chino",
+      "href": "https://us.masons.it/fr/collections/pantalons-chino-ete-homme"
+    },
+    {
+      "text": "Cargo",
+      "href": "https://us.masons.it/fr/collections/pantalons-cargo-homme-ete"
+    },
+    {
+      "text": "Jogger",
+      "href": "https://us.masons.it/fr/collections/pantalons-jogger-ete-pour-homme"
+    },
+    {
+      "text": "Denim",
+      "href": "https://us.masons.it/fr/collections/tailored-denim"
+    },
+    {
+      "text": "Chino",
+      "href": "https://us.masons.it/fr/collections/bermuda-chino-homme"
+    },
+    {
+      "text": "Cargo",
+      "href": "https://us.masons.it/fr/collections/bermuda-cargo-homme"
+    },
+    {
+      "text": "Chile",
+      "href": "https://us.masons.it/fr/collections/chile-pantalons-cargo-masons"
+    },
+    {
+      "text": "Milano",
+      "href": "https://us.masons.it/fr/collections/milano-pantalons-chino-homme-masons"
+    },
+    {
+      "text": "New York",
+      "href": "https://us.masons.it/fr/collections/new-york-chino-homme-masons"
+    },
+    {
+      "text": "Torino",
+      "href": "https://us.masons.it/fr/collections/torino-pantalons-chino-homme-masons"
+    },
+    {
+      "text": "Osaka",
+      "href": "https://us.masons.it/fr/collections/osaka-men-chino-pants"
+    },
+    {
+      "text": "Boston",
+      "href": "https://us.masons.it/fr/collections/boston"
+    },
+    {
+      "text": "London",
+      "href": "https://us.masons.it/fr/collections/london-bermuda-homme"
+    },
+    {
+      "text": "Chile Bermuda",
+      "href": "https://us.masons.it/fr/collections/chile-bermuda"
+    },
+    {
+      "text": "Extra Slim Fit",
+      "href": "https://us.masons.it/fr/collections/extra-slim-fit-pantalons-homme"
+    },
+    {
+      "text": "Slim Fit",
+      "href": "https://us.masons.it/fr/collections/slim-fit-pantalons-homme"
+    },
+    {
+      "text": "Regular Fit",
+      "href": "https://us.masons.it/fr/collections/regular-fit-pantalons-homme"
+    },
+    {
+      "text": "Carrot Fit",
+      "href": "https://us.masons.it/fr/collections/carrot-fit-pantalons-homme"
+    },
+    {
+      "text": "Relaxed Fit",
+      "href": "https://us.masons.it/fr/collections/relaxed-fit-masons-hommes"
+    },
+    {
+      "text": "View all",
+      "href": "https://us.masons.it/fr/collections/printemps-ete-femme"
+    },
+    {
+      "text": "New Arrivals",
+      "href": "https://us.masons.it/fr/collections/new-woman-arrivals"
+    },
+    {
+      "text": "Pants",
+      "href": "https://us.masons.it/fr/collections/pantalons-ete-femmes"
+    },
+    {
+      "text": "Shorts",
+      "href": "https://us.masons.it/fr/collections/bermuda-ete-femme"
+    },
+    {
+      "text": "Suits",
+      "href": "https://us.masons.it/fr/collections/costumes-dete-femme"
+    },
+    {
+      "text": "Jackets",
+      "href": "https://us.masons.it/fr/collections/vestes-ete-femme"
+    },
+    {
+      "text": "Shirts",
+      "href": "https://us.masons.it/fr/collections/chemises-femme-ete"
+    },
+    {
+      "text": "Chino",
+      "href": "https://us.masons.it/fr/collections/pantalons-chino-ete-femme"
+    },
+    {
+      "text": "Cargo",
+      "href": "https://us.masons.it/fr/collections/pantalons-cargo-femme-ete"
+    },
+    {
+      "text": "Jogger",
+      "href": "https://us.masons.it/fr/collections/pantalons-jogger-femme"
+    },
+    {
+      "text": "Denim",
+      "href": "https://us.masons.it/fr/collections/pantalons-denim-ete-femme"
+    },
+    {
+      "text": "New York",
+      "href": "https://us.masons.it/fr/collections/new-york-femme-chinos"
+    },
+    {
+      "text": "New York Carrot",
+      "href": "https://us.masons.it/fr/collections/new-york-carrot"
+    },
+    {
+      "text": "Chile",
+      "href": "https://us.masons.it/fr/collections/chile-femme-pantalon-cargo"
+    },
+    {
+      "text": "Malibu",
+      "href": "https://us.masons.it/fr/collections/malibu"
+    },
+    {
+      "text": "Dallas",
+      "href": "https://us.masons.it/fr/collections/dallas"
+    },
+    {
+      "text": "Slim Fit",
+      "href": "https://us.masons.it/fr/collections/slim-fit-femme-masons"
+    },
+    {
+      "text": "Carrot Fit",
+      "href": "https://us.masons.it/fr/collections/carrot-fit-femme-masons"
+    },
+    {
+      "text": "Straight Fit",
+      "href": "https://us.masons.it/fr/collections/coupe-droite-pantalons-femme-1"
+    },
+    {
+      "text": "Relaxed Fit",
+      "href": "https://us.masons.it/fr/collections/relaxed-fit-pantalons-femme"
+    },
+    {
+      "text": "Wide Leg",
+      "href": "https://us.masons.it/fr/collections/wide-leg"
+    },
+    {
+      "text": "New Arrivals",
+      "href": "https://us.masons.it/fr/collections/new-arrivals"
+    },
+    {
+      "text": "Pants",
+      "href": "https://us.masons.it/fr/collections/pantalons-dhiver-hommes"
+    },
+    {
+      "text": "Blazer",
+      "href": "https://us.masons.it/fr/collections/blazer-dhiver-hommes"
+    },
+    {
+      "text": "Suits",
+      "href": "https://us.masons.it/fr/collections/homme-costume"
+    },
+    {
+      "text": "Jackets",
+      "href": "https://us.masons.it/fr/collections/vestes-homme-dhiver"
+    },
+    {
+      "text": "Overshirt",
+      "href": "https://us.masons.it/fr/collections/overshirt-homme"
+    },
+    {
+      "text": "Chino",
+      "href": "https://us.masons.it/fr/collections/pantalons-chino-dhiver-hommes"
+    },
+    {
+      "text": "Cargo",
+      "href": "https://us.masons.it/fr/collections/pantalons-cargo-dhiver-hommes"
+    },
+    {
+      "text": "Jogger",
+      "href": "https://us.masons.it/fr/collections/pantalons-jogger-dhiver-hommes"
+    },
+    {
+      "text": "Denim",
+      "href": "https://us.masons.it/fr/collections/pantalons-denim-dhiver-hommes"
+    },
+    {
+      "text": "Prestige",
+      "href": "https://us.masons.it/fr/collections/prestige"
+    },
+    {
+      "text": "New Arrivals",
+      "href": "https://us.masons.it/fr/collections/new-woman-arrivals"
+    },
+    {
+      "text": "Pants",
+      "href": "https://us.masons.it/fr/collections/pantalons-dhiver-femme"
+    },
+    {
+      "text": "Blazer",
+      "href": "https://us.masons.it/fr/collections/blazer-dhiver-femme"
+    },
+    {
+      "text": "Suits",
+      "href": "https://us.masons.it/fr/collections/costume-femme"
+    },
+    {
+      "text": "Jackets",
+      "href": "https://us.masons.it/fr/collections/vestes-et-manteaux-dhiver-pour-femmes"
+    },
+    {
+      "text": "Shirts",
+      "href": "https://us.masons.it/fr/collections/chemises-hiver-femme"
+    },
+    {
+      "text": "Chino",
+      "href": "https://us.masons.it/fr/collections/pantalons-chino-dhiver-femme"
+    },
+    {
+      "text": "Cargo",
+      "href": "https://us.masons.it/fr/collections/pantalons-cargo-dhiver-femme"
+    },
+    {
+      "text": "Jogger",
+      "href": "https://us.masons.it/fr/collections/pantalons-jogger-dhiver-femme"
+    },
+    {
+      "text": "Denim",
+      "href": "https://us.masons.it/fr/collections/denim-winter-femme"
+    },
+    {
+      "text": "Prestige",
+      "href": "https://us.masons.it/fr/collections/prestige-donna"
+    },
+    {
+      "text": "ACCESSORIES",
+      "href": "https://us.masons.it/fr/collections/accessories"
+    },
+    {
+      "text": "Our Story",
+      "href": "https://us.masons.it/fr/pages/decouvrez-notre-histoire"
+    },
+    {
+      "text": "BLOG",
+      "href": "https://us.masons.it/fr/blogs/news"
+    },
+    {
+      "text": "Blog",
+      "href": "https://us.masons.it/fr/blogs/news"
+    },
+    {
+      "text": "Autres options de connexion\n          \n          \n            Se connecter",
+      "href": "https://us.masons.it/customer_authentication/login?return_to=%2Ffr&locale=fr&ui_hint=full"
+    },
+    {
+      "text": "Commandes",
+      "href": "https://us.masons.it/fr/account"
+    },
+    {
+      "text": "Profil",
+      "href": "https://us.masons.it/fr/account/addresses"
+    },
+    {
+      "text": "Summer 2026 Men",
+      "href": "https://us.masons.it/fr/collections/printemps-ete-homme"
+    },
+    {
+      "text": "Summer 2026 Men",
+      "href": "https://us.masons.it/fr/collections/printemps-ete-homme"
+    },
+    {
+      "text": "View all",
+      "href": "https://us.masons.it/fr/collections/printemps-ete-homme"
+    },
+    {
+      "text": "New Arrivals",
+      "href": "https://us.masons.it/fr/collections/new-arrivals"
+    },
+    {
+      "text": "Pants",
+      "href": "https://us.masons.it/fr/collections/pantalons-homme-ete"
+    },
+    {
+      "text": "Bermuda Shorts",
+      "href": "https://us.masons.it/fr/collections/bermuda-ete-homme"
+    },
+    {
+      "text": "Blazer",
+      "href": "https://us.masons.it/fr/collections/blazer-ete-homme"
+    },
+    {
+      "text": "Suits",
+      "href": "https://us.masons.it/fr/collections/costumes-ete-homme"
+    },
+    {
+      "text": "Jackets",
+      "href": "https://us.masons.it/fr/collections/vestes-ete-homme"
+    },
+    {
+      "text": "Shirts",
+      "href": "https://us.masons.it/fr/collections/chemises-ete-homme"
+    },
+    {
+      "text": "Pants",
+      "href": "https://us.masons.it/fr/collections/pantalons-homme-ete"
+    },
+    {
+      "text": "Chino",
+      "href": "https://us.masons.it/fr/collections/pantalons-chino-ete-homme"
+    },
+    {
+      "text": "Cargo",
+      "href": "https://us.masons.it/fr/collections/pantalons-cargo-homme-ete"
+    },
+    {
+      "text": "Jogger",
+      "href": "https://us.masons.it/fr/collections/pantalons-jogger-ete-pour-homme"
+    },
+    {
+      "text": "Denim",
+      "href": "https://us.masons.it/fr/collections/tailored-denim"
+    },
+    {
+      "text": "Bermuda Shorts",
+      "href": "https://us.masons.it/fr/collections/bermuda-ete-homme"
+    },
+    {
+      "text": "Chino",
+      "href": "https://us.masons.it/fr/collections/bermuda-chino-homme"
+    },
+    {
+      "text": "Cargo",
+      "href": "https://us.masons.it/fr/collections/bermuda-cargo-homme"
+    },
+    {
+      "text": "Shop By Model",
+      "href": "https://us.masons.it/fr/collections/shop-by-model"
+    },
+    {
+      "text": "Chile",
+      "href": "https://us.masons.it/fr/collections/chile-pantalons-cargo-masons"
+    },
+    {
+      "text": "Milano",
+      "href": "https://us.masons.it/fr/collections/milano-pantalons-chino-homme-masons"
+    },
+    {
+      "text": "New York",
+      "href": "https://us.masons.it/fr/collections/new-york-chino-homme-masons"
+    },
+    {
+      "text": "Torino",
+      "href": "https://us.masons.it/fr/collections/torino-pantalons-chino-homme-masons"
+    },
+    {
+      "text": "Osaka",
+      "href": "https://us.masons.it/fr/collections/osaka-men-chino-pants"
+    },
+    {
+      "text": "Boston",
+      "href": "https://us.masons.it/fr/collections/boston"
+    },
+    {
+      "text": "London",
+      "href": "https://us.masons.it/fr/collections/london-bermuda-homme"
+    },
+    {
+      "text": "Chile Bermuda",
+      "href": "https://us.masons.it/fr/collections/chile-bermuda"
+    },
+    {
+      "text": "Shop By Fit",
+      "href": "https://us.masons.it/fr/collections/shop-by-fit-femme"
+    },
+    {
+      "text": "Extra Slim Fit",
+      "href": "https://us.masons.it/fr/collections/extra-slim-fit-pantalons-homme"
+    },
+    {
+      "text": "Slim Fit",
+      "href": "https://us.masons.it/fr/collections/slim-fit-pantalons-homme"
+    },
+    {
+      "text": "Regular Fit",
+      "href": "https://us.masons.it/fr/collections/regular-fit-pantalons-homme"
+    },
+    {
+      "text": "Carrot Fit",
+      "href": "https://us.masons.it/fr/collections/carrot-fit-pantalons-homme"
+    },
+    {
+      "text": "Relaxed Fit",
+      "href": "https://us.masons.it/fr/collections/relaxed-fit-masons-hommes"
+    },
+    {
+      "text": "SS26 Mason's Homme",
+      "href": "https://us.masons.it/fr/collections/printemps-ete-homme"
+    },
+    {
+      "text": "Summer 2026 Women",
+      "href": "https://us.masons.it/fr/collections/printemps-ete-femme"
+    },
+    {
+      "text": "Summer 2026 Women",
+      "href": "https://us.masons.it/fr/collections/printemps-ete-femme"
+    },
+    {
+      "text": "View all",
+      "href": "https://us.masons.it/fr/collections/printemps-ete-femme"
+    },
+    {
+      "text": "New Arrivals",
+      "href": "https://us.masons.it/fr/collections/new-woman-arrivals"
+    },
+    {
+      "text": "Pants",
+      "href": "https://us.masons.it/fr/collections/pantalons-ete-femmes"
+    },
+    {
+      "text": "Shorts",
+      "href": "https://us.masons.it/fr/collections/bermuda-ete-femme"
+    },
+    {
+      "text": "Suits",
+      "href": "https://us.masons.it/fr/collections/costumes-dete-femme"
+    },
+    {
+      "text": "Jackets",
+      "href": "https://us.masons.it/fr/collections/vestes-ete-femme"
+    },
+    {
+      "text": "Shirts",
+      "href": "https://us.masons.it/fr/collections/chemises-femme-ete"
+    },
+    {
+      "text": "Pants",
+      "href": "https://us.masons.it/fr/collections/pantalons-ete-femmes"
+    },
+    {
+      "text": "Chino",
+      "href": "https://us.masons.it/fr/collections/pantalons-chino-ete-femme"
+    },
+    {
+      "text": "Cargo",
+      "href": "https://us.masons.it/fr/collections/pantalons-cargo-femme-ete"
+    },
+    {
+      "text": "Jogger",
+      "href": "https://us.masons.it/fr/collections/pantalons-jogger-femme"
+    },
+    {
+      "text": "Denim",
+      "href": "https://us.masons.it/fr/collections/pantalons-denim-ete-femme"
+    },
+    {
+      "text": "Shop By Model",
+      "href": "https://us.masons.it/fr/collections/shop-by-model-femme"
+    },
+    {
+      "text": "New York",
+      "href": "https://us.masons.it/fr/collections/new-york-femme-chinos"
+    },
+    {
+      "text": "New York Carrot",
+      "href": "https://us.masons.it/fr/collections/new-york-carrot"
+    },
+    {
+      "text": "Chile",
+      "href": "https://us.masons.it/fr/collections/chile-femme-pantalon-cargo"
+    },
+    {
+      "text": "Malibu",
+      "href": "https://us.masons.it/fr/collections/malibu"
+    },
+    {
+      "text": "Dallas",
+      "href": "https://us.masons.it/fr/collections/dallas"
+    },
+    {
+      "text": "Shop By Fit",
+      "href": "https://us.masons.it/fr/collections/shop-by-fit-femme"
+    },
+    {
+      "text": "Slim Fit",
+      "href": "https://us.masons.it/fr/collections/slim-fit-femme-masons"
+    },
+    {
+      "text": "Carrot Fit",
+      "href": "https://us.masons.it/fr/collections/carrot-fit-femme-masons"
+    },
+    {
+      "text": "Straight Fit",
+      "href": "https://us.masons.it/fr/collections/coupe-droite-pantalons-femme-1"
+    },
+    {
+      "text": "Relaxed Fit",
+      "href": "https://us.masons.it/fr/collections/relaxed-fit-pantalons-femme"
+    },
+    {
+      "text": "Wide Leg",
+      "href": "https://us.masons.it/fr/collections/wide-leg"
+    },
+    {
+      "text": "SS26 Mason's Femme",
+      "href": "https://us.masons.it/fr/collections/printemps-ete-femme"
+    },
+    {
+      "text": "Pantalons d'été Femme",
+      "href": "https://us.masons.it/fr/collections/pantalons-ete-femmes"
+    },
+    {
+      "text": "Winter 2025 Men",
+      "href": "https://us.masons.it/fr/collections/fall-winter-homme"
+    },
+    {
+      "text": "Men",
+      "href": "https://us.masons.it/fr/collections/fall-winter-homme"
+    },
+    {
+      "text": "New Arrivals",
+      "href": "https://us.masons.it/fr/collections/new-arrivals"
+    },
+    {
+      "text": "Pants",
+      "href": "https://us.masons.it/fr/collections/pantalons-dhiver-hommes"
+    },
+    {
+      "text": "Blazer",
+      "href": "https://us.masons.it/fr/collections/blazer-dhiver-hommes"
+    },
+    {
+      "text": "Suits",
+      "href": "https://us.masons.it/fr/collections/homme-costume"
+    },
+    {
+      "text": "Jackets",
+      "href": "https://us.masons.it/fr/collections/vestes-homme-dhiver"
+    },
+    {
+      "text": "Overshirt",
+      "href": "https://us.masons.it/fr/collections/overshirt-homme"
+    },
+    {
+      "text": "Pants",
+      "href": "https://us.masons.it/fr/collections/pantalons-dhiver-hommes"
+    },
+    {
+      "text": "Chino",
+      "href": "https://us.masons.it/fr/collections/pantalons-chino-dhiver-hommes"
+    },
+    {
+      "text": "Cargo",
+      "href": "https://us.masons.it/fr/collections/pantalons-cargo-dhiver-hommes"
+    },
+    {
+      "text": "Jogger",
+      "href": "https://us.masons.it/fr/collections/pantalons-jogger-dhiver-hommes"
+    },
+    {
+      "text": "Denim",
+      "href": "https://us.masons.it/fr/collections/pantalons-denim-dhiver-hommes"
+    },
+    {
+      "text": "Prestige",
+      "href": "https://us.masons.it/fr/collections/prestige"
+    },
+    {
+      "text": "Prestige",
+      "href": "https://us.masons.it/fr/collections/prestige"
+    },
+    {
+      "text": "FW25 Mason's Homme",
+      "href": "https://us.masons.it/fr/collections/fall-winter-homme"
+    },
+    {
+      "text": "Pantalons d'hiver homme",
+      "href": "https://us.masons.it/fr/collections/pantalons-dhiver-hommes"
+    },
+    {
+      "text": "Prestige",
+      "href": "https://us.masons.it/fr/collections/prestige"
+    },
+    {
+      "text": "Winter 2025 Women",
+      "href": "https://us.masons.it/fr/collections/fall-winter-femme"
+    },
+    {
+      "text": "Women",
+      "href": "https://us.masons.it/fr/collections/fall-winter-femme"
+    },
+    {
+      "text": "New Arrivals",
+      "href": "https://us.masons.it/fr/collections/new-woman-arrivals"
+    },
+    {
+      "text": "Pants",
+      "href": "https://us.masons.it/fr/collections/pantalons-dhiver-femme"
+    },
+    {
+      "text": "Blazer",
+      "href": "https://us.masons.it/fr/collections/blazer-dhiver-femme"
+    },
+    {
+      "text": "Suits",
+      "href": "https://us.masons.it/fr/collections/costume-femme"
+    },
+    {
+      "text": "Jackets",
+      "href": "https://us.masons.it/fr/collections/vestes-et-manteaux-dhiver-pour-femmes"
+    },
+    {
+      "text": "Shirts",
+      "href": "https://us.masons.it/fr/collections/chemises-hiver-femme"
+    },
+    {
+      "text": "Pants",
+      "href": "https://us.masons.it/fr/collections/pantalons-dhiver-femme"
+    },
+    {
+      "text": "Chino",
+      "href": "https://us.masons.it/fr/collections/pantalons-chino-dhiver-femme"
+    },
+    {
+      "text": "Cargo",
+      "href": "https://us.masons.it/fr/collections/pantalons-cargo-dhiver-femme"
+    },
+    {
+      "text": "Jogger",
+      "href": "https://us.masons.it/fr/collections/pantalons-jogger-dhiver-femme"
+    },
+    {
+      "text": "Denim",
+      "href": "https://us.masons.it/fr/collections/denim-winter-femme"
+    },
+    {
+      "text": "Prestige",
+      "href": "https://us.masons.it/fr/collections/prestige-donna"
+    },
+    {
+      "text": "Prestige",
+      "href": "https://us.masons.it/fr/collections/prestige-donna"
+    },
+    {
+      "text": "FW25 Mason's Femme",
+      "href": "https://us.masons.it/fr/collections/fall-winter-femme"
+    },
+    {
+      "text": "Pantalons d'hiver Femme",
+      "href": "https://us.masons.it/fr/collections/pantalons-dhiver-femme"
+    },
+    {
+      "text": "Prestige Femme",
+      "href": "https://us.masons.it/fr/collections/prestige-donna"
+    },
+    {
+      "text": "ACCESSORIES",
+      "href": "https://us.masons.it/fr/collections/accessories"
+    },
+    {
+      "text": "Our Story",
+      "href": "https://us.masons.it/fr/pages/decouvrez-notre-histoire"
+    },
+    {
+      "text": "BLOG",
+      "href": "https://us.masons.it/fr/blogs/news"
+    },
+    {
+      "text": "Blog",
+      "href": "https://us.masons.it/fr/blogs/news"
+    },
+    {
+      "text": "Autres options de connexion\n          \n          \n            Se connecter",
+      "href": "https://us.masons.it/customer_authentication/login?return_to=%2Ffr&locale=fr&ui_hint=full"
+    },
+    {
+      "text": "Commandes",
+      "href": "https://us.masons.it/fr/account"
+    },
+    {
+      "text": "Profil",
+      "href": "https://us.masons.it/fr/account/addresses"
+    },
+    {
+      "text": "Connectez-vous",
+      "href": "https://us.masons.it/customer_authentication/redirect?locale=fr&region_country=BM"
+    },
+    {
+      "text": "Continuer vos achats",
+      "href": "https://us.masons.it/fr/collections/all"
+    }
+  ],
+  "footerLinks": [
+    {
+      "text": "Qui nous sommes",
+      "href": "https://us.masons.it/fr/pages/entreprise"
+    },
+    {
+      "text": "Histoire",
+      "href": "https://us.masons.it/fr/pages/historique"
+    },
+    {
+      "text": "Contactez-nous",
+      "href": "https://us.masons.it/fr/pages/contacts"
+    },
+    {
+      "text": "Facebook",
+      "href": "https://www.facebook.com/Masonsclothing"
+    },
+    {
+      "text": "Instagram",
+      "href": "https://www.instagram.com/masons_official/"
+    },
+    {
+      "text": "Pinterest",
+      "href": "https://www.pinterest.com/masonsofficial/"
+    },
+    {
+      "text": "Youtube",
+      "href": "https://www.youtube.com/channel/UC0_s6PELgqDo5wuEn66sEmA/featured"
+    },
+    {
+      "text": "Tiktok",
+      "href": "https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2F%40masons_official%3F_t%3DZN-8vRbzv5k7EM%26_r%3D1&lang=en&enter_method=mandatory"
+    },
+    {
+      "text": "Échanges & Retours",
+      "href": "https://us.masons.it/fr/pages/retours-et-remboursements"
+    },
+    {
+      "text": "Expédition",
+      "href": "https://us.masons.it/fr/pages/expeditions"
+    },
+    {
+      "text": "Méthodes de payement",
+      "href": "https://us.masons.it/fr/pages/paiements"
+    },
+    {
+      "text": "PERSONAL SHOPPER",
+      "href": "https://us.masons.it/fr/pages/assistant-de-vente"
+    },
+    {
+      "text": "Info confidentialité",
+      "href": "https://us.masons.it/fr/pages/avis-de-non-responsabilite"
+    },
+    {
+      "text": "Politique en matière de cookies",
+      "href": "https://us.masons.it/fr/pages/politique-de-cookie-du-site-web-masons-it"
+    },
+    {
+      "text": "Termes et conditions",
+      "href": "https://us.masons.it/fr/pages/champ-d-application"
+    },
+    {
+      "text": "Préférences de confidentialité",
+      "href": "https://us.masons.it/fr#iubenda-advertising-preferences-link"
+    },
+    {
+      "text": "de.masons.it",
+      "href": "https://de.masons.it/"
+    },
+    {
+      "text": "en.masons.it",
+      "href": "https://en.masons.it/"
+    },
+    {
+      "text": "fr.masons.it",
+      "href": "https://fr.masons.it/"
+    },
+    {
+      "text": "es.masons.it",
+      "href": "https://es.masons.it/"
+    },
+    {
+      "text": "us.masons.it",
+      "href": "https://us.masons.it/"
+    },
+    {
+      "text": "Mason's",
+      "href": "https://us.masons.it/fr"
+    }
+  ],
+  "thirdPartyScripts": [
+    "https://invitejs.trustpilot.com/tp.min.js",
+    "https://tseish-app.connect.trustedshops.com/esc.js?apiBaseUrl=aHR0cHM6Ly90c2Vpc2gtYXBwLmNvbm5lY3QudHJ1c3RlZHNob3BzLmNvbQ==&instanceId=bWFzb25zLWZvcnRlLWRlaS1tYXJtaS5teXNob3BpZnkuY29t&shop=masons-forte-dei-marmi.myshopify.com",
+    "https://s3.eu-west-1.amazonaws.com/production-klarna-il-shopify-osm/0b7fe7c4a98ef8166eeafee767bc667686567a25/masons-forte-dei-marmi.myshopify.com-1765286734988.js?shop=masons-forte-dei-marmi.myshopify.com",
+    "https://d23dclunsivw3h.cloudfront.net/redirect-app.js?shop=masons-forte-dei-marmi.myshopify.com",
+    "https://pps.triplewhale.systems/main.js?shop=masons-forte-dei-marmi.myshopify.com",
+    "https://ecommplugins-trustboxsettings.trustpilot.com/masons-forte-dei-marmi.myshopify.com.js?settings=1727364012989&shop=masons-forte-dei-marmi.myshopify.com",
+    "https://ecommplugins-scripts.trustpilot.com/v2.1/js/header.min.js?settings=eyJrZXkiOiJSeU5pT1dFWHZ0TmFDM211In0=&shop=masons-forte-dei-marmi.myshopify.com",
+    "https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=TuLFF4&shop=masons-forte-dei-marmi.myshopify.com",
+    "https://www.googletagmanager.com/gtag/js?id=GT-WP4TS8C&cx=c&gtm=4e63o1",
+    "https://www.googletagmanager.com/gtag/js?id=G-MFJ8R6LQMN&cx=c&gtm=4e63o1",
+    "https://www.paypalobjects.com/martech/tm/paypal/mktconf.js",
+    "https://connect.facebook.net/signals/config/742321702609468?v=2.9.281&r=stable&domain=us.masons.it&hme=7561e8db2489737df4c74b634c943d82cefbf4e67acc7fda2493ff919471f0aa&ex_m=101%2C194%2C143%2C22%2C69%2C70%2C136%2C65%2C64%2C11%2C151%2C87%2C16%2C130%2C123%2C72%2C75%2C129%2C148%2C153%2C8%2C4%2C5%2C7%2C6%2C3%2C88%2C98%2C154%2C159%2C208%2C59%2C175%2C176%2C52%2C264%2C30%2C71%2C220%2C219%2C218%2C23%2C32%2C100%2C58%2C10%2C60%2C94%2C95%2C96%2C102%2C126%2C31%2C29%2C128%2C125%2C124%2C144%2C73%2C147%2C145%2C146%2C47%2C57%2C119%2C15%2C150%2C42%2C251%2C252%2C250%2C26%2C27%2C28%2C45%2C137%2C74%2C109%2C18%2C20%2C41%2C37%2C39%2C38%2C80%2C89%2C93%2C107%2C135%2C138%2C43%2C108%2C24%2C21%2C115%2C66%2C35%2C140%2C139%2C141%2C132%2C131%2C25%2C34%2C56%2C106%2C149%2C67%2C17%2C142%2C111%2C78%2C63%2C19%2C82%2C83%2C112%2C81%2C33%2C280%2C201%2C190%2C191%2C189%2C283%2C275%2C49%2C202%2C104%2C127%2C77%2C117%2C51%2C44%2C46%2C110%2C116%2C122%2C55%2C61%2C50%2C53%2C97%2C152%2C1%2C120%2C14%2C118%2C12%2C2%2C54%2C90%2C62%2C114%2C86%2C85%2C155%2C156%2C91%2C92%2C9%2C121%2C99%2C48%2C133%2C84%2C76%2C68%2C113%2C103%2C40%2C134%2C0%2C79%2C36%2C105%2C13%2C157",
+    "https://connect.facebook.net/en_US/fbevents.js",
+    "https://www.paypalobjects.com/martech/tm/paypal/mktgtagmanager.js",
+    "https://us.masons.it/cdn/s/trekkie.storefront.debbda03e9ac9faaa11b0ff77bcb79c971117f47.min.js",
+    "https://cdn.shopify.com/extensions/019d06ed-f6e5-7cd5-84ac-d4e2fb3c889c/gdpr-cookie-consent-294/assets/pandectes-rules-latest.js",
+    "https://us.masons.it/cdn/shopifycloud/importmap-polyfill/es-modules-shim.2.4.0.js",
+    "https://us.masons.it/cdn/shop/t/61/assets/view-transitions.js?v=84877080446900032951762765515",
+    "https://us.masons.it/cdn/shop/t/61/assets/quick-add.js?v=42969546021928654151765368561",
+    "https://us.masons.it/cdn/shop/t/61/assets/cart-discount.js?v=107077853990124422021762765510",
+    "https://us.masons.it/cdn/shop/t/61/assets/dialog.js?v=94382931671780430451762765510",
+    "https://us.masons.it/cdn/shop/t/61/assets/custom-variant-picker.js?v=103837973233485248061772008725",
+    "https://us.masons.it/cdn/shop/t/61/assets/product-card.js?v=155247581423100950441762765511",
+    "https://us.masons.it/cdn/shop/t/61/assets/product-form.js?v=6335949782538809251762765513",
+    "https://us.masons.it/cdn/shop/t/61/assets/accordion-custom.js?v=99000499017714805851762765512",
+    "https://us.masons.it/cdn/shop/t/61/assets/media.js?v=37825095869491791421762765511",
+    "https://us.masons.it/cdn/shop/t/61/assets/product-price.js?v=30079423257668675401762765515",
+    "https://us.masons.it/cdn/shop/t/61/assets/product-title-truncation.js?v=81744426891537421781762765510",
+    "https://us.masons.it/cdn/shop/t/61/assets/product-inventory.js?v=16343734458933704981762765515",
+    "https://us.masons.it/cdn/shop/t/61/assets/show-more.js?v=94563802205717136101762765510",
+    "https://us.masons.it/cdn/shop/t/61/assets/slideshow.js?v=82536845446382011861764236362",
+    "https://us.masons.it/cdn/shop/t/61/assets/anchored-popover.js?v=143092715850611436701762765513",
+    "https://us.masons.it/cdn/shop/t/61/assets/floating-panel.js?v=128677600744947036551762765513",
+    "https://us.masons.it/cdn/shop/t/61/assets/video-background.js?v=25237992823806706551762765514",
+    "https://us.masons.it/cdn/shop/t/61/assets/component-quantity-selector.js?v=56330027151833116691762765514",
+    "https://us.masons.it/cdn/shop/t/61/assets/media-gallery.js?v=111441960308641931071762765510",
+    "https://us.masons.it/cdn/shop/t/61/assets/rte-formatter.js?v=101420294193111439321762765515",
+    "https://us.masons.it/cdn/shop/t/61/assets/gift-card-recipient-form.js?v=129634859299628245901762765516",
+    "https://us.masons.it/cdn/shop/t/61/assets/localization.js?v=93216351602114551531762765516",
+    "https://us.masons.it/cdn/shop/t/61/assets/product-card-link.js?v=97122579314620396511762765510",
+    "https://us.masons.it/cdn/shop/t/61/assets/auto-close-details.js?v=58350291535404441581762765515",
+    "https://us.masons.it/checkouts/internal/preloads.js?locale=fr-BM",
+    "https://shop.app/checkouts/internal/preloads.js?locale=fr-BM&shop_id=56940101806",
+    "https://us.masons.it/cdn/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.fr.esm.js",
+    "https://us.masons.it/cdn/shopifycloud/storefront/assets/storefront/load_feature-496de5fe.js",
+    "https://us.masons.it/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-65b4c6d7.js?v=20250812",
+    "https://cdn.shopify.com/extensions/019d06ed-f6e5-7cd5-84ac-d4e2fb3c889c/gdpr-cookie-consent-294/assets/pandectes-core-latest.js",
+    "https://static.klaviyo.com/onsite/js/TuLFF4/klaviyo.js?company_id=TuLFF4",
+    "https://cdn.shopify.com/extensions/019a1460-f72e-7cbc-becc-90116917fae9/rt-whats-app-chat-live-chat-2/assets/whatsapp.js",
+    "https://cozycountryredirectii.addons.business/js/eggbox/8619/script_9a439c67614839b9cfad0329de5efede.js?v=1&sign=9a439c67614839b9cfad0329de5efede&shop=masons-forte-dei-marmi.myshopify.com",
+    "https://cdn.shopify.com/extensions/019d2482-effc-745d-b3b9-820314517d61/lb-upsell-275/assets/lb-selleasy.js",
+    "https://us.masons.it/cdn/wpm/b01689e1cw391fac49p9901ea95m3b388515l.js",
+    "https://us.masons.it/cdn/shopifycloud/storefront/assets/shop_events_listener-3da45d37.js",
+    "https://us.masons.it/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.3.0.min.js",
+    "https://us.masons.it/web-pixels@01689e1cw391fac49p9901ea95m3b388515/app/web-pixel-1895530878@ca16bc87fe92b6042fbaa3acc2fbdaa6/pixel.legacy.js",
+    "https://us.masons.it/web-pixels@01689e1cw391fac49p9901ea95m3b388515/app/web-pixel-1079116111@ac521efa9cd6866459cd0b40264a3f38/pixel.legacy.js",
+    "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.shop-login-button.fr.esm.js",
+    "https://us.masons.it/cdn/shopifycloud/consent-tracking-api/v0.1/consent-tracking-api.js",
+    "https://www.googletagmanager.com/gtm.js?id=GTM-MC27J74",
+    "https://static-tracking.klaviyo.com/onsite/js/build-preview/commit-51507fdb11268217eb7dfe859c54e07178b393e1/fender_analytics.e5aba8b3a52dc623782c.js?cb=2",
+    "https://static-tracking.klaviyo.com/onsite/js/build-preview/commit-51507fdb11268217eb7dfe859c54e07178b393e1/static.05920b16793f2a456e22.js?cb=2",
+    "https://static-tracking.klaviyo.com/onsite/js/build-preview/commit-51507fdb11268217eb7dfe859c54e07178b393e1/vendors~static~in_app_forms~signup_forms~post_identification_sync~web_personalization~client_identity~reviews~telemetry~customerHubRoot~renderFavoritesButton~renderFavoritesIconButton~FavoritesButtonElement~renderFaqWidget~.2cc0e8eaac59e1064c76.js?cb=2",
+    "https://static.klaviyo.com/onsite/js/build-preview/commit-51507fdb11268217eb7dfe859c54e07178b393e1/runtime.582158d674aa930a826f.js?cb=2",
+    "https://static.klaviyo.com/onsite/js/build-preview/commit-51507fdb11268217eb7dfe859c54e07178b393e1/sharedUtils.c8980c78a63e5e2a75a1.js?cb=2",
+    "https://static.klaviyo.com/onsite/js/build-preview/commit-51507fdb11268217eb7dfe859c54e07178b393e1/vendors~static~in_app_forms~signup_forms~post_identification_sync~web_personalization~client_identity~reviews~telemetry~customerHubRoot~renderFavoritesButton~renderFavoritesIconButton~FavoritesButtonElement~renderFaqWidget~.2cc0e8eaac59e1064c76.js?cb=2",
+    "https://static.klaviyo.com/onsite/js/build-preview/commit-51507fdb11268217eb7dfe859c54e07178b393e1/vendors~in_app_forms~signup_forms~client_identity~telemetry~onsite-triggering-v2~onsite-triggering~.00140035a0ee1bdef5e1.js?cb=2",
+    "https://static.klaviyo.com/onsite/js/build-preview/commit-51507fdb11268217eb7dfe859c54e07178b393e1/vendors~in_app_forms~signup_forms~reviews~atlas.0201e888d834a3782e3a.js?cb=2",
+    "https://static.klaviyo.com/onsite/js/build-preview/commit-51507fdb11268217eb7dfe859c54e07178b393e1/vendors~in_app_forms~signup_forms.a899b049d575de74ade1.js?cb=2",
+    "https://static.klaviyo.com/onsite/js/build-preview/commit-51507fdb11268217eb7dfe859c54e07178b393e1/default~in_app_forms~signup_forms.12a26492291f69aa18c7.js?cb=2",
+    "https://static.klaviyo.com/onsite/js/build-preview/commit-51507fdb11268217eb7dfe859c54e07178b393e1/signup_forms.b91963e01b14e3963e32.js?cb=2",
+    "https://static-tracking.klaviyo.com/onsite/js/build-preview/commit-51507fdb11268217eb7dfe859c54e07178b393e1/post_identification_sync.e290d099b5bfa48fdae0.js?cb=2",
+    "https://static.klaviyo.com/onsite/js/build-preview/commit-51507fdb11268217eb7dfe859c54e07178b393e1/vendors~atlas.c2026054534d0e4da081.js?cb=2",
+    "https://static.klaviyo.com/onsite/js/build-preview/commit-51507fdb11268217eb7dfe859c54e07178b393e1/atlas.d8be324a04603e98e234.js?cb=2",
+    "https://static.klaviyo.com/onsite/js/build-preview/commit-51507fdb11268217eb7dfe859c54e07178b393e1/event_adapter.4f7be3f375ef0d59c121.js?cb=2",
+    "https://static-tracking.klaviyo.com/onsite/js/build-preview/commit-51507fdb11268217eb7dfe859c54e07178b393e1/vendors~in_app_forms~signup_forms~client_identity~telemetry~onsite-triggering-v2~onsite-triggering~.00140035a0ee1bdef5e1.js?cb=2",
+    "https://static-tracking.klaviyo.com/onsite/js/build-preview/commit-51507fdb11268217eb7dfe859c54e07178b393e1/telemetry.252f3f2a5777c4acc847.js?cb=2",
+    "https://cdn.shopify.com/extensions/019d2482-effc-745d-b3b9-820314517d61/lb-upsell-275/assets/lb-upsell-components.esm.js",
+    "https://us.masons.it/cdn/shop/t/61/assets/announcement-bar.js?v=34024675399582161451762765515",
+    "https://us.masons.it/cdn/shop/t/61/assets/header-drawer.js?v=38290796699993510201762765509",
+    "https://us.masons.it/cdn/shop/t/61/assets/account-login-actions.js?v=132624473766457443991762765513",
+    "https://us.masons.it/cdn/shopifycloud/shop-js/modules/v2/loader.shop-login-button.fr.esm.js",
+    "https://us.masons.it/cdn/shop/t/61/assets/header-menu.js?v=98986771878453457241762765510",
+    "https://us.masons.it/cdn/shop/t/61/assets/cart-icon.js?v=14733679814066288171762765512",
+    "https://us.masons.it/cdn/shop/t/61/assets/cart-drawer.js?v=92290163633888904321762765511",
+    "https://us.masons.it/cdn/shop/t/61/assets/component-cart-items.js?v=95720873921622680421762765514",
+    "https://us.masons.it/cdn/shop/t/61/assets/drawer-toggle.js?v=126731948185942140051762765511",
+    "https://us.masons.it/cdn/shop/t/61/assets/header.js?v=178801392800100488631767794545",
+    "https://us.masons.it/cdn/shop/t/61/assets/collection-links.js?v=105371657135809757731764591172",
+    "https://us.masons.it/cdn/shop/t/61/assets/shop-the-look.js?v=139555848118292172771765888363",
+    "https://us.masons.it/cdn/shop/t/61/assets/predictive-search.js?v=14341133600247032501774256467",
+    "https://widgets.trustedshops.com/js/XE5B9E8E265AB9131EE7D390FB045BA31.js",
+    "https://cdn.shopify.com/extensions/019d2482-effc-745d-b3b9-820314517d61/lb-upsell-275/assets/lb-utils.js",
+    "https://cdn.shopify.com/extensions/019ce26a-bb73-7ec7-a00f-cef8cb945806/swish-wishlist-king-220/assets/block-wishlist-page.js",
+    "https://cdn.shopify.com/extensions/019ce26a-bb73-7ec7-a00f-cef8cb945806/swish-wishlist-king-220/assets/block-app-settings.js",
+    "https://www.paypalobjects.com/pa/js/min/pa.js",
+    "https://www.paypal.com/sdk/js?client-id=AbtXlp5R3xc83T9xW_ZXKTK8IVZ-14EMelDioU4VC285IqSuxUI4yotKxjV0sz_X6YsONYi10vSBPNKM&merchant-id=F75VDXGFY6YUA&components=messages",
+    "https://cdn.shopify.com/extensions/019cbd3b-0378-72bf-a18a-991d3f4a2893/notify-me-66/assets/restock-sdk-loader.js?v=1772701269",
+    "https://cdn.shopify.com/extensions/019ce26a-bb73-7ec7-a00f-cef8cb945806/swish-wishlist-king-220/assets/block-code-access.js",
+    "https://www.googletagmanager.com/gtag/js?id=G-MFJ8R6LQMN",
+    "https://www.googletagmanager.com/gtag/js?id=AW-994735176",
+    "https://www.googletagmanager.com/gtag/js?id=GT-WP4TS8C",
+    "https://masons.activehosted.com/f/embed.php?id=93",
+    "https://widgets.trustedshops.com/assets/trustbadge.js",
+    "https://us.masons.it/checkouts/internal/preloads.js?locale=en-BM",
+    "https://shop.app/checkouts/internal/preloads.js?locale=en-BM&shop_id=56940101806",
+    "https://us.masons.it/cdn/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js",
+    "https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.shop-login-button.en.esm.js",
+    "https://us.masons.it/cdn/shopifycloud/shop-js/modules/v2/loader.shop-login-button.en.esm.js",
+    "https://www.googletagmanager.com/gtag/js?id=AW-994735176&cx=c&gtm=4e63o1",
+    "https://www.googletagmanager.com/gtag/js?id=AW-994735176&cx=c&gtm=4e63o1h1",
+    "https://www.googletagmanager.com/gtag/js?id=G-MFJ8R6LQMN&cx=c&gtm=4e63o1h1",
+    "https://us.masons.it/cdn/shop/t/61/assets/page-toggle.js?v=69245768521381870071762765512",
+    "https://us.masons.it/cdn/shop/t/61/compiled_assets/scripts.js?v=156579988649478506741762765532",
+    "https://us.masons.it/cdn/shop/t/61/assets/results-list.js?v=28346210841421047511762765514",
+    "https://us.masons.it/cdn/shop/t/61/assets/facets.js?v=16510020039899366041762765513"
+  ],
+  "allHeadings": [
+    {
+      "tag": "H2",
+      "text": "Country/Region",
+      "computedSize": "21.4259px",
+      "computedWeight": "500",
+      "computedFamily": "\"Helvetica Neue\", monospace",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "uppercase",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H2",
+      "text": "Langue",
+      "computedSize": "21.4259px",
+      "computedWeight": "500",
+      "computedFamily": "\"Helvetica Neue\", monospace",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "uppercase",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H2",
+      "text": "Country/Region",
+      "computedSize": "21.4259px",
+      "computedWeight": "500",
+      "computedFamily": "\"Helvetica Neue\", monospace",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "uppercase",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H2",
+      "text": "Langue",
+      "computedSize": "21.4259px",
+      "computedWeight": "500",
+      "computedFamily": "\"Helvetica Neue\", monospace",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "uppercase",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Flyshirt delamere veste surchemise homme en gabardine stretch",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Osaka 1 Pince delamere pantalon chino homme en gabardine stretch carrot fit",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Osaka 1 Pinces pantalon chino homme en satin de coton et soie carrot fit ①",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Field Jacket M74 veste homme en toile oxford ①",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Field Jacket M74 Veste homme en toile oxford ①",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Chile pantalon cargo homme en gabardine stretch regular fit",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Jacket M74 delamere veste homme en twill stretch",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Jacket M74 delamere Veste homme en twill stretch",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Torino delamere pantalon chino homme en gabardine stretch slim fit",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Harris pantalon 5 poches homme en denim avec imprimé Hawaii regular fit",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Milano pantalon chino homme en chevron extra slim fit",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Da Vinci Travel blazer homme en satin technique travel stretch",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Milano Jogger Travel pantalon chino homme en satin technique travel stretch extra slim fit",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Da Vinci Travel blazer homme en satin technique travel stretch",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Milano Jogger Travel pantalon chino homme en satin technique travel stretch extra slim fit",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Milano Jogger Travel pantalon chino homme en satin technique travel stretch extra slim fit",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Santa Barbara veste femme en natté",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Vivienne Work pantalon cargo femme en natté balloon fit",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Dallas Wide pantalon cargo femme en coton flammé straight fit",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Dallas Wide pantalon cargo femme en coton flammé straight fit",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Fatique Jogger pantalon cargo femme en twill relaxed fit",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Fatique Jogger pantalon cargo femme en twill relaxed fit",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Baltimora bermuda cargo femme en panama flammé relaxed fit",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Irma Pockets veste femme en panama flammé",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Marlene Pantalon Cargo femme en gabardine imprimé camouflage carrot fit",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Malibu Jogger pantalon chino femme en gabardine carrot fit",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Malibu Jogger pantalon chino femme en gabardine carrot fit",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Malibu Jogger pantalon chino femme en gabardine carrot fit",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Chile City pantalon cargo femme en gabardine stretch slim fit",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Chile City pantalon cargo femme en gabardine stretch slim fit",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Chile City pantalon cargo femme en gabardine stretch slim fit",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    },
+    {
+      "tag": "H3",
+      "text": "Chile City pantalon cargo femme en gabardine stretch slim fit",
+      "computedSize": "8.75px",
+      "computedWeight": "400",
+      "computedFamily": "\"Helvetica Neue\", sans-serif",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedTransform": "none",
+      "computedTracking": "normal"
+    }
+  ],
+  "allButtons": [
+    {
+      "text": "Passer au contenu",
+      "classes": "skip-to-content-link button-secondary",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(34, 34, 34)",
+      "computedBorder": "1px solid rgb(34, 34, 34)",
+      "computedRadius": "0px",
+      "computedPadding": "4px 16px 3px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Ouvrir le sélecteur de région et de langue\n      \n        \n          \n        \n        USD\n      \n/\n          FR",
+      "classes": "button dropdown-localization__button localization-selector link link--text",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "1px solid rgba(0, 0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "4px 2.5px 3px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "",
+      "classes": "button button-unstyled country-filter__reset-button field__button",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour\n                          \n                          Summer 2026 Men",
+      "classes": "menu-drawer__nav-buttons",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px 10px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "13.142px"
+    },
+    {
+      "text": "Retour\n                          \n                          Summer 2026 Men",
+      "classes": "button menu-drawer__back-button focus-inset",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "",
+      "computedRadius": "0px",
+      "computedPadding": "8px 12.5px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour",
+      "classes": "menu-drawer__back-button-icon icon-caret icon-caret--backward",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Summer 2026 Men",
+      "classes": "menu-drawer__back-button-text",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour\n                                        \n                                        Summer 2026 Men",
+      "classes": "menu-drawer__nav-buttons",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px 10px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "13.142px"
+    },
+    {
+      "text": "Retour\n                                        \n                                        Summer 2026 Men",
+      "classes": "button menu-drawer__back-button focus-inset",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "",
+      "computedRadius": "0px",
+      "computedPadding": "8px 12.5px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour",
+      "classes": "menu-drawer__back-button-icon icon-caret icon-caret--backward",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Summer 2026 Men",
+      "classes": "menu-drawer__back-button-text",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour\n                                        \n                                        Pants",
+      "classes": "menu-drawer__nav-buttons",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px 10px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "13.142px"
+    },
+    {
+      "text": "Retour\n                                        \n                                        Pants",
+      "classes": "button menu-drawer__back-button focus-inset",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "",
+      "computedRadius": "0px",
+      "computedPadding": "8px 12.5px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour",
+      "classes": "menu-drawer__back-button-icon icon-caret icon-caret--backward",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Pants",
+      "classes": "menu-drawer__back-button-text",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour\n                                        \n                                        Bermuda Shorts",
+      "classes": "menu-drawer__nav-buttons",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px 10px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "13.142px"
+    },
+    {
+      "text": "Retour\n                                        \n                                        Bermuda Shorts",
+      "classes": "button menu-drawer__back-button focus-inset",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "",
+      "computedRadius": "0px",
+      "computedPadding": "8px 12.5px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour",
+      "classes": "menu-drawer__back-button-icon icon-caret icon-caret--backward",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Bermuda Shorts",
+      "classes": "menu-drawer__back-button-text",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour\n                                        \n                                        Shop By Model",
+      "classes": "menu-drawer__nav-buttons",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px 10px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "13.142px"
+    },
+    {
+      "text": "Retour\n                                        \n                                        Shop By Model",
+      "classes": "button menu-drawer__back-button focus-inset",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "",
+      "computedRadius": "0px",
+      "computedPadding": "8px 12.5px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour",
+      "classes": "menu-drawer__back-button-icon icon-caret icon-caret--backward",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Shop By Model",
+      "classes": "menu-drawer__back-button-text",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour\n                                        \n                                        Shop By Fit",
+      "classes": "menu-drawer__nav-buttons",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px 10px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "13.142px"
+    },
+    {
+      "text": "Retour\n                                        \n                                        Shop By Fit",
+      "classes": "button menu-drawer__back-button focus-inset",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "",
+      "computedRadius": "0px",
+      "computedPadding": "8px 12.5px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour",
+      "classes": "menu-drawer__back-button-icon icon-caret icon-caret--backward",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Shop By Fit",
+      "classes": "menu-drawer__back-button-text",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour\n                          \n                          Summer 2026 Women",
+      "classes": "menu-drawer__nav-buttons",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px 10px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "13.142px"
+    },
+    {
+      "text": "Retour\n                          \n                          Summer 2026 Women",
+      "classes": "button menu-drawer__back-button focus-inset",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "",
+      "computedRadius": "0px",
+      "computedPadding": "8px 12.5px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour",
+      "classes": "menu-drawer__back-button-icon icon-caret icon-caret--backward",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Summer 2026 Women",
+      "classes": "menu-drawer__back-button-text",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour\n                                        \n                                        Summer 2026 Women",
+      "classes": "menu-drawer__nav-buttons",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px 10px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "13.142px"
+    },
+    {
+      "text": "Retour\n                                        \n                                        Summer 2026 Women",
+      "classes": "button menu-drawer__back-button focus-inset",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "",
+      "computedRadius": "0px",
+      "computedPadding": "8px 12.5px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour",
+      "classes": "menu-drawer__back-button-icon icon-caret icon-caret--backward",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Summer 2026 Women",
+      "classes": "menu-drawer__back-button-text",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour\n                                        \n                                        Pants",
+      "classes": "menu-drawer__nav-buttons",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px 10px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "13.142px"
+    },
+    {
+      "text": "Retour\n                                        \n                                        Pants",
+      "classes": "button menu-drawer__back-button focus-inset",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "",
+      "computedRadius": "0px",
+      "computedPadding": "8px 12.5px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour",
+      "classes": "menu-drawer__back-button-icon icon-caret icon-caret--backward",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Pants",
+      "classes": "menu-drawer__back-button-text",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour\n                                        \n                                        Shop By Model",
+      "classes": "menu-drawer__nav-buttons",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px 10px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "13.142px"
+    },
+    {
+      "text": "Retour\n                                        \n                                        Shop By Model",
+      "classes": "button menu-drawer__back-button focus-inset",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "",
+      "computedRadius": "0px",
+      "computedPadding": "8px 12.5px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour",
+      "classes": "menu-drawer__back-button-icon icon-caret icon-caret--backward",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Shop By Model",
+      "classes": "menu-drawer__back-button-text",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour\n                                        \n                                        Shop By Fit",
+      "classes": "menu-drawer__nav-buttons",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px 10px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "13.142px"
+    },
+    {
+      "text": "Retour\n                                        \n                                        Shop By Fit",
+      "classes": "button menu-drawer__back-button focus-inset",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "",
+      "computedRadius": "0px",
+      "computedPadding": "8px 12.5px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour",
+      "classes": "menu-drawer__back-button-icon icon-caret icon-caret--backward",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Shop By Fit",
+      "classes": "menu-drawer__back-button-text",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour\n                          \n                          Winter 2025 Men",
+      "classes": "menu-drawer__nav-buttons",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px 10px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "13.142px"
+    },
+    {
+      "text": "Retour\n                          \n                          Winter 2025 Men",
+      "classes": "button menu-drawer__back-button focus-inset",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "",
+      "computedRadius": "0px",
+      "computedPadding": "8px 12.5px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    },
+    {
+      "text": "Retour",
+      "classes": "menu-drawer__back-button-icon icon-caret icon-caret--backward",
+      "computedBg": "rgba(0, 0, 0, 0)",
+      "computedColor": "rgb(0, 0, 0)",
+      "computedBorder": "0px none rgb(0, 0, 0)",
+      "computedRadius": "0px",
+      "computedPadding": "0px",
+      "computedFont": "\"Helvetica Neue\", sans-serif",
+      "computedSize": "12px"
+    }
+  ],
+  "colorSchemes": []
+}

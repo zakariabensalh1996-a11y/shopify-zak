@@ -1,0 +1,12 @@
+{
+  "name": "masons-recon",
+  "version": "1.0.0",
+  "description": "Playwright reconnaissance script for Mason's site clone",
+  "main": "scraper.js",
+  "scripts": {
+    "recon": "node scraper.js"
+  },
+  "dependencies": {
+    "playwright": "^1.42.0"
+  }
+}

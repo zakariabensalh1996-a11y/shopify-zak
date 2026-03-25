@@ -8,6 +8,7 @@
  * ------------------------------------------------------------
  */{
   "sections": {
+
     "cart-section": {
       "type": "main-cart",
       "blocks": {
@@ -15,9 +16,9 @@
           "type": "_cart-title",
           "static": true,
           "settings": {
-            "title": "Cart",
+            "title": "MON PANIER",
             "show_count": true,
-            "type_preset": "h4",
+            "type_preset": "h3",
             "alignment": "left",
             "padding-block-start": 0,
             "padding-block-end": 0,
@@ -58,17 +59,18 @@
       },
       "settings": {
         "section_width": "page-width",
-        "color_scheme": "",
-        "padding-block-start": 24,
+        "color_scheme": "scheme-1",
+        "padding-block-start": 40,
         "padding-block-end": 0
       }
     },
-    "product_list_NNFgcy": {
+
+    "cart_upsell": {
       "type": "product-list",
       "blocks": {
         "static-header": {
           "type": "_product-list-content",
-          "name": "t:names.header",
+          "name": "Header",
           "static": true,
           "settings": {
             "content_direction": "row",
@@ -88,34 +90,32 @@
             "inherit_color_scheme": true,
             "color_scheme": "",
             "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0,
             "padding-block-start": 0,
-            "padding-block-end": 0,
+            "padding-block-end": 16,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
           "blocks": {
-            "product_list_text_fifeh4": {
+            "upsell_title": {
               "type": "_product-list-text",
-              "name": "t:names.collection_title",
+              "name": "Title",
               "settings": {
-                "text": "<h3>You may also like</h3>",
+                "text": "<h2>VOUS AIMEREZ AUSSI</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h4",
-                "font": "var(--font-body--family)",
+                "type_preset": "h2",
+                "font": "var(--font-heading--family)",
                 "font_size": "",
                 "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
+                "letter_spacing": "0.10em",
+                "case": "uppercase",
                 "wrap": "pretty",
-                "color": "var(--color-foreground)",
+                "color": "var(--color-foreground-heading)",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -125,33 +125,16 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "product_list_button_eibbma": {
-              "type": "_product-list-button",
-              "name": "t:names.product_list_button",
-              "settings": {
-                "label": "View all",
-                "open_in_new_tab": false,
-                "style_class": "link",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
-          "block_order": [
-            "product_list_text_fifeh4",
-            "product_list_button_eibbma"
-          ]
+          "block_order": ["upsell_title"]
         },
         "static-product-card": {
           "type": "_product-card",
-          "name": "t:names.product_card",
+          "name": "Product Card",
           "static": true,
           "settings": {
-            "product_card_gap": 4,
+            "product_card_gap": 8,
             "inherit_color_scheme": true,
             "color_scheme": "",
             "border": "none",
@@ -164,11 +147,11 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "product_card_gallery_PEPpfq": {
+            "upsell_gallery": {
               "type": "_product-card-gallery",
-              "name": "t:names.product_card_media",
+              "name": "Media",
               "settings": {
-                "image_ratio": "adapt",
+                "image_ratio": "portrait",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
@@ -180,48 +163,47 @@
               },
               "blocks": {}
             },
-            "product_title_WNMpHe": {
+            "upsell_title": {
               "type": "product-title",
-              "name": "t:names.product_title",
+              "name": "Title",
               "settings": {
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
-                "font_size": "",
+                "font_size": "1.2rem",
                 "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
+                "letter_spacing": "0.05em",
+                "case": "uppercase",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
-                "padding-block-start": 4,
+                "padding-block-start": 8,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {}
             },
-            "price_yXfkPX": {
+            "upsell_price": {
               "type": "price",
-              "name": "t:names.product_price",
               "settings": {
                 "show_sale_price_first": true,
                 "show_installments": false,
                 "show_tax_info": false,
-                "type_preset": "h6",
+                "type_preset": "paragraph",
                 "width": "100%",
                 "alignment": "left",
                 "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "font_size": "1.2rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
                 "color": "var(--color-foreground)",
-                "padding-block-start": 0,
+                "padding-block-start": 4,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
@@ -229,37 +211,34 @@
               "blocks": {}
             }
           },
-          "block_order": [
-            "product_card_gallery_PEPpfq",
-            "product_title_WNMpHe",
-            "price_yXfkPX"
-          ]
+          "block_order": ["upsell_gallery", "upsell_title", "upsell_price"]
         }
       },
-      "name": "Featured collection",
+      "name": "Vous aimerez aussi",
       "settings": {
-        "collection": "all",
-        "layout_type": "grid",
-        "carousel_on_mobile": false,
-        "max_products": 4,
+        "collection": "new-arrivals",
+        "layout_type": "carousel",
+        "carousel_on_mobile": true,
+        "max_products": 8,
         "columns": 4,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
         "columns_gap": 8,
-        "rows_gap": 24,
+        "rows_gap": 0,
         "icons_style": "arrow",
         "icons_shape": "none",
         "section_width": "page-width",
         "horizontal_alignment": "flex-start",
-        "gap": 28,
+        "gap": 32,
         "color_scheme": "scheme-1",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 64,
+        "padding-block-end": 64
       }
     }
+
   },
   "order": [
     "cart-section",
-    "product_list_NNFgcy"
+    "cart_upsell"
   ]
 }

@@ -1,0 +1,74 @@
+{
+  "sections": {
+
+    "about_hero": {
+      "type": "masons-about",
+      "name": "About Hero",
+      "settings": {
+        "label": "EST. 1974",
+        "heading": "NOTRE HISTOIRE",
+        "body": "<p>Mason's naît à Forte dei Marmi en 1974, station balnéaire chic de la Toscane. Depuis plus de 50 ans, nous créons des pantalons tailleur alliant style, confort et savoir-faire artisanal italien.</p><p>Chaque pièce Mason's est conçue pour sublimer la silhouette avec des coupes intemporelles, des matières nobles et une attention aux détails qui fait notre renommée internationale.</p>",
+        "btn_label": "Découvrir la collection",
+        "btn_link": "/collections/all"
+      }
+    },
+
+    "about_content": {
+      "type": "section",
+      "blocks": {
+        "content_text": {
+          "type": "page-content",
+          "settings": {},
+          "blocks": {}
+        }
+      },
+      "block_order": ["content_text"],
+      "name": "Page content",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-1",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 64,
+        "padding-block-end": 80
+      }
+    },
+
+    "about_ps": {
+      "type": "masons-personal-shopper",
+      "name": "Personal Shopper",
+      "settings": {
+        "label": "FOR YOU",
+        "heading": "PERSONAL SHOPPER",
+        "body": "<p>Bénéficiez des conseils personnalisés de nos experts pour trouver le pantalon parfait selon votre morphologie, vos goûts et votre style de vie.</p>",
+        "btn_label": "Découvrir",
+        "btn_link": "/pages/assistant-de-vente"
+      }
+    }
+
+  },
+  "order": [
+    "about_hero",
+    "about_content",
+    "about_ps"
+  ]
+}

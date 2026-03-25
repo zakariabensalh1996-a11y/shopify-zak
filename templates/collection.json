@@ -8,25 +8,26 @@
  * ------------------------------------------------------------
  */{
   "sections": {
-    "section": {
+
+    "collection_banner": {
       "type": "section",
       "blocks": {
-        "text_tqQTNE": {
+        "col_title": {
           "type": "text",
-          "name": "Title",
+          "name": "Collection Title",
           "settings": {
             "text": "<h1>{{ closest.collection.title }}</h1>",
-            "width": "fit-content",
+            "width": "fill",
             "max_width": "normal",
             "alignment": "left",
             "type_preset": "h2",
-            "font": "var(--font-primary--family)",
+            "font": "var(--font-heading--family)",
             "font_size": "",
             "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
+            "letter_spacing": "0.10em",
+            "case": "uppercase",
             "wrap": "pretty",
-            "color": "",
+            "color": "var(--color-foreground-heading)",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -37,22 +38,22 @@
           },
           "blocks": {}
         },
-        "text_twGGkJ": {
+        "col_desc": {
           "type": "text",
-          "name": "Description",
+          "name": "Collection Description",
           "settings": {
             "text": "{{ closest.collection.description }}",
-            "width": "fit-content",
+            "width": "fill",
             "max_width": "normal",
             "alignment": "left",
             "type_preset": "rte",
-            "font": "var(--font-primary--family)",
-            "font_size": "",
+            "font": "var(--font-body--family)",
+            "font_size": "1.3rem",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
-            "color": "",
+            "color": "var(--color-foreground)",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -64,20 +65,17 @@
           "blocks": {}
         }
       },
-      "block_order": [
-        "text_tqQTNE",
-        "text_twGGkJ"
-      ],
-      "name": "Collection heading",
+      "block_order": ["col_title", "col_desc"],
+      "name": "Collection header",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
+        "vertical_alignment": "flex-end",
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
+        "vertical_alignment_flex_direction_column": "flex-end",
+        "gap": 8,
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
@@ -93,10 +91,11 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 40,
+        "padding-block-end": 24
       }
     },
+
     "main": {
       "type": "main-collection",
       "blocks": {
@@ -106,20 +105,20 @@
           "settings": {
             "enable_filtering": true,
             "filter_style": "horizontal",
-            "filter_width": "centered",
-            "text_label_case": "default",
+            "filter_width": "page-width",
+            "text_label_case": "uppercase",
             "show_swatch_label": false,
-            "show_filter_label": false,
+            "show_filter_label": true,
             "enable_sorting": true,
-            "enable_grid_density": true,
+            "enable_grid_density": false,
             "inherit_color_scheme": true,
             "color_scheme": "",
-            "padding-block-start": 8,
-            "padding-block-end": 8,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0,
-            "facets_margin_bottom": 8,
-            "facets_margin_right": 20
+            "facets_margin_bottom": 16,
+            "facets_margin_right": 0
           },
           "blocks": {}
         },
@@ -127,7 +126,7 @@
           "type": "_product-card",
           "static": true,
           "settings": {
-            "product_card_gap": 4,
+            "product_card_gap": 8,
             "inherit_color_scheme": true,
             "color_scheme": "",
             "border": "none",
@@ -143,7 +142,7 @@
             "card-gallery": {
               "type": "_product-card-gallery",
               "settings": {
-                "image_ratio": "adapt",
+                "image_ratio": "portrait",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
@@ -155,47 +154,47 @@
               },
               "blocks": {}
             },
-            "product_title_4nY4eT": {
+            "card_title": {
               "type": "product-title",
-              "name": "t:names.product_title",
+              "name": "Title",
               "settings": {
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "font_size": "1.2rem",
                 "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
+                "letter_spacing": "0.05em",
+                "case": "uppercase",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
-                "padding-block-start": 4,
+                "padding-block-start": 8,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {}
             },
-            "price_EzJzMm": {
+            "card_price": {
               "type": "price",
               "settings": {
                 "show_sale_price_first": true,
                 "show_installments": false,
                 "show_tax_info": false,
-                "type_preset": "h6",
+                "type_preset": "paragraph",
                 "width": "100%",
                 "alignment": "left",
                 "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "font_size": "1.2rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
                 "color": "var(--color-foreground)",
-                "padding-block-start": 0,
+                "padding-block-start": 4,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
@@ -203,31 +202,28 @@
               "blocks": {}
             }
           },
-          "block_order": [
-            "card-gallery",
-            "product_title_4nY4eT",
-            "price_EzJzMm"
-          ]
+          "block_order": ["card-gallery", "card_title", "card_price"]
         }
       },
       "settings": {
         "layout_type": "grid",
         "product_card_size": "medium",
         "mobile_product_card_size": "small",
-        "product_grid_width": "centered",
+        "product_grid_width": "page-width",
         "full_width_on_mobile": true,
-        "columns_gap_horizontal": 16,
+        "columns_gap_horizontal": 8,
         "columns_gap_vertical": 24,
         "padding-inline-start": 0,
         "padding-inline-end": 0,
         "color_scheme": "scheme-1",
         "padding-block-start": 0,
-        "padding-block-end": 32
+        "padding-block-end": 64
       }
     }
+
   },
   "order": [
-    "section",
+    "collection_banner",
     "main"
   ]
 }

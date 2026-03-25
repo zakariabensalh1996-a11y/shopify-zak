@@ -1,0 +1,196 @@
+{%- comment -%}
+  Mason's Size Guide Trigger & Modal
+  Usage: {% render 'masons-size-guide' %}
+  Renders a link that opens an inline size guide overlay.
+{%- endcomment -%}
+
+<button
+  type="button"
+  class="masons-size-guide__trigger"
+  aria-controls="masons-size-guide-modal"
+  aria-expanded="false"
+>
+  {{- 'Guide des tailles' -}}
+</button>
+
+<dialog
+  id="masons-size-guide-modal"
+  class="masons-size-guide__modal"
+  aria-label="Guide des tailles"
+>
+  <div class="masons-size-guide__inner">
+    <header class="masons-size-guide__header">
+      <h2 class="masons-size-guide__title">GUIDE DES TAILLES</h2>
+      <button
+        type="button"
+        class="masons-size-guide__close"
+        aria-label="Fermer"
+        onclick="document.getElementById('masons-size-guide-modal').close()"
+      >
+        &#215;
+      </button>
+    </header>
+
+    <div class="masons-size-guide__content">
+      <p class="masons-size-guide__intro">
+        Pour trouver votre taille Mason's, mesurez votre tour de taille et consultez le tableau ci-dessous.
+      </p>
+
+      <table class="masons-size-guide__table">
+        <thead>
+          <tr>
+            <th>Taille EU</th>
+            <th>Taille IT</th>
+            <th>Tour de taille (cm)</th>
+            <th>Tour de hanches (cm)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>XS</td><td>44</td><td>72–76</td><td>90–94</td></tr>
+          <tr><td>S</td><td>46</td><td>76–80</td><td>94–98</td></tr>
+          <tr><td>M</td><td>48</td><td>80–84</td><td>98–102</td></tr>
+          <tr><td>L</td><td>50</td><td>84–88</td><td>102–106</td></tr>
+          <tr><td>XL</td><td>52</td><td>88–94</td><td>106–112</td></tr>
+          <tr><td>XXL</td><td>54</td><td>94–100</td><td>112–118</td></tr>
+          <tr><td>3XL</td><td>56</td><td>100–108</td><td>118–126</td></tr>
+        </tbody>
+      </table>
+
+      <p class="masons-size-guide__note">
+        En cas de doute, choisissez la taille supérieure. Tous les pantalons Mason's sont réalisés en tissu de qualité
+        supérieure avec une légère élasticité pour un confort optimal.
+      </p>
+    </div>
+  </div>
+</dialog>
+
+<style>
+  .masons-size-guide__trigger {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: var(--color-foreground, #222222);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .masons-size-guide__trigger:hover {
+    color: #FF5031;
+  }
+
+  .masons-size-guide__modal {
+    border: 1px solid #E5E5E5;
+    border-radius: 0;
+    padding: 0;
+    max-width: 680px;
+    width: 90vw;
+    max-height: 85vh;
+    overflow-y: auto;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .masons-size-guide__modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .masons-size-guide__inner {
+    padding: 0;
+  }
+
+  .masons-size-guide__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 32px;
+    border-bottom: 1px solid #E5E5E5;
+  }
+
+  .masons-size-guide__title {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    color: #222222;
+    margin: 0;
+  }
+
+  .masons-size-guide__close {
+    background: none;
+    border: none;
+    font-size: 2.4rem;
+    line-height: 1;
+    cursor: pointer;
+    color: #222222;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .masons-size-guide__content {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .masons-size-guide__intro,
+  .masons-size-guide__note {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #222222;
+    margin: 0;
+  }
+
+  .masons-size-guide__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+  }
+
+  .masons-size-guide__table th {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 1.0rem;
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 2px solid #222222;
+    color: #222222;
+  }
+
+  .masons-size-guide__table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #E5E5E5;
+    color: #222222;
+  }
+
+  .masons-size-guide__table tr:hover td {
+    background-color: #F2F2F2;
+  }
+</style>
+
+<script>
+  (function () {
+    var trigger = document.querySelector('.masons-size-guide__trigger');
+    var modal = document.getElementById('masons-size-guide-modal');
+    if (!trigger || !modal) return;
+    trigger.addEventListener('click', function () {
+      modal.showModal();
+    });
+  })();
+</script>
