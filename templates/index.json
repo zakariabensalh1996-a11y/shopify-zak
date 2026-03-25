@@ -10,126 +10,15 @@
   "sections": {
 
     "hero_ss26": {
-      "type": "hero",
-      "blocks": {
-        "text_heading": {
-          "type": "text",
-          "name": "Heading",
-          "settings": {
-            "text": "<p><strong>NOUVELLE COLLECTION SS26</strong></p>",
-            "width": "fill",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h1",
-            "font": "var(--font-heading--family)",
-            "font_size": "",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "uppercase",
-            "wrap": "balance",
-            "color": "var(--color-foreground-heading)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "button_homme": {
-          "type": "button",
-          "name": "Button Homme",
-          "settings": {
-            "label": "Homme",
-            "link": "shopify://collections/printemps-ete-homme",
-            "open_in_new_tab": false,
-            "style_class": "button-secondary",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
-        },
-        "button_femme": {
-          "type": "button",
-          "name": "Button Femme",
-          "settings": {
-            "label": "Femme",
-            "link": "shopify://collections/printemps-ete-femme",
-            "open_in_new_tab": false,
-            "style_class": "button-secondary",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
-        },
-        "text_subtitle": {
-          "type": "text",
-          "name": "Subtitle",
-          "settings": {
-            "text": "<p>Découvrez la nouvelle collection : passion artisanale depuis 1974</p>",
-            "width": "fill",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h4",
-            "font": "var(--font-body--family)",
-            "font_size": "",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground-heading)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_heading",
-        "button_homme",
-        "button_femme",
-        "text_subtitle"
-      ],
+      "type": "masons-hero",
       "name": "Hero SS26",
       "settings": {
-        "media_type_1": "image",
-        "media_type_2": "image",
-        "stack_media_on_mobile": false,
-        "custom_mobile_media": false,
-        "media_type_1_mobile": "image",
-        "media_type_2_mobile": "image",
-        "open_in_new_tab": false,
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "flex-end",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "flex-end",
-        "gap": 24,
-        "section_width": "full",
-        "section_height": "large",
-        "section_height_custom": 70,
-        "color_scheme": "scheme-6",
-        "toggle_overlay": true,
-        "overlay_color": "#22222226",
-        "overlay_style": "gradient",
-        "gradient_direction": "to top",
-        "blurred_reflection": false,
-        "reflection_opacity": 75,
-        "padding-block-start": 60,
-        "padding-block-end": 60
+        "heading": "NOUVELLE COLLECTION SS26",
+        "kicker": "Découvrez la nouvelle collection : passion artisanale depuis 1974",
+        "btn1_label": "Homme",
+        "btn1_link": "/collections/printemps-ete-homme",
+        "btn2_label": "Femme",
+        "btn2_link": "/collections/printemps-ete-femme"
       }
     },
 
@@ -567,156 +456,26 @@
     },
 
     "media_about": {
-      "type": "media-with-content",
-      "blocks": {
-        "media": {
-          "type": "_media-without-appearance",
-          "static": true,
-          "settings": {
-            "media_type": "image"
-          },
-          "blocks": {}
-        },
-        "content": {
-          "type": "_content-without-appearance",
-          "static": true,
-          "settings": {
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "space-between"
-          },
-          "blocks": {
-            "label_text": {
-              "type": "text",
-              "name": "Label",
-              "settings": {
-                "text": "<p>EST. 1974</p>",
-                "type_preset": "h5",
-                "letter_spacing": "0.25em",
-                "case": "uppercase"
-              }
-            },
-            "heading_text": {
-              "type": "text",
-              "name": "Heading",
-              "settings": {
-                "text": "<h2>ABOUT US</h2>",
-                "type_preset": "h2",
-                "case": "uppercase"
-              }
-            },
-            "body_text": {
-              "type": "text",
-              "name": "Body",
-              "settings": {
-                "text": "<p>Mason's naît à Forte dei Marmi en 1974. Depuis plus de 50 ans, nous créons des pantalons tailleur alliant style, confort et qualité artisanale italienne.</p>",
-                "type_preset": "rte",
-                "font_size": "1.4rem",
-                "padding-block-start": 16
-              }
-            },
-            "cta_btn": {
-              "type": "button",
-              "name": "CTA",
-              "settings": {
-                "label": "Notre histoire",
-                "link": "shopify://pages/decouvrez-notre-histoire",
-                "style_class": "button-primary",
-                "width": "fit-content",
-                "width_mobile": "fill"
-              }
-            }
-          },
-          "block_order": ["label_text", "heading_text", "body_text", "cta_btn"]
-        }
-      },
-      "block_order": ["media", "content"],
+      "type": "masons-about",
       "name": "About Us",
       "settings": {
-        "media_position": "left",
-        "media_width": "medium",
-        "media_height": "medium",
-        "section_width": "full",
-        "extend_media": true,
-        "color_scheme": "scheme-1",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "label": "EST. 1974",
+        "heading": "ABOUT US",
+        "body": "<p>Mason's naît à Forte dei Marmi en 1974. Depuis plus de 50 ans, nous créons des pantalons tailleur alliant style, confort et qualité artisanale italienne.</p>",
+        "btn_label": "Notre histoire",
+        "btn_link": "/pages/decouvrez-notre-histoire"
       }
     },
 
     "media_personal_shopper": {
-      "type": "media-with-content",
-      "blocks": {
-        "media": {
-          "type": "_media-without-appearance",
-          "static": true,
-          "settings": {
-            "media_type": "image"
-          },
-          "blocks": {}
-        },
-        "content": {
-          "type": "_content-without-appearance",
-          "static": true,
-          "settings": {
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "space-between"
-          },
-          "blocks": {
-            "label_text": {
-              "type": "text",
-              "name": "Label",
-              "settings": {
-                "text": "<p>FOR YOU</p>",
-                "type_preset": "h5",
-                "letter_spacing": "0.25em",
-                "case": "uppercase"
-              }
-            },
-            "heading_text": {
-              "type": "text",
-              "name": "Heading",
-              "settings": {
-                "text": "<h2>PERSONAL SHOPPER</h2>",
-                "type_preset": "h2",
-                "case": "uppercase"
-              }
-            },
-            "body_text": {
-              "type": "text",
-              "name": "Body",
-              "settings": {
-                "text": "<p>Bénéficiez des conseils personnalisés de nos experts pour trouver le pantalon parfait selon votre morphologie, vos goûts et votre style de vie.</p>",
-                "type_preset": "rte",
-                "font_size": "1.4rem",
-                "padding-block-start": 16
-              }
-            },
-            "cta_btn": {
-              "type": "button",
-              "name": "CTA",
-              "settings": {
-                "label": "Découvrir",
-                "link": "shopify://pages/assistant-de-vente",
-                "style_class": "button-primary",
-                "width": "fit-content",
-                "width_mobile": "fill"
-              }
-            }
-          },
-          "block_order": ["label_text", "heading_text", "body_text", "cta_btn"]
-        }
-      },
-      "block_order": ["media", "content"],
+      "type": "masons-personal-shopper",
       "name": "Personal Shopper",
       "settings": {
-        "media_position": "right",
-        "media_width": "medium",
-        "media_height": "medium",
-        "section_width": "full",
-        "extend_media": true,
-        "color_scheme": "scheme-2",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "label": "FOR YOU",
+        "heading": "PERSONAL SHOPPER",
+        "body": "<p>Bénéficiez des conseils personnalisés de nos experts pour trouver le pantalon parfait selon votre morphologie, vos goûts et votre style de vie.</p>",
+        "btn_label": "Découvrir",
+        "btn_link": "/pages/assistant-de-vente"
       }
     }
 
