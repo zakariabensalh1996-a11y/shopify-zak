@@ -177,8 +177,7 @@
                 "ratio": "portrait"
               }
             }
-          },
-          "block_order": ["title"]
+          }
         }
       },
       "block_order": ["link"],
