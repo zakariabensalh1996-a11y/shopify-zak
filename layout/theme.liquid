@@ -31,6 +31,14 @@
     {%- render 'theme-styles-variables' -%}
     {%- render 'color-schemes' -%}
 
+    {%- comment -%} Mason's custom design system overrides {%- endcomment -%}
+    {{ 'masons-custom.css' | asset_url | stylesheet_tag }}
+
+    {%- comment -%} Preload custom fonts for performance {%- endcomment -%}
+    <link rel="preload" href="{{ 'HelveticaNeue-Roman.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ 'HelveticaNeue-Medium.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ 'Southera.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
+
     {% if request.design_mode %}
       {%- render 'theme-editor' -%}
     {% endif %}
