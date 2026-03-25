@@ -248,16 +248,10 @@
           },
           "blocks": {}
         },
-        "payment_icons": {
-          "type": "payment-icons",
-          "settings": {},
-          "blocks": {}
-        }
       },
       "block_order": [
         "footer_copyright",
-        "footer_policy_list",
-        "payment_icons"
+        "footer_policy_list"
       ],
       "name": "Footer utilities",
       "settings": {

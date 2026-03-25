@@ -156,140 +156,34 @@
     "collection_links_models": {
       "type": "collection-links",
       "blocks": {
-        "link_milano": {
+        "link": {
           "type": "_collection-link",
-          "settings": {
-            "collection": "milano-pantalons-chino-homme-masons"
-          },
+          "static": true,
           "blocks": {
-            "title_milano": {
+            "title": {
               "type": "_inline-collection-title",
+              "name": "Title",
+              "static": true,
               "settings": {
-                "text": "Milano"
+                "font": "var(--font-heading--family)"
+              }
+            },
+            "image": {
+              "type": "_image",
+              "name": "Image",
+              "static": true,
+              "settings": {
+                "height": "large",
+                "ratio": "portrait"
               }
             }
           },
-          "block_order": ["title_milano"]
-        },
-        "link_newyork": {
-          "type": "_collection-link",
-          "settings": {
-            "collection": "new-york-chino-homme-masons"
-          },
-          "blocks": {
-            "title_ny": {
-              "type": "_inline-collection-title",
-              "settings": {
-                "text": "New York"
-              }
-            }
-          },
-          "block_order": ["title_ny"]
-        },
-        "link_torino": {
-          "type": "_collection-link",
-          "settings": {
-            "collection": "torino-pantalons-chino-homme-masons"
-          },
-          "blocks": {
-            "title_torino": {
-              "type": "_inline-collection-title",
-              "settings": {
-                "text": "Torino"
-              }
-            }
-          },
-          "block_order": ["title_torino"]
-        },
-        "link_chile": {
-          "type": "_collection-link",
-          "settings": {
-            "collection": "chile-pantalons-cargo-masons"
-          },
-          "blocks": {
-            "title_chile": {
-              "type": "_inline-collection-title",
-              "settings": {
-                "text": "Chile"
-              }
-            }
-          },
-          "block_order": ["title_chile"]
-        },
-        "link_boston": {
-          "type": "_collection-link",
-          "settings": {
-            "collection": "boston"
-          },
-          "blocks": {
-            "title_boston": {
-              "type": "_inline-collection-title",
-              "settings": {
-                "text": "Boston"
-              }
-            }
-          },
-          "block_order": ["title_boston"]
-        },
-        "link_osaka": {
-          "type": "_collection-link",
-          "settings": {
-            "collection": "osaka-men-chino-pants"
-          },
-          "blocks": {
-            "title_osaka": {
-              "type": "_inline-collection-title",
-              "settings": {
-                "text": "Osaka"
-              }
-            }
-          },
-          "block_order": ["title_osaka"]
-        },
-        "link_london": {
-          "type": "_collection-link",
-          "settings": {
-            "collection": "london-bermuda-homme"
-          },
-          "blocks": {
-            "title_london": {
-              "type": "_inline-collection-title",
-              "settings": {
-                "text": "London"
-              }
-            }
-          },
-          "block_order": ["title_london"]
-        },
-        "link_malibu": {
-          "type": "_collection-link",
-          "settings": {
-            "collection": "malibu"
-          },
-          "blocks": {
-            "title_malibu": {
-              "type": "_inline-collection-title",
-              "settings": {
-                "text": "Malibu"
-              }
-            }
-          },
-          "block_order": ["title_malibu"]
+          "block_order": ["title", "image"]
         }
       },
-      "block_order": [
-        "link_milano",
-        "link_newyork",
-        "link_torino",
-        "link_chile",
-        "link_boston",
-        "link_osaka",
-        "link_london",
-        "link_malibu"
-      ],
+      "block_order": ["link"],
       "name": "Modèles - Nos Best Sellers",
       "settings": {
-        "collection_list": null,
         "layout": "spotlight",
         "section_width": "page-width",
         "alignment": "left",
