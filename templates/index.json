@@ -137,16 +137,17 @@
       "type": "marquee",
       "blocks": {
         "marquee_text_1": {
-          "type": "_marquee",
+          "type": "text",
           "settings": {
-            "text": "MODÈLES · NOS BEST SELLERS · DEPUIS 1974 · FORTE DEI MARMI · ITALIE ·"
+            "text": "<p>MODÈLES · NOS BEST SELLERS · DEPUIS 1974 · FORTE DEI MARMI · ITALIE</p>"
           }
         }
       },
       "block_order": ["marquee_text_1"],
       "name": "Marquee Models",
       "settings": {
-        "speed": 40,
+        "movement_direction": "normal",
+        "gap_between_elements": 40,
         "color_scheme": "scheme-1",
         "padding-block-start": 16,
         "padding-block-end": 16
