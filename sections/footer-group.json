@@ -115,9 +115,9 @@
             "width": "fill",
             "custom_width": 100,
             "inherit_color_scheme": true,
+            "color_scheme": "",
             "heading": "",
             "heading_preset": "h3",
-            "color_scheme": "",
             "border_style": "bottom",
             "border_width": 1,
             "border_radius": 0,
@@ -156,13 +156,8 @@
         "menu_societe": {
           "type": "menu",
           "settings": {
-            "heading": "SOCIÉTÉ",
             "menu": "footer-societe",
-            "font": "var(--font-body--family)",
-            "font_size": "1.3rem",
-            "case": "none",
-            "width": "fill",
-            "custom_width": 100,
+            "heading": "SOCIÉTÉ",
             "inherit_color_scheme": true,
             "color_scheme": "",
             "padding-block-start": 0,
@@ -175,13 +170,8 @@
         "menu_service": {
           "type": "menu",
           "settings": {
-            "heading": "SERVICE CLIENT",
             "menu": "footer-service",
-            "font": "var(--font-body--family)",
-            "font_size": "1.3rem",
-            "case": "none",
-            "width": "fill",
-            "custom_width": 100,
+            "heading": "SERVICE CLIENT",
             "inherit_color_scheme": true,
             "color_scheme": "",
             "padding-block-start": 0,
@@ -194,13 +184,8 @@
         "menu_legal": {
           "type": "menu",
           "settings": {
-            "heading": "LÉGAL",
             "menu": "footer-legal",
-            "font": "var(--font-body--family)",
-            "font_size": "1.3rem",
-            "case": "none",
-            "width": "fill",
-            "custom_width": 100,
+            "heading": "LÉGAL",
             "inherit_color_scheme": true,
             "color_scheme": "",
             "padding-block-start": 0,
@@ -247,7 +232,7 @@
             "case": "none"
           },
           "blocks": {}
-        },
+        }
       },
       "block_order": [
         "footer_copyright",
