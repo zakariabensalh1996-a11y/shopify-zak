@@ -29,7 +29,14 @@
               sizes: '(max-width: 768px) 100vw, 50vw'
           }}
         {%- else -%}
-          {{ 'image' | placeholder_svg_tag: 'masons-stl__placeholder' }}
+          <img
+            src="{{ 'masons-about-poster.jpg' | asset_url }}"
+            alt="Shop The Look"
+            class="masons-stl__editorial-image"
+            loading="lazy"
+            width="960"
+            height="1200"
+          >
         {%- endif -%}
       </div>
 

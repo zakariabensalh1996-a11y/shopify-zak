@@ -12,6 +12,8 @@
         type="image/png"
         href="{{ settings.favicon | image_url: width: 32, height: 32 }}"
       >
+    {%- else -%}
+      <link rel="icon" type="image/jpeg" href="{{ 'masons-favicon.jpg' | asset_url }}">
     {%- endif -%}
 
     {% comment %} This a way to wait for main content to load when navigating to a new page so that the view transitions can work consistently {% endcomment %}
@@ -33,6 +35,55 @@
 
     {%- comment -%} Mason's custom design system overrides {%- endcomment -%}
     {{ 'masons-custom.css' | asset_url | stylesheet_tag }}
+
+    {%- comment -%} Mason's asset logo fallback (used until logo is set in theme editor) {%- endcomment -%}
+    <style>
+      :root {
+        --masons-logo-url: url('{{ 'masons-logo.png' | asset_url }}');
+        --masons-logo-url-inverse: url('{{ 'masons-logo.png' | asset_url }}');
+      }
+      /* When no Shopify logo image is configured, show asset logo via background */
+      .header-logo__image-container--original {
+        font-size: 0 !important;
+        line-height: 0 !important;
+        display: block;
+        min-width: 120px;
+        height: 28px;
+        background-image: var(--masons-logo-url);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left center;
+      }
+      /* Hide background when actual logo img exists */
+      .header-logo__image-container--original:has(img) {
+        background-image: none;
+        min-width: unset;
+        height: unset;
+        font-size: revert !important;
+        line-height: revert !important;
+      }
+      /* Inverse logo for transparent header on homepage */
+      .header-logo__image-container--inverse {
+        font-size: 0 !important;
+        line-height: 0 !important;
+        display: block;
+        min-width: 120px;
+        height: 28px;
+        background-image: var(--masons-logo-url-inverse);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left center;
+        filter: brightness(0) invert(1);
+      }
+      .header-logo__image-container--inverse:has(img) {
+        background-image: none;
+        min-width: unset;
+        height: unset;
+        font-size: revert !important;
+        line-height: revert !important;
+        filter: none;
+      }
+    </style>
 
     {%- comment -%} Preload custom fonts for performance {%- endcomment -%}
     <link rel="preload" href="{{ 'HelveticaNeue-Roman.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>

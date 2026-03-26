@@ -68,13 +68,30 @@
       >
         {% if menu %}
           <ul class="list-unstyled">
-            {% for link in menu.links %}
-              <li class="menu__item {{ block_settings.link_preset }}">
-                <a href="{{ link.url }}">
-                  {{ link.title }}
-                </a>
-              </li>
-            {% endfor %}
+            {% if menu.links.size > 0 %}
+              {% for link in menu.links %}
+                <li class="menu__item {{ block_settings.link_preset }}">
+                  <a href="{{ link.url }}">
+                    {{ link.title }}
+                  </a>
+                </li>
+              {% endfor %}
+            {% else %}
+              {%- comment -%} Fallback links while Shopify navigation menus are being configured {%- endcomment -%}
+              {% if menu.handle == 'footer-societe' %}
+                {% assign _fb = "Notre histoire|/pages/decouvrez-notre-histoire,Blog|/blogs/news,Personal Shopper|/pages/assistant-de-vente" | split: "," %}
+              {% elsif menu.handle == 'footer-service' %}
+                {% assign _fb = "Nous contacter|/pages/contact,FAQ|/pages/faq,Guide des tailles|/pages/guide-des-tailles,Retours & Échanges|/pages/retours" | split: "," %}
+              {% elsif menu.handle == 'footer-legal' %}
+                {% assign _fb = "CGV|/policies/terms-of-service,Confidentialité|/policies/privacy-policy,Mentions légales|/pages/mentions-legales,Remboursement|/policies/refund-policy" | split: "," %}
+              {% endif %}
+              {% for _f in _fb %}
+                {% assign _fp = _f | split: "|" %}
+                <li class="menu__item {{ block_settings.link_preset }}">
+                  <a href="{{ _fp[1] }}">{{ _fp[0] }}</a>
+                </li>
+              {% endfor %}
+            {% endif %}
           </ul>
         {% endif %}
       </nav>

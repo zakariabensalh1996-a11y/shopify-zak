@@ -33,20 +33,28 @@
             class="menu-list__list list-unstyled"
             role="list"
           >
-            {% for link in block_settings.menu.links %}
-              <li>
-                <a
-                  href="{{ link.url }}"
-                  id="MenuItem-{{ link.handle }}"
-                  class="menu-list__item"
-                  {% if link.current %}
-                    aria-current="page"
-                  {% endif %}
-                >
-                  {{- link.title -}}
-                </a>
-              </li>
-            {% endfor %}
+            {% if block_settings.menu.links.size > 0 %}
+              {% for link in block_settings.menu.links %}
+                <li>
+                  <a
+                    href="{{ link.url }}"
+                    id="MenuItem-{{ link.handle }}"
+                    class="menu-list__item"
+                    {% if link.current %}
+                      aria-current="page"
+                    {% endif %}
+                  >
+                    {{- link.title -}}
+                  </a>
+                </li>
+              {% endfor %}
+            {% else %}
+              {% assign fb_nav = "HOMME|/collections/homme,FEMME|/collections/femme,ACCESSORIES|/collections/accessories,SOLDES|/collections/soldes" | split: "," %}
+              {% for nav_item in fb_nav %}
+                {% assign np = nav_item | split: "|" %}
+                <li><a href="{{ np[1] }}" class="menu-list__item">{{ np[0] }}</a></li>
+              {% endfor %}
+            {% endif %}
           </ul>
         </div>
       </div>
@@ -77,7 +85,16 @@
       endif
     %}
 
+    {%- comment -%} Fallback nav if Shopify navigation menu not yet created {%- endcomment -%}
+    {% liquid
+      if block_settings.menu.links.size == 0
+        assign masons_fallback_nav = "HOMME|/collections/homme,FEMME|/collections/femme,ACCESSORIES|/collections/accessories,SOLDES|/collections/soldes,NOTRE HISTOIRE|/pages/decouvrez-notre-histoire,BLOG|/blogs/news"
+        assign masons_fallback_links = masons_fallback_nav | split: ","
+      endif
+    %}
+
     {% capture children %}
+      {% if block_settings.menu.links.size > 0 %}
       {% for link in block_settings.menu.links %}
         <li
           role="presentation"
@@ -134,6 +151,18 @@
           {%- endif -%}
         </li>
       {% endfor %}
+      {% else %}
+        {% for nav_item in masons_fallback_links %}
+          {% assign nav_parts = nav_item | split: "|" %}
+          {% assign nav_title = nav_parts[0] %}
+          {% assign nav_url = nav_parts[1] %}
+          <li role="presentation" class="menu-list__list-item">
+            <a href="{{ nav_url }}" class="menu-list__link">
+              <span class="menu-list__link-title">{{ nav_title }}</span>
+            </a>
+          </li>
+        {% endfor %}
+      {% endif %}
       <li
         class="menu-list__list-item"
         role="presentation"
