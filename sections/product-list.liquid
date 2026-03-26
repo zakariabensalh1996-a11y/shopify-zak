@@ -2,6 +2,10 @@
 
 {% liquid
   assign max_items = section.settings.max_products
+  assign resolved_collection = section.settings.collection
+  if resolved_collection == blank and section.settings.product_handles != blank
+    assign _resolved_by_handles = true
+  endif
 %}
 
 <div class="section-background color-{{ section.settings.color_scheme }}"></div>
@@ -25,9 +29,9 @@
   </div>
 
   {% capture list_items %}
-    {% if section.settings.collection != blank %}
-      {% paginate section.settings.collection.products by max_items %}
-        {% for product in section.settings.collection.products limit: max_items %}
+    {% if resolved_collection != blank %}
+      {% paginate resolved_collection.products by max_items %}
+        {% for product in resolved_collection.products limit: max_items %}
           <div
             class="resource-list__item"
           >
@@ -41,6 +45,20 @@
           {% endunless %}
         {% endfor %}
       {% endpaginate %}
+    {% elsif _resolved_by_handles %}
+      {% assign _handles = section.settings.product_handles | split: ',' %}
+      {% for _h in _handles limit: max_items %}
+        {% assign _handle_clean = _h | strip %}
+        {% assign product = all_products[_handle_clean] %}
+        {% if product != blank %}
+          <div class="resource-list__item">
+            {% # theme-check-disable UniqueStaticBlockId %}
+              {% content_for 'block', type: '_product-card', id: 'static-product-card', closest.product: product %}
+            {% # theme-check-enable UniqueStaticBlockId %}
+          </div>
+          {% unless forloop.last %}<!--@list/split-->{% endunless %}
+        {% endif %}
+      {% endfor %}
     {% else %}
       {% for i in (1..max_items) %}
         <div
@@ -103,6 +121,12 @@
       "type": "collection",
       "id": "collection",
       "label": "t:settings.collection"
+    },
+    {
+      "type": "text",
+      "id": "product_handles",
+      "label": "Product handles (fallback)",
+      "info": "Comma-separated product handles shown when collection is unavailable"
     },
     {
       "type": "select",

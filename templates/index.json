@@ -256,6 +256,7 @@
       "name": "Homme SS26 - Nouveautés",
       "settings": {
         "collection": "new-arrivals",
+        "product_handles": "milano-chino-homme,new-york-chino-homme,torino-chino-homme,osaka-chino-homme,chile-cargo-homme,london-bermuda-homme-product,chile-bermuda-homme-product,boston-homme-product",
         "layout_type": "carousel",
         "carousel_on_mobile": true,
         "max_products": 16,
@@ -448,6 +449,7 @@
       "name": "Femme SS26 - Nouveautés",
       "settings": {
         "collection": "new-woman-arrivals",
+        "product_handles": "malibu-femme-product,chino-slim-femme,bermuda-chino-femme",
         "layout_type": "carousel",
         "carousel_on_mobile": true,
         "max_products": 16,
