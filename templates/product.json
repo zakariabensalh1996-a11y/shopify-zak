@@ -303,7 +303,7 @@
                     "size_text": {
                       "type": "text",
                       "settings": {
-                        "text": "<p><strong>Taille italienne.</strong> Pour connaître votre taille, mesurez votre tour de taille :</p><ul><li>IT 44 / FR 36 — Tour de taille 72–76 cm</li><li>IT 46 / FR 38 — 76–80 cm</li><li>IT 48 / FR 40 — 80–84 cm</li><li>IT 50 / FR 42 — 84–88 cm</li><li>IT 52 / FR 44 — 88–94 cm</li><li>IT 54 / FR 46 — 94–100 cm</li><li>IT 56 / FR 48 — 100–108 cm</li></ul>",
+                        "text": "<p><strong>Taille italienne.</strong> Mesurez votre tour de taille à la partie la plus fine du ventre :</p><p><strong>Homme :</strong></p><ul><li>IT 44 / FR 34 — 68–72 cm</li><li>IT 46 / FR 36 — 72–76 cm</li><li>IT 48 / FR 38 — 76–80 cm</li><li>IT 50 / FR 40 — 80–84 cm</li><li>IT 52 / FR 42 — 84–90 cm</li><li>IT 54 / FR 44 — 90–96 cm</li><li>IT 56 / FR 46 — 96–102 cm</li><li>IT 58 / FR 48 — 102–108 cm</li><li>IT 60 / FR 50 — 108–114 cm</li></ul><p><strong>Femme :</strong></p><ul><li>IT 36 / FR 34 — 62–66 cm</li><li>IT 38 / FR 36 — 66–70 cm</li><li>IT 40 / FR 38 — 70–74 cm</li><li>IT 42 / FR 40 — 74–78 cm</li><li>IT 44 / FR 42 — 78–82 cm</li><li>IT 46 / FR 44 — 82–86 cm</li></ul><p><a href='/pages/guide-des-tailles'>→ Guide des tailles complet</a></p>",
                         "width": "100%"
                       },
                       "blocks": {}
