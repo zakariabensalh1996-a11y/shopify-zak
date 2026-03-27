@@ -30,7 +30,7 @@
         "announcement_shipping": {
           "type": "_announcement",
           "settings": {
-            "text": "LIVRAISON GRATUITE À PARTIR DE 200$",
+            "text": "LIVRAISON GRATUITE À PARTIR DE 200€",
             "link": "",
             "font": "var(--font-body--family)",
             "font_size": "1.1rem",
