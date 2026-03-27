@@ -79,11 +79,11 @@
             {% else %}
               {%- comment -%} Fallback links while Shopify navigation menus are being configured {%- endcomment -%}
               {% if menu.handle == 'footer-societe' %}
-                {% assign _fb = "Notre histoire|/pages/decouvrez-notre-histoire,Blog|/blogs/news,Personal Shopper|/pages/assistant-de-vente" | split: "," %}
+                {% assign _fb = "Qui nous sommes|/pages/qui-nous-sommes,Notre histoire|/pages/notre-histoire,Contactez-nous|/pages/contact" | split: "," %}
               {% elsif menu.handle == 'footer-service' %}
-                {% assign _fb = "Nous contacter|/pages/contact,FAQ|/pages/faq,Guide des tailles|/pages/guide-des-tailles,Retours & Échanges|/pages/retours" | split: "," %}
+                {% assign _fb = "Échanges & Retours|/pages/retours-echanges,Expédition|/pages/expedition,Méthodes de paiement|/pages/methodes-de-paiement" | split: "," %}
               {% elsif menu.handle == 'footer-legal' %}
-                {% assign _fb = "CGV|/policies/terms-of-service,Confidentialité|/policies/privacy-policy,Mentions légales|/pages/mentions-legales,Remboursement|/policies/refund-policy" | split: "," %}
+                {% assign _fb = "Info confidentialité|/policies/privacy-policy,Politique en matière de cookies|/pages/politique-cookies,Termes et conditions|/policies/terms-of-service,Préférences de confidentialité|/pages/preferences-confidentialite" | split: "," %}
               {% endif %}
               {% for _f in _fb %}
                 {% assign _fp = _f | split: "|" %}

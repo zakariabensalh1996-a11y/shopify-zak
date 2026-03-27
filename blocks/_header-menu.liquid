@@ -88,7 +88,7 @@
     {%- comment -%} Fallback nav if Shopify navigation menu not yet created {%- endcomment -%}
     {% liquid
       if block_settings.menu.links.size == 0
-        assign masons_fallback_nav = "HOMME|/collections/homme,FEMME|/collections/femme,ACCESSORIES|/collections/accessories,SOLDES|/collections/soldes,NOTRE HISTOIRE|/pages/decouvrez-notre-histoire,BLOG|/blogs/news"
+        assign masons_fallback_nav = "ÉTÉ 2026 HOMME|/collections/printemps-ete-homme,ÉTÉ 2026 FEMME|/collections/printemps-ete-femme,HIVER 2025 HOMME|/collections/homme,HIVER 2025 FEMME|/collections/femme,ACCESSORIES|/collections/accessories,NOTRE HISTOIRE|/pages/notre-histoire,BLOG|/blogs/news"
         assign masons_fallback_links = masons_fallback_nav | split: ","
       endif
     %}
