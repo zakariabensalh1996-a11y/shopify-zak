@@ -40,6 +40,35 @@
   >
     {% render 'variant-swatches', product_resource: closest.product %}
   </product-swatches>
+{% else %}
+  {%- liquid
+    assign has_couleur = false
+    for opt in closest.product.options_with_values
+      if opt.name == 'Couleur'
+        assign has_couleur = true
+        break
+      endif
+    endfor
+  -%}
+  {% if has_couleur %}
+    <product-swatches
+      data-product-id="{{ closest.product.id }}"
+      data-product-url="{{ closest.product.url }}"
+      style="
+        --overflow-list-alignment: flex-start;
+        --overflow-list-alignment-mobile: flex-start;
+        --product-swatches-alignment: start;
+        --product-swatches-alignment-mobile: start;
+        --product-swatches-padding-block-start: 4px;
+        --product-swatches-padding-block-end: 0px;
+        --product-swatches-padding-inline-start: 0px;
+        --product-swatches-padding-inline-end: 0px;
+      "
+      {{ block.shopify_attributes }}
+    >
+      {% render 'masons-color-swatches', product_resource: closest.product %}
+    </product-swatches>
+  {% endif %}
 {% endif %}
 
 {% schema %}
