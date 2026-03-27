@@ -4,40 +4,54 @@
   data-section-id="{{ section.id }}"
 >
   <div class="masons-hero__media">
-    <img
-      src="{{ 'masons-hero-ss26.jpg' | asset_url }}"
-      alt="{{ section.settings.heading | escape }}"
-      class="masons-hero__image"
-      loading="eager"
-      fetchpriority="high"
-      width="1920"
-      height="1080"
-    >
+    {%- if section.settings.image != blank -%}
+      {{
+        section.settings.image
+        | image_url: width: 3840
+        | image_tag:
+          loading: 'eager',
+          fetchpriority: 'high',
+          class: 'masons-hero__image',
+          widths: '832, 1200, 1600, 1920, 2560, 3840',
+          sizes: '100vw',
+          alt: section.settings.heading
+      }}
+    {%- else -%}
+      <img
+        src="{{ 'masons-hero-ss26.jpg' | asset_url }}"
+        alt="{{ section.settings.heading | escape }}"
+        class="masons-hero__image"
+        loading="eager"
+        fetchpriority="high"
+        width="1920"
+        height="1080"
+      >
+    {%- endif -%}
     <div class="masons-hero__overlay"></div>
   </div>
 
   <div class="masons-hero__inner page-width">
     <div class="masons-hero__content">
-      {%- if section.settings.kicker != blank -%}
-        <p class="masons-hero__kicker">{{ section.settings.kicker }}</p>
-      {%- endif -%}
-
       {%- if section.settings.heading != blank -%}
         <h1 class="masons-hero__heading">{{ section.settings.heading }}</h1>
       {%- endif -%}
 
       <div class="masons-hero__actions">
         {%- if section.settings.btn1_label != blank -%}
-          <a href="{{ section.settings.btn1_link }}" class="button button--secondary">
+          <a href="{{ section.settings.btn1_link }}" class="button button--secondary masons-hero__btn">
             {{ section.settings.btn1_label }}
           </a>
         {%- endif -%}
         {%- if section.settings.btn2_label != blank -%}
-          <a href="{{ section.settings.btn2_link }}" class="button button--secondary">
+          <a href="{{ section.settings.btn2_link }}" class="button button--secondary masons-hero__btn">
             {{ section.settings.btn2_label }}
           </a>
         {%- endif -%}
       </div>
+
+      {%- if section.settings.kicker != blank -%}
+        <p class="masons-hero__kicker">{{ section.settings.kicker }}</p>
+      {%- endif -%}
     </div>
   </div>
 </section>
@@ -63,47 +77,39 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center top;
+    /* Exact object-position from scraped site: 60.8% 32.2% */
+    object-position: 60.8% 32.2%;
     display: block;
   }
 
+  /* Exact overlay from hero.html: #22222226 → transparent, to top */
   #section-{{ section.id }} .masons-hero__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(34, 34, 34, 0.72) 0%, rgba(34, 34, 34, 0.10) 50%, transparent 100%);
+    background: linear-gradient(to top, #22222226, rgba(34, 34, 34, 0));
   }
 
   #section-{{ section.id }} .masons-hero__inner {
     position: relative;
     z-index: 1;
     width: 100%;
-    padding-bottom: 60px;
+    padding-bottom: 10%;
   }
 
   #section-{{ section.id }} .masons-hero__content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     gap: 20px;
-    max-width: 640px;
-  }
-
-  #section-{{ section.id }} .masons-hero__kicker {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 400;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.80);
-    margin: 0;
-    line-height: 1.4;
+    width: 100%;
   }
 
   #section-{{ section.id }} .masons-hero__heading {
     font-family: 'Helvetica Neue', sans-serif;
-    font-size: 4.0rem;
-    font-weight: 500;
-    letter-spacing: 0.10em;
+    font-size: clamp(2.2rem, 4vw, 4.2rem);
+    font-weight: 700;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #ffffff;
     margin: 0;
@@ -114,36 +120,42 @@
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    justify-content: center;
   }
 
-  #section-{{ section.id }} .masons-hero__actions .button--secondary {
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.70);
-    color: #ffffff;
-    padding: 12px 32px;
-    font-size: 1.2rem;
-    letter-spacing: 0.10em;
+  #section-{{ section.id }} .masons-hero__btn {
+    background-color: rgba(255, 255, 255, 0.90);
+    border: none;
+    color: #000000;
+    padding: 10px 40px;
+    font-size: 1.1rem;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
-    transition: background-color 0.25s ease-out, border-color 0.25s ease-out;
+    font-weight: 400;
+    transition: background-color 0.25s ease-out;
   }
 
-  #section-{{ section.id }} .masons-hero__actions .button--secondary:hover {
+  #section-{{ section.id }} .masons-hero__btn:hover {
     background-color: #ffffff;
-    border-color: #ffffff;
-    color: #222222;
+    color: #000000;
+  }
+
+  #section-{{ section.id }} .masons-hero__kicker {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 0.80);
+    margin: 0;
+    line-height: 1.5;
   }
 
   @media screen and (max-width: 768px) {
     #section-{{ section.id }} .masons-hero__heading {
-      font-size: 2.8rem;
+      font-size: 2.4rem;
     }
-
-    #section-{{ section.id }} .masons-hero__inner {
-      padding-bottom: 40px;
-    }
-
-    #section-{{ section.id }} .masons-hero__actions .button--secondary {
-      padding: 12px 24px;
+    #section-{{ section.id }} .masons-hero__btn {
+      padding: 10px 28px;
     }
   }
 </style>
@@ -154,6 +166,12 @@
   "tag": "section",
   "settings": [
     {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Hero Image",
+      "info": "Recommended: 1920×1080px or larger. Leave blank to use the default SS26 asset."
+    },
+    {
       "type": "text",
       "id": "heading",
       "label": "Heading",
@@ -162,7 +180,7 @@
     {
       "type": "text",
       "id": "kicker",
-      "label": "Kicker / Subtitle",
+      "label": "Subtitle (below buttons)",
       "default": "Découvrez la nouvelle collection : passion artisanale depuis 1974"
     },
     {

@@ -4,14 +4,27 @@
   data-section-id="{{ section.id }}"
 >
   <div class="masons-about__media">
-    <img
-      src="{{ 'masons-about-poster.jpg' | asset_url }}"
-      alt="Mason's — About Us"
-      class="masons-about__image"
-      loading="lazy"
-      width="960"
-      height="1200"
-    >
+    {%- if section.settings.image != blank -%}
+      {{
+        section.settings.image
+        | image_url: width: 1200
+        | image_tag:
+          loading: 'lazy',
+          class: 'masons-about__image',
+          widths: '600, 800, 960, 1200',
+          sizes: '(max-width: 768px) 100vw, 50vw',
+          alt: section.settings.heading
+      }}
+    {%- else -%}
+      <img
+        src="{{ 'masons-about-poster.jpg' | asset_url }}"
+        alt="Mason's — About Us"
+        class="masons-about__image"
+        loading="lazy"
+        width="960"
+        height="1200"
+      >
+    {%- endif -%}
   </div>
 
   <div class="masons-about__content">
@@ -28,10 +41,17 @@
     {%- endif -%}
 
     {%- if section.settings.btn_label != blank -%}
-      <a href="{{ section.settings.btn_link }}" class="button button--primary masons-about__cta">
+      <a href="{{ section.settings.btn_link }}" class="masons-about__cta">
         {{ section.settings.btn_label }}
       </a>
     {%- endif -%}
+
+    {%- comment -%} Manifesto words — exact from scraped site {%- endcomment -%}
+    <div class="masons-about__manifesto" aria-hidden="true">
+      <p>Authentique,</p>
+      <p>Libre,</p>
+      <p>Élégant.</p>
+    </div>
   </div>
 </section>
 
@@ -40,7 +60,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 640px;
-    background-color: var(--color-background, #F2F2F2);
+    background-color: var(--color-background, #ffffff);
   }
 
   #section-{{ section.id }} .masons-about__media {
@@ -62,57 +82,75 @@
     align-items: flex-start;
     gap: 0;
     padding: 80px 64px;
+    background-color: var(--color-background, #F2F2F2);
   }
 
   #section-{{ section.id }} .masons-about__label {
     font-family: 'Helvetica Neue', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
     letter-spacing: 0.25em;
     text-transform: uppercase;
-    color: var(--color-foreground, #222222);
-    margin: 0 0 16px;
+    color: #FF5031;
+    margin: 0 0 12px;
     line-height: 1.4;
   }
 
   #section-{{ section.id }} .masons-about__heading {
     font-family: 'Helvetica Neue', sans-serif;
-    font-size: 3.6rem;
+    font-size: 3.2rem;
     font-weight: 500;
-    letter-spacing: 0.10em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--color-foreground-heading, #222222);
+    color: var(--color-foreground-heading, #000000);
     margin: 0 0 24px;
     line-height: 1.1;
   }
 
   #section-{{ section.id }} .masons-about__body {
     font-family: 'Helvetica Neue', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 400;
-    line-height: 1.7;
-    color: var(--color-foreground, #222222);
-    margin: 0 0 40px;
-    max-width: 480px;
+    line-height: 1.75;
+    color: #767676;
+    margin: 0 0 32px;
+    max-width: 46ch;
   }
 
   #section-{{ section.id }} .masons-about__cta {
     display: inline-block;
-    background-color: #222222;
-    color: #ffffff;
-    border: 1px solid #222222;
-    padding: 14px 36px;
-    font-size: 1.2rem;
-    letter-spacing: 0.10em;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.20em;
     text-transform: uppercase;
+    color: var(--color-foreground, #000000);
     text-decoration: none;
-    transition: background-color 0.25s ease-out, border-color 0.25s ease-out;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 1px;
+    margin-bottom: 40px;
+    transition: color 0.25s ease-out;
   }
 
   #section-{{ section.id }} .masons-about__cta:hover {
-    background-color: #FF5031;
-    border-color: #FF5031;
-    color: #ffffff;
+    color: #FF5031;
+  }
+
+  /* Manifesto — italic, large, stacked */
+  #section-{{ section.id }} .masons-about__manifesto {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  #section-{{ section.id }} .masons-about__manifesto p {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: clamp(2.0rem, 3vw, 3.2rem);
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+    color: var(--color-foreground-heading, #000000);
+    margin: 0;
   }
 
   @media screen and (max-width: 1024px) {
@@ -137,6 +175,10 @@
     #section-{{ section.id }} .masons-about__heading {
       font-size: 2.4rem;
     }
+
+    #section-{{ section.id }} .masons-about__manifesto p {
+      font-size: 2.0rem;
+    }
   }
 </style>
 
@@ -146,9 +188,15 @@
   "tag": "section",
   "settings": [
     {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "Leave blank to use the default asset."
+    },
+    {
       "type": "text",
       "id": "label",
-      "label": "Label",
+      "label": "Label (above heading)",
       "default": "EST. 1974"
     },
     {
@@ -161,18 +209,18 @@
       "type": "richtext",
       "id": "body",
       "label": "Body Text",
-      "default": "<p>Mason's naît à Forte dei Marmi en 1974. Depuis plus de 50 ans, nous créons des pantalons tailleur alliant style, confort et qualité artisanale italienne.</p>"
+      "default": "<p>De la renommée atelier de couture de Vilmo Martini à Carrara à la marque internationale Mason's : découvrez comment, en 1974, son fils Giorgio a transformé le savoir-faire paternel en une aventure entrepreneuriale qui conjugue encore aujourd'hui tradition artisanale et innovation dans l'univers de la mode.</p>"
     },
     {
       "type": "text",
       "id": "btn_label",
-      "label": "Button Label",
-      "default": "Notre histoire"
+      "label": "Link Label",
+      "default": "About Us"
     },
     {
       "type": "url",
       "id": "btn_link",
-      "label": "Button Link"
+      "label": "Link URL"
     }
   ],
   "presets": [

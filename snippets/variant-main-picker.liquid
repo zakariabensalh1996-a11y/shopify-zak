@@ -131,71 +131,11 @@
                     mode: 'unscaled'
                   %}
                 {% else %}
-                  {% if product_option.name == 'Couleur' %}
-                    {%- liquid
-                      assign _cn = product_option_value.name
-                      assign _hex = '#cccccc'
-                      case _cn
-                        when 'Noir'
-                          assign _hex = '#111111'
-                        when 'Blanc'
-                          assign _hex = '#f5f5f5'
-                        when 'Gris'
-                          assign _hex = '#808080'
-                        when 'Gris Perle'
-                          assign _hex = '#c8c8c8'
-                        when 'Gris Clair'
-                          assign _hex = '#d3d3d3'
-                        when 'Bleu Marine'
-                          assign _hex = '#1f3a5f'
-                        when 'Bleu Nuit'
-                          assign _hex = '#0d1b2a'
-                        when 'Bleu Ciel'
-                          assign _hex = '#87ceeb'
-                        when 'Marron'
-                          assign _hex = '#6b3a2a'
-                        when 'Marron Clair'
-                          assign _hex = '#a0644c'
-                        when 'Brique'
-                          assign _hex = '#b5442e'
-                        when 'Basalte'
-                          assign _hex = '#4a4a4a'
-                        when 'Beige'
-                          assign _hex = '#d4b896'
-                        when 'Beige Clair'
-                          assign _hex = '#e8d5c0'
-                        when 'Beige Moyen'
-                          assign _hex = '#c9a87a'
-                        when 'Sable'
-                          assign _hex = '#c2a97a'
-                        when 'Vert Forêt'
-                          assign _hex = '#2d5016'
-                        when 'Vert Militaire'
-                          assign _hex = '#4b5320'
-                        when 'Stucco'
-                          assign _hex = '#b8a99a'
-                        when 'Sauge'
-                          assign _hex = '#87a878'
-                        when 'Rose'
-                          assign _hex = '#f4c2c2'
-                        when 'Lait'
-                          assign _hex = '#f5f0e8'
-                        when 'Beurre'
-                          assign _hex = '#f5e6a3'
-                        when 'Crème'
-                          assign _hex = '#fffdd0'
-                        when 'Craie'
-                          assign _hex = '#e8e8e0'
-                      endcase
-                    -%}
-                    <span class="swatch masons-swatch-inline" style="--swatch-background: {{ _hex }};"></span>
-                  {% else %}
-                    {% if product_option_value.available == true %}
-                      <span
-                        class="variant-option__button-label__pill"
-                        data-key="variant-option-pill"
-                      ></span>
-                    {% endif %}
+                  {% if product_option_value.available == true %}
+                    <span
+                      class="variant-option__button-label__pill"
+                      data-key="variant-option-pill"
+                    ></span>
                   {% endif %}
                   <span
                     class="variant-option__button-label__text"

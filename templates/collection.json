@@ -200,17 +200,9 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "card_swatches": {
-              "type": "swatches",
-              "name": "Color Swatches",
-              "settings": {
-                "hide_padding": true
-              },
-              "blocks": {}
             }
           },
-          "block_order": ["card-gallery", "card_title", "card_price", "card_swatches"]
+          "block_order": ["card-gallery", "card_title", "card_price"]
         }
       },
       "settings": {

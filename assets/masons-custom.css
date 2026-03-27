@@ -4,6 +4,48 @@
    the exact Mason's design system extracted from us.masons.it
    ============================================================ */
 
+/* ── Custom Fonts ────────────────────────────────────────── */
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('{{ "HelveticaNeue-Roman.woff2" | asset_url }}') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('{{ "HelveticaNeue-Medium.woff2" | asset_url }}') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('{{ "HelveticaNeue-Bold.woff2" | asset_url }}') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bull-5';
+  src: url('{{ "Bull-5-Typewriter.woff2" | asset_url }}') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Southera';
+  src: url('{{ "Southera.woff2" | asset_url }}') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ── Global Font Override ────────────────────────────────── */
 /* Override Horizon's Inter font with Helvetica Neue across the board */
 
@@ -346,186 +388,4 @@ marquee-section,
 /* ── Product section gap override ───────────────────────── */
 product-information {
   gap: 0;
-}
-
-/* ── Couleur option: inline color dot in variant button ─── */
-.masons-swatch-inline {
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  flex-shrink: 0;
-  vertical-align: middle;
-  margin-right: 4px;
-  border-radius: 0 !important;
-  border: 1px solid rgba(0,0,0,0.15);
-}
-
-/* Make Couleur buttons slightly taller to fit the circle */
-.variant-option--buttons .variant-option__button-label:has(.masons-swatch-inline) {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-
-/* ── Disable Horizon hover-lift on product cards ─────────── */
-product-card,
-.product-card,
-[class*="product-card"] {
-  --hover-lift-amount: 0px !important;
-  --hover-scale-amount: 1 !important;
-  --hover-subtle-zoom-amount: 1 !important;
-  box-shadow: none !important;
-  transform: none !important;
-  transition: none !important;
-}
-
-product-card:hover,
-.product-card:hover {
-  transform: none !important;
-  box-shadow: none !important;
-}
-
-/* ── Product card image: slight zoom on hover (Mason's style) */
-card-gallery img,
-.card-gallery img,
-[class*="card-gallery"] img {
-  transition: transform 0.4s ease-out !important;
-}
-
-card-gallery:hover img,
-.card-gallery:hover img,
-[class*="card-gallery"]:hover img {
-  transform: scale(1.03) !important;
-}
-
-/* ── Collection page: tighter grid matching Mason's layout ── */
-.product-grid {
-  --columns-gap-horizontal: 8px !important;
-  --columns-gap-vertical: 24px !important;
-}
-
-/* ── Product card content area spacing ───────────────────── */
-.product-card__content,
-[class*="product-card__content"] {
-  gap: 0 !important;
-}
-
-/* ── Product title: exact Mason's card title style ────────── */
-.card__heading a,
-product-title a,
-.product-card .product-title,
-[data-block-type="product-title"] .text-block__text {
-  font-family: 'Helvetica Neue', sans-serif !important;
-  font-size: 1.2rem !important;
-  font-weight: 400 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.05em !important;
-  line-height: 1.4 !important;
-  color: #000000 !important;
-}
-
-/* ── Price block: compact style ──────────────────────────── */
-[data-block-type="price"] .price,
-.price-block__price {
-  font-family: 'Helvetica Neue', sans-serif !important;
-  font-size: 1.2rem !important;
-  font-weight: 400 !important;
-  letter-spacing: 0.02em !important;
-}
-
-/* ── Swatches: small circular color indicators ────────────── */
-.swatches__list {
-  gap: 4px !important;
-}
-
-.swatch,
-[class*="swatch__item"] {
-  width: 12px !important;
-  height: 12px !important;
-  border-radius: 50% !important;
-  border: 1px solid rgba(0,0,0,0.12) !important;
-}
-
-/* ── Section spacing: match Mason's tighter layout ────────── */
-.section {
-  --padding-block: var(--padding-block-start, 64px) var(--padding-block-end, 64px);
-}
-
-/* ── Collection banner: minimal header like Mason's ──────── */
-.collection-banner,
-[class*="collection-banner"] {
-  padding-bottom: 16px !important;
-}
-
-/* ── Filter bar: uppercase, minimal ──────────────────────── */
-.facet-filters__label,
-.facets__label,
-[class*="facet__label"] {
-  font-family: 'Helvetica Neue', sans-serif !important;
-  font-size: 1.1rem !important;
-  font-weight: 400 !important;
-  letter-spacing: 0.08em !important;
-  text-transform: uppercase !important;
-}
-
-/* ── Announcement bar: white background (scheme-2) ──────── */
-.announcement-bar {
-  background-color: #ffffff;
-}
-
-/* ── Header logo height ───────────────────────────────────── */
-.header__logo img,
-.header-logo img {
-  height: 28px !important;
-  width: auto !important;
-}
-
-/* ── Nav links: exact Mason's header style ───────────────── */
-.header__nav a,
-.header-menu__nav-link,
-[class*="header__nav"] a,
-[class*="nav-link"] {
-  font-family: 'Helvetica Neue', sans-serif !important;
-  font-size: 1.2rem !important;
-  font-weight: 500 !important;
-  letter-spacing: 0.08em !important;
-  text-transform: uppercase !important;
-}
-
-/* ── Product page: image takes full column height ─────────── */
-.product__media-gallery,
-[class*="product-media-gallery"] {
-  position: sticky;
-  top: 80px;
-}
-
-/* ── Product page: details column spacing ────────────────── */
-.product__details,
-[class*="product-information"] {
-  padding-top: 0 !important;
-}
-
-/* ── Back to top / scroll utility ────────────────────────── */
-.back-to-top {
-  display: none;
-}
-
-/* ── Mega-menu: square dropdowns matching Mason's ──────── */
-.mega-menu,
-[class*="mega-menu"],
-.header-menu__dropdown {
-  border-radius: 0 !important;
-  border: 1px solid #E5E5E5 !important;
-  background-color: #ffffff !important;
-}
-
-/* ── Price: remove extra margin ──────────────────────────── */
-.price__sale,
-.price--sale {
-  margin: 0 !important;
-}
-
-/* ── Product grid item: no extra shadow ──────────────────── */
-.product-grid__item {
-  box-shadow: none !important;
 }

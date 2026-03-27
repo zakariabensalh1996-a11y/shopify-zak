@@ -68,13 +68,11 @@
                 "ratio": "portrait"
               }
             }
-          },
-          "block_order": []
+          }
         }
       },
       "name": "Modèles - Nos Best Sellers",
       "settings": {
-        "product_handles": "milano-chino-homme,new-york-chino-homme,torino-chino-homme,malibu-femme-product",
         "layout": "spotlight",
         "section_width": "page-width",
         "alignment": "left",
@@ -246,21 +244,12 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "swatches": {
-              "type": "swatches",
-              "name": "Color Swatches",
-              "settings": {
-                "hide_padding": true
-              },
-              "blocks": {}
             }
           },
           "block_order": [
             "gallery",
             "title",
-            "price",
-            "swatches"
+            "price"
           ]
         }
       },
@@ -448,21 +437,12 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "swatches": {
-              "type": "swatches",
-              "name": "Color Swatches",
-              "settings": {
-                "hide_padding": true
-              },
-              "blocks": {}
             }
           },
           "block_order": [
             "gallery",
             "title",
-            "price",
-            "swatches"
+            "price"
           ]
         }
       },
@@ -490,47 +470,15 @@
     },
     "shop_the_look": {
       "type": "masons-shop-the-look",
-      "blocks": {
-        "stl_1": {
-          "type": "product",
-          "settings": {
-            "product": "gid://shopify/product/8052393639998"
-          }
-        },
-        "stl_2": {
-          "type": "product",
-          "settings": {
-            "product": "gid://shopify/product/8052394688574"
-          }
-        },
-        "stl_3": {
-          "type": "product",
-          "settings": {
-            "product": "gid://shopify/product/8052393771070"
-          }
-        },
-        "stl_4": {
-          "type": "product",
-          "settings": {
-            "product": "gid://shopify/product/8052394819646"
-          }
-        }
-      },
-      "block_order": [
-        "stl_1",
-        "stl_2",
-        "stl_3",
-        "stl_4"
-      ],
-      "name": "Shop The Look",
+      "name": "Editorial Shoot",
       "settings": {
-        "heading": "SHOP THE LOOK",
-        "subheading": "Composez votre look avec nos sélections",
-        "products_label": "COMPOSEZ VOTRE LOOK",
+        "heading": "EDITORIAL SHOOT",
+        "subheading": "",
+        "products_label": "SUIVANT",
         "cta_label": "Voir tout",
         "cta_link": "/collections/all",
-        "padding_top": 64,
-        "padding_bottom": 64
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "media_about": {
@@ -539,8 +487,8 @@
       "settings": {
         "label": "EST. 1974",
         "heading": "ABOUT US",
-        "body": "<p>Mason's naît à Forte dei Marmi en 1974. Depuis plus de 50 ans, nous créons des pantalons tailleur alliant style, confort et qualité artisanale italienne.</p>",
-        "btn_label": "Notre histoire",
+        "body": "<p>De la renommée atelier de couture de Vilmo Martini à Carrara à la marque internationale Mason's : découvrez comment, en 1974, son fils Giorgio a transformé le savoir-faire paternel en une aventure entrepreneuriale qui conjugue encore aujourd'hui tradition artisanale et innovation dans l'univers de la mode.</p>",
+        "btn_label": "About Us",
         "btn_link": "/pages/decouvrez-notre-histoire"
       }
     },
@@ -550,8 +498,8 @@
       "settings": {
         "label": "FOR YOU",
         "heading": "PERSONAL SHOPPER",
-        "body": "<p>Bénéficiez des conseils personnalisés de nos experts pour trouver le pantalon parfait selon votre morphologie, vos goûts et votre style de vie.</p>",
-        "btn_label": "Découvrir",
+        "body": "<p>Avec notre service de Personal Shopper, vous pouvez découvrir les collections lors d'un appel vidéo dédié, en italien ou en anglais, et recevoir des conseils personnalisés pour choisir les pièces parfaites et optimiser votre temps. Achetez immédiatement ou revoyez les looks sélectionnés en toute tranquillité, puis finalisez votre commande quand vous le souhaitez.</p>",
+        "btn_label": "Réservez sur WhatsApp",
         "btn_link": "/pages/assistant-de-vente"
       }
     }
