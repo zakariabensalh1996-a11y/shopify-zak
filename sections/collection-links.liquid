@@ -2,18 +2,24 @@
 
 {% liquid
   assign collection_list = section.settings.collection_list
+  assign _use_products_fallback = false
 
   if collection_list == blank
-    assign limit = 4
-
-    for i in (1..4)
-      assign collection_list = collection_list | append: ', '
-    endfor
-
-    assign collection_list = collection_list | split: ','
+    if section.settings.product_handles != blank
+      assign _use_products_fallback = true
+      assign _product_handles_arr = section.settings.product_handles | split: ','
+    else
+      assign limit = 4
+      for i in (1..4)
+        assign collection_list = collection_list | append: ', '
+      endfor
+      assign collection_list = collection_list | split: ','
+    endif
   endif
 
-  assign active_collection = collection_list | find: 'id', collection.id | default: collection_list.first
+  unless _use_products_fallback
+    assign active_collection = collection_list | find: 'id', collection.id | default: collection_list.first
+  endunless
 %}
 
 <script
@@ -39,56 +45,94 @@
       class="collection-links__container"
       ref="container"
     >
-      {% for collection in collection_list limit: limit %}
-        {% liquid
-          assign current = false
-
-          if collection.id == active_collection.id
-            assign current = true
-          endif
-        %}
-        {% content_for 'block',
-          type: '_collection-link',
-          id: 'link',
-          closest.collection: collection,
-          index: forloop.index0,
-          current: current
-        %}
-      {% endfor %}
+      {% if _use_products_fallback %}
+        {% for _ph in _product_handles_arr %}
+          {% assign _ph_clean = _ph | strip %}
+          {% assign _prd = all_products[_ph_clean] %}
+          {% if _prd != blank %}
+            {% content_for 'block',
+              type: '_collection-link',
+              id: 'link',
+              closest.product: _prd,
+              index: forloop.index0,
+              current: forloop.first
+            %}
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        {% for collection in collection_list limit: limit %}
+          {% liquid
+            assign current = false
+            if collection.id == active_collection.id
+              assign current = true
+            endif
+          %}
+          {% content_for 'block',
+            type: '_collection-link',
+            id: 'link',
+            closest.collection: collection,
+            index: forloop.index0,
+            current: current
+          %}
+        {% endfor %}
+      {% endif %}
     </div>
 
     {% case section.settings.layout %}
       {% when 'spotlight' %}
         {% capture slides %}
-          {% for collection in collection_list limit: limit %}
-          {% liquid
-            assign current = false
+          {% if _use_products_fallback %}
+            {% assign _slide_count = 0 %}
+            {% for _ph in _product_handles_arr %}
+              {% assign _ph_clean = _ph | strip %}
+              {% assign _prd = all_products[_ph_clean] %}
+              {% if _prd != blank %}
+                {% assign _slide_count = _slide_count | plus: 1 %}
+                {% capture slide %}
+                  {% # theme-check-disable UniqueStaticBlockId %}
+                  {% content_for 'block',
+                    type: '_collection-link',
+                    id: 'link',
+                    closest.product: _prd,
+                    index: forloop.index0,
+                    current: forloop.first,
+                    image_only: true
+                  %}
+                  {% # theme-check-enable UniqueStaticBlockId %}
+                {% endcapture %}
+                {% render 'slideshow-slide', children: slide, index: forloop.index0 %}
+              {% endif %}
+            {% endfor %}
+          {% else %}
+            {% for collection in collection_list limit: limit %}
+              {% liquid
+                assign current = false
+                if collection.id == active_collection.id
+                  assign current = true
+                endif
+              %}
+              {% capture slide %}
+                {% # theme-check-disable UniqueStaticBlockId %}
+                {% content_for 'block',
+                  type: '_collection-link',
+                  id: 'link',
+                  closest.collection: collection,
+                  index: forloop.index0,
+                  current: current,
+                  image_only: true
+                %}
+                {% # theme-check-enable UniqueStaticBlockId %}
+              {% endcapture %}
+              {% render 'slideshow-slide', children: slide, index: forloop.index0 %}
+            {% endfor %}
+          {% endif %}
+        {% endcapture %}
 
-            if collection.id == active_collection.id
-              assign current = true
-            endif
-          %}
-
-          {% capture slide %}
-            {% # theme-check-disable UniqueStaticBlockId %}
-            {% content_for 'block',
-              type: '_collection-link',
-              id: 'link',
-              closest.collection: collection,
-              index: forloop.index0,
-              current: current,
-              image_only: true
-            %}
-            {% # theme-check-enable UniqueStaticBlockId %}
-          {% endcapture %}
-
-          {% render 'slideshow-slide', children: slide, index: forloop.index0 %}
-        {% endfor %}
-      {% endcapture %}
-
+        {% assign _computed_slide_count = collection_list.size %}
+        {% if _use_products_fallback %}{% assign _computed_slide_count = _product_handles_arr.size %}{% endif %}
         {% render 'slideshow',
           slides: slides,
-          slide_count: collection_list.size,
+          slide_count: _computed_slide_count,
           class: 'collection-links__images',
           ref: 'slideshow'
         %}
@@ -203,6 +247,12 @@
       "type": "collection_list",
       "id": "collection_list",
       "label": "t:settings.collection_list"
+    },
+    {
+      "type": "text",
+      "id": "product_handles",
+      "label": "Product handles (fallback)",
+      "info": "Comma-separated product handles used when collection list is unavailable"
     },
     {
       "type": "header",

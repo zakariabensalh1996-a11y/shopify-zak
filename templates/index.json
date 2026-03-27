@@ -68,7 +68,8 @@
                 "ratio": "portrait"
               }
             }
-          }
+          },
+          "block_order": []
         }
       },
       "name": "Modèles - Nos Best Sellers",
@@ -470,6 +471,38 @@
     },
     "shop_the_look": {
       "type": "masons-shop-the-look",
+      "blocks": {
+        "stl_1": {
+          "type": "product",
+          "settings": {
+            "product": "gid://shopify/product/8052393639998"
+          }
+        },
+        "stl_2": {
+          "type": "product",
+          "settings": {
+            "product": "gid://shopify/product/8052394688574"
+          }
+        },
+        "stl_3": {
+          "type": "product",
+          "settings": {
+            "product": "gid://shopify/product/8052393771070"
+          }
+        },
+        "stl_4": {
+          "type": "product",
+          "settings": {
+            "product": "gid://shopify/product/8052394819646"
+          }
+        }
+      },
+      "block_order": [
+        "stl_1",
+        "stl_2",
+        "stl_3",
+        "stl_4"
+      ],
       "name": "Shop The Look",
       "settings": {
         "heading": "SHOP THE LOOK",

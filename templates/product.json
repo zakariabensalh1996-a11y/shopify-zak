@@ -32,7 +32,7 @@
             "extend_media": false,
             "zoom": true,
             "video_loop": false,
-            "hide_variants": true,
+            "hide_variants": false,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -55,8 +55,6 @@
             "inherit_color_scheme": true,
             "color_scheme": "scheme-1",
             "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
@@ -67,94 +65,53 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "header_group": {
-              "type": "group",
-              "name": "Header",
+            "product_title": {
+              "type": "text",
+              "name": "Product title",
               "settings": {
-                "open_in_new_tab": false,
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 8,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
+                "text": "<h1>{{ closest.product.title }}</h1>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-heading--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "0.08em",
+                "case": "uppercase",
+                "wrap": "pretty",
+                "color": "var(--color-foreground-heading)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
-              "blocks": {
-                "product_title": {
-                  "type": "text",
-                  "name": "Product title",
-                  "settings": {
-                    "text": "<h1>{{ closest.product.title }}</h1>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "h3",
-                    "font": "var(--font-heading--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "0.08em",
-                    "case": "uppercase",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground-heading)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "product_price": {
-                  "type": "price",
-                  "settings": {
-                    "show_sale_price_first": true,
-                    "show_installments": false,
-                    "show_tax_info": false,
-                    "type_preset": "paragraph",
-                    "width": "100%",
-                    "alignment": "left",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1.4rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "color": "var(--color-foreground)",
-                    "padding-block-start": 4,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
+              "blocks": {}
+            },
+            "product_price": {
+              "type": "price",
+              "settings": {
+                "show_sale_price_first": true,
+                "show_installments": false,
+                "show_tax_info": false,
+                "type_preset": "paragraph",
+                "width": "100%",
+                "alignment": "left",
+                "font": "var(--font-body--family)",
+                "font_size": "1.6rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "color": "var(--color-foreground)",
+                "padding-block-start": 4,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
-              "block_order": ["product_title", "product_price"]
+              "blocks": {}
             },
             "divider_top": {
               "type": "_divider",
@@ -174,6 +131,18 @@
                 "variant_style": "buttons",
                 "show_swatches": false,
                 "alignment": "left",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_inventory": {
+              "type": "product-inventory",
+              "settings": {
+                "inventory_threshold": 5,
+                "show_inventory_quantity": false,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -215,11 +184,28 @@
               },
               "block_order": []
             },
+            "custom_hem": {
+              "type": "product-custom-property",
+              "name": "Ourlet personnalisé",
+              "settings": {
+                "property_heading": "Service d'ourlet personnalisé gratuit",
+                "property_description": "Indiquez votre longueur d'entrejambe en cm pour un ourlet sur-mesure",
+                "property_key": "Longueur entrejambe (cm)",
+                "input_type": "text",
+                "required": false,
+                "placeholder": "Ex: 76",
+                "padding-block-start": 8,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "delivery_text": {
               "type": "text",
               "name": "Delivery info",
               "settings": {
-                "text": "<p>Livraison gratuite à partir de 200$. Retours gratuits sous 30 jours.</p>",
+                "text": "<p>Livraison gratuite à partir de 200€ · Retours gratuits sous 30 jours</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -234,7 +220,7 @@
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
-                "padding-block-start": 0,
+                "padding-block-start": 8,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
@@ -248,16 +234,15 @@
                 "thickness": 1,
                 "corner_radius": "square",
                 "width_percent": 100,
-                "padding-block-start": 4,
+                "padding-block-start": 8,
                 "padding-block-end": 4
               },
               "blocks": {}
             },
             "product_description": {
-              "type": "text",
+              "type": "product-description",
               "name": "Description",
               "settings": {
-                "text": "{{ closest.product.description }}",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -269,25 +254,98 @@
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "accordion_fabric": {
+              "type": "accordion",
+              "name": "Composition du tissu",
+              "settings": {
+                "icon": "plus",
+                "dividers": true,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "fabric_row": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Composition du tissu",
+                    "open_by_default": false,
+                    "icon": "plus"
+                  },
+                  "blocks": {
+                    "fabric_text": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Fabriqué en Italie. Lavage à 30° recommandé. Composition détaillée dans la description ci-dessus.</p>",
+                        "width": "100%"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": ["fabric_text"]
+                },
+                "size_row": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Guide des tailles",
+                    "open_by_default": false,
+                    "icon": "plus"
+                  },
+                  "blocks": {
+                    "size_text": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p><strong>Taille italienne.</strong> Pour connaître votre taille, mesurez votre tour de taille :</p><ul><li>IT 44 / FR 36 — Tour de taille 72–76 cm</li><li>IT 46 / FR 38 — 76–80 cm</li><li>IT 48 / FR 40 — 80–84 cm</li><li>IT 50 / FR 42 — 84–88 cm</li><li>IT 52 / FR 44 — 88–94 cm</li><li>IT 54 / FR 46 — 94–100 cm</li><li>IT 56 / FR 48 — 100–108 cm</li></ul>",
+                        "width": "100%"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": ["size_text"]
+                },
+                "delivery_row": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Livraison & Retours",
+                    "open_by_default": false,
+                    "icon": "plus"
+                  },
+                  "blocks": {
+                    "delivery_text": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p><strong>Livraison gratuite</strong> à partir de 200€ — 3 à 5 jours ouvrés.<br><strong>Retours gratuits</strong> sous 30 jours — articles non portés, étiquettes intactes.</p>",
+                        "width": "100%"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": ["delivery_text"]
+                }
+              },
+              "block_order": ["fabric_row", "size_row", "delivery_row"]
             }
           },
           "block_order": [
-            "header_group",
+            "product_title",
+            "product_price",
             "divider_top",
             "variant_picker",
+            "product_inventory",
             "buy_buttons",
+            "custom_hem",
             "delivery_text",
             "divider_desc",
-            "product_description"
+            "product_description",
+            "accordion_fabric"
           ]
         }
       },
@@ -297,6 +355,7 @@
         "equal_columns": false,
         "limit_details_width": true,
         "gap": 48,
+        "enable_sticky_add_to_cart": true,
         "color_scheme": "scheme-1",
         "padding-block-start": 0,
         "padding-block-end": 0
@@ -310,7 +369,7 @@
           "type": "text",
           "name": "Heading",
           "settings": {
-            "text": "<h2>VOUS AIMEREZ AUSSI</h2>",
+            "text": "<h2>VOUS POURRIEZ AUSSI AIMER</h2>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -418,7 +477,7 @@
         }
       },
       "block_order": ["recs_heading"],
-      "name": "Vous aimerez aussi",
+      "name": "Vous pourriez aussi aimer",
       "settings": {
         "product": "{{ closest.product }}",
         "recommendation_type": "related",

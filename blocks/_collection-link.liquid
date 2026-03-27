@@ -14,9 +14,10 @@
 
 {% liquid
   assign onboarding = false
-  if closest.collection == empty
+  if closest.collection == empty and closest.product == empty
     assign onboarding = true
   endif
+  assign _link_url = closest.collection.url | default: closest.product.url
 %}
 
 {% if block.settings.show_count %}
@@ -46,7 +47,7 @@
 
 {% if image_only %}
   <a
-    href="{{ closest.collection.url }}"
+    href="{{ _link_url }}"
     class="collection-links__image"
     size="{{ section.settings.image_height }}"
     tabindex="-1"
@@ -59,7 +60,7 @@
   </a>
 {% else %}
   <a
-    href="{{ closest.collection.url }}"
+    href="{{ _link_url }}"
     class="collection-links__link"
     ref="links[]"
     on:pointerenter="/select/{{ index }}"
