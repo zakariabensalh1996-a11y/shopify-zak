@@ -74,6 +74,7 @@
       },
       "name": "Modèles - Nos Best Sellers",
       "settings": {
+        "product_handles": "milano-chino-homme,new-york-chino-homme,torino-chino-homme,malibu-femme-product",
         "layout": "spotlight",
         "section_width": "page-width",
         "alignment": "left",
