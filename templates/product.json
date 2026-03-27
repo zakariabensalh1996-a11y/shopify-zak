@@ -129,7 +129,7 @@
               "type": "variant-picker",
               "settings": {
                 "variant_style": "buttons",
-                "show_swatches": false,
+                "show_swatches": true,
                 "alignment": "left",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
@@ -471,9 +471,17 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "rec_swatches": {
+              "type": "swatches",
+              "name": "Color Swatches",
+              "settings": {
+                "hide_padding": true
+              },
+              "blocks": {}
             }
           },
-          "block_order": ["rec_gallery", "rec_title", "rec_price"]
+          "block_order": ["rec_gallery", "rec_title", "rec_price", "rec_swatches"]
         }
       },
       "block_order": ["recs_heading"],
