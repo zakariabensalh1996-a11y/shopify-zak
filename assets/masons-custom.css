@@ -4,48 +4,6 @@
    the exact Mason's design system extracted from us.masons.it
    ============================================================ */
 
-/* ── Custom Fonts ────────────────────────────────────────── */
-
-@font-face {
-  font-family: 'Helvetica Neue';
-  src: url('{{ "HelveticaNeue-Roman.woff2" | asset_url }}') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Helvetica Neue';
-  src: url('{{ "HelveticaNeue-Medium.woff2" | asset_url }}') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Helvetica Neue';
-  src: url('{{ "HelveticaNeue-Bold.woff2" | asset_url }}') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Bull-5';
-  src: url('{{ "Bull-5-Typewriter.woff2" | asset_url }}') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Southera';
-  src: url('{{ "Southera.woff2" | asset_url }}') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
 /* ── Global Font Override ────────────────────────────────── */
 /* Override Horizon's Inter font with Helvetica Neue across the board */
 
